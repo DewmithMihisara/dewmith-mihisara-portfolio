@@ -4,6 +4,8 @@ Welcome to My Portfolio! This is a personal website showcasing my work, skills, 
 achievements. It serves as a comprehensive collection of projects, experience, and information 
 about me.
 
+<h3>Technology & Frameworks</h3>
+
 <ul>
   <li>HTML</li>
   <li>CSS</li>
