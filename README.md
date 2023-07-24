@@ -52,6 +52,7 @@ This repository hosts the source code for my portfolio website, a personal platf
 The portfolio website is built using the following technologies:
 
 * `HTML5` and `CSS3` for the website structure and styling.
+* `JavaScript` and `jQuery` for interactive elements and animations.
 
 ## Local Development
 
