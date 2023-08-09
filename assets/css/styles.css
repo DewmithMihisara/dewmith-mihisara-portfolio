@@ -7,8 +7,12 @@
 }
 .main_header{
     font-size: 48px;
-    font-family: Georgia, serif;
+    font-family: Georgia, sans-serif;
     font-style: normal;
+}
+.main_para{
+    font-size: 18px;
+    font-family: Arial, serif;
 }
 #special_word{
     color: #03BFDA;
