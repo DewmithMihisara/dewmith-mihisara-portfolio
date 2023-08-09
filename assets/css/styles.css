@@ -1,7 +1,15 @@
 .sub_title{
     font-size: 20px;
     font-style: normal;
-    font-family: Arial, Serif;
+    font-family: Arial, serif;
     font-weight: 100;
     letter-spacing: 8px;
+}
+.main_header{
+    font-size: 48px;
+    font-family: Georgia, serif;
+    font-style: normal;
+}
+#special_word{
+    color: #03BFDA;
 }
