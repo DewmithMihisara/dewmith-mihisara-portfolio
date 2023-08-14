@@ -46,7 +46,7 @@ body>header>div>img{
 }
 
 body > header > nav a {
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     font-size: 18px;
     color: #000000;
     text-decoration: none;
@@ -91,5 +91,10 @@ body > header > nav a.active, body > header > nav a:hover {
 .home_content>hgroup{
     width: 591px;
     border: 2px black solid;
+}
+.home_section>img{
+    width: 688px;
+    margin-left: 230px;
+    margin-top: 50px;
 }
 
