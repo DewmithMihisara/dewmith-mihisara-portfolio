@@ -1,47 +1,33 @@
-/*.sub_title{*/
-/*    font-size: 20px;*/
-/*    font-style: normal;*/
-/*    font-family: Arial, serif;*/
-/*    font-weight: 100;*/
-/*    letter-spacing: 8px;*/
-/*}*/
-/*.main_header{*/
-/*    font-size: 48px;*/
-/*    font-family: Georgia, sans-serif;*/
-/*    font-style: normal;*/
-/*}*/
-/*.main_para{*/
-/*    font-size: 18px;*/
-/*    font-family: Arial, serif;*/
-/*}*/
-/*#special_word{*/
-/*    color: #03BFDA;*/
-/*}*/
-/*==============================================================*/
+/*=======================font styles main=======================================*/
+.sub_title{
+    font-size: 20px;
+    font-style: normal;
+    font-family: Arial, serif;
+    font-weight: 100;
+    letter-spacing: 8px;
+}
+.main_header{
+    font-size: 48px;
+    font-family: Georgia, sans-serif;
+    font-style: normal;
+}
+.main_para{
+    font-size: 18px;
+    font-family: Arial, serif;
+}
+#special_word{
+    color: #03BFDA;
+}
 
-/*body>main>section>section>hgroup>h6:before{*/
-/*    background-color: #000000;*/
-/*    display: block;*/
-/*    width: 120px;*/
-/*    height: 2px;*/
-/*    content: "";*/
-/*    position: absolute;*/
-/*    left: 0;*/
-/*    top: 50%;*/
-/*    z-index: -1;*/
-/*}*/
-
-/*========================================*/
+/*====================navi bar styles==========================================*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     background: #FFFFFF;
 }
-
 .header {
     position: fixed;
     top: 0;
@@ -54,14 +40,6 @@ body {
     align-items: center;
     z-index: 100;
 }
-
-/*.logo {*/
-/*    font-size: 25px;*/
-/*    color: #000000;*/
-/*    text-decoration: none;*/
-/*    font-weight: 600;*/
-/*    pointer-events: none;*/
-/*}*/
 body>header>div>img{
     width: 45px;
     margin-left: 5%;
@@ -79,5 +57,39 @@ body > header > nav a.active, body > header > nav a:hover {
     background: linear-gradient(45deg, #03BFDA, #000000);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+}
+
+/*==============================================================*/
+
+/*body>main>section>section>hgroup>h6:before{*/
+/*    background-color: #000000;*/
+/*    display: block;*/
+/*    width: 120px;*/
+/*    height: 2px;*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    left: 0;*/
+/*    top: 50%;*/
+/*    z-index: -1;*/
+/*}*/
+
+/*======================home page========================================*/
+
+.home_section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.home_content{
+    padding-left: 10%;
+}
+.home_content>hgroup>h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.home_content>hgroup{
+    width: 591px;
+    border: 2px black solid;
 }
 
