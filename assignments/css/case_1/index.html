@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Positions_ Absolute Positions</title>
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="stylesheet" href="8.0.1_normalize.css">
+    <style>
+
+        div{
+            width: 50vw;
+            height: 50vh;
+            position: absolute;
+        }
+        #d1{
+            top: 0;
+            left: 0;
+            background: red;
+        }
+        #d2{
+            top: 0;
+            right: 0;
+            background: green;
+        }
+        #d3{
+            bottom: 0;
+            right: 0;
+            background: yellow;
+        }
+        #d4{
+            bottom: 0;
+            left: 0;
+            background: deeppink;
+        }
+        #d5{
+            background: #FFFFFF;
+            width: 20%;
+            height: 40%;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        #d5>div{
+            width: 70%;
+            height: 70%;
+            border-radius: 100%;
+            background: red;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        #d1>div,#d2>div,#d3>div,#d4>div{
+            width: 40%;
+            height: 80%;
+            border-radius: 100%;
+            background: white;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        #d1>div>div,#d2>div>div,#d3>div>div,#d4>div>div{
+            width: 50%;
+            height: 50%;
+            background: red;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        #d1_r{
+            width: 10%;
+            height: 20%;
+            background: white;
+            top: 0;
+            left: 0;
+            border-bottom-right-radius:270%;
+            margin: auto;
+        }
+        #d2_r{
+            width: 10%;
+            height: 20%;
+            background: white;
+            top: 0;
+            right: 0;
+            border-bottom-left-radius: 270%;
+            margin: auto;
+        }
+        #d3_r{
+            width: 10%;
+            height: 20%;
+            background: white;
+            bottom: 0;
+            left: 0;
+            border-top-right-radius: 270%;
+            margin: auto;
+        }
+        #d4_r{
+            width: 10%;
+            height: 20%;
+            background: white;
+            bottom: 0;
+            right: 0;
+            border-top-left-radius: 270%;
+            margin: auto;
+        }
+        #hlf_1{
+            width: 400px;
+            height: 200px;
+            background: white;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            border-radius: 200px 200px 0 0;
+            margin: auto;
+        }
+        #hlf_2{
+            width: 20%;
+            height: 20%;
+            background: white;
+            top: 0;
+            right: 0;
+            left: 0;
+            /*border-bottom-left-radius: 50px;*/
+            /*border-bottom-right-radius: 50px;*/
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+<div id="d1">
+    <div><div></div></div>
+</div>
+<div id="d2">
+    <div><div></div></div>
+</div>
+<div id="d3">
+    <div><div></div></div>
+</div>
+<div id="d4">
+    <div><div></div></div>
+</div>
+<div id="d5">
+    <div></div>
+</div>
+<div id="d1_r"></div>
+<div id="d2_r"></div>
+<div id="d3_r"></div>
+<div id="d4_r"></div>
+<div id="hlf_1"></div>
+<div id="hlf_2"></div>
+</body>
+</html>
