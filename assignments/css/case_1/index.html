@@ -6,112 +6,96 @@
     <meta name="viewport" content="width=device-width initial-scale=1">
     <link rel="stylesheet" href="8.0.1_normalize.css">
     <style>
-
+        body>section{
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
         div{
             width: 50vw;
             height: 50vh;
             position: absolute;
         }
-        #d1{
+        body>section>div:first-child{
             top: 0;
             left: 0;
             background: red;
         }
-        #d2{
+        body>section>div:nth-child(2){
             top: 0;
             right: 0;
             background: green;
         }
-        #d3{
+        body>section>div:nth-child(3){
             bottom: 0;
             right: 0;
             background: yellow;
         }
-        #d4{
+        body>section>div:nth-child(4){
             bottom: 0;
             left: 0;
             background: deeppink;
         }
-        #d5{
-            background: #FFFFFF;
-            width: 20%;
-            height: 40%;
+        body>section>div:nth-child(5), body>section>div:nth-child(5)>div, body>section>div>div,body>section>div:nth-child(2)>div,body>section>div:nth-child(3)>div,body>section>div:nth-child(4)>div, body>section>div:first-child>div>div,body>section>div:nth-child(2)>div>div,body>section>div:nth-child(3)>div>div,body>section>div:nth-child(4)>div>div{
             top: 0;
             bottom: 0;
             left: 0;
             right: 0;
+        }
+        body>section>div:nth-child(5){
+            background: #FFFFFF;
+            width: 20%;
+            height: 40%;
             margin: auto;
         }
 
-        #d5>div{
+        body>section>div:nth-child(5)>div{
             width: 70%;
             height: 70%;
             border-radius: 100%;
             background: red;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
             margin: auto;
         }
-        #d1>div,#d2>div,#d3>div,#d4>div{
+        body>section>div:first-child>div, body>section>div:nth-child(2)>div,body>section>div:nth-child(3)>div,body>section>div:nth-child(4)>div{
             width: 40%;
             height: 80%;
             border-radius: 100%;
             background: white;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
             margin: auto;
         }
-        #d1>div>div,#d2>div>div,#d3>div>div,#d4>div>div{
+        body>section>div:first-child>div>div,body>section>div:nth-child(2)>div>div,body>section>div:nth-child(3)>div>div,body>section>div:nth-child(4)>div>div{
             width: 50%;
             height: 50%;
             background: red;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
             margin: auto;
         }
-        #d1_r{
+        body>section>div:nth-child(6), body>section>div:nth-child(7), body>section>div:nth-child(8), body>section>div:nth-child(9){
             width: 10%;
             height: 20%;
             background: white;
+            margin: auto;
+        }
+        body>section>div:nth-child(6){
             top: 0;
             left: 0;
             border-bottom-right-radius:270%;
-            margin: auto;
         }
-        #d2_r{
-            width: 10%;
-            height: 20%;
-            background: white;
+        body>section>div:nth-child(7){
             top: 0;
             right: 0;
-            border-bottom-left-radius: 270%;
-            margin: auto;
+            border-bottom-left-radius:270%;
         }
-        #d3_r{
-            width: 10%;
-            height: 20%;
-            background: white;
+        body>section>div:nth-child(8){
             bottom: 0;
             left: 0;
-            border-top-right-radius: 270%;
-            margin: auto;
+            border-top-right-radius:270%;
         }
-        #d4_r{
-            width: 10%;
-            height: 20%;
-            background: white;
+        body>section>div:nth-child(9){
             bottom: 0;
             right: 0;
-            border-top-left-radius: 270%;
-            margin: auto;
+            border-top-left-radius:270%;
         }
-        #hlf_1{
+        body>section>div:nth-child(10){
             background: white;
             bottom: 0;
             right: 0;
@@ -121,7 +105,7 @@
             height: 100px;
             border-radius: 100px 100px 0 0;
         }
-        #hlf_2{
+        body>section>div:nth-child(11){
             width: 200px;
             height: 100px;
             border-radius: 0 0 100px 100px;
@@ -134,26 +118,98 @@
     </style>
 </head>
 <body>
-<div id="d1">
-    <div><div></div></div>
-</div>
-<div id="d2">
-    <div><div></div></div>
-</div>
-<div id="d3">
-    <div><div></div></div>
-</div>
-<div id="d4">
-    <div><div></div></div>
-</div>
-<div id="d5">
-    <div></div>
-</div>
-<div id="d1_r"></div>
-<div id="d2_r"></div>
-<div id="d3_r"></div>
-<div id="d4_r"></div>
-<div id="hlf_1"></div>
-<div id="hlf_2"></div>
+<section>
+    <div >
+        <div><div></div></div>
+    </div>
+    <div >
+        <div><div></div></div>
+    </div>
+    <div >
+        <div><div></div></div>
+    </div>
+    <div >
+        <div><div></div></div>
+    </div>
+    <div >
+        <div></div>
+    </div>
+    <div ></div>
+    <div ></div>
+    <div ></div>
+    <div ></div>
+    <div ></div>
+    <div ></div>
+</section>
+<section>
+    <div>
+        <div><div></div></div>
+    </div>
+    <div >
+        <div><div></div></div>
+    </div>
+    <div>
+        <div><div></div></div>
+    </div>
+    <div >
+        <div><div></div></div>
+    </div>
+    <div >
+        <div></div>
+    </div>
+    <div ></div>
+    <div ></div>
+    <div ></div>
+    <div ></div>
+    <div ></div>
+    <div ></div>
+</section>
+<section>
+    <div>
+        <div><div></div></div>
+    </div>
+    <div >
+        <div><div></div></div>
+    </div>
+    <div>
+        <div><div></div></div>
+    </div>
+    <div >
+        <div><div></div></div>
+    </div>
+    <div >
+        <div></div>
+    </div>
+    <div ></div>
+    <div ></div>
+    <div ></div>
+    <div ></div>
+    <div ></div>
+    <div ></div>
+</section>
+<section>
+    <div>
+        <div><div></div></div>
+    </div>
+    <div >
+        <div><div></div></div>
+    </div>
+    <div>
+        <div><div></div></div>
+    </div>
+    <div >
+        <div><div></div></div>
+    </div>
+    <div >
+        <div></div>
+    </div>
+    <div ></div>
+    <div ></div>
+    <div ></div>
+    <div ></div>
+    <div ></div>
+    <div ></div>
+</section>
+
 </body>
 </html>
