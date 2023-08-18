@@ -1,3 +1,9 @@
+/*=======================section separation=======================================*/
+body>section{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
 /*=======================font styles main=======================================*/
 .sub_title{
     font-size: 20px;
@@ -90,7 +96,6 @@ body > header > nav a.active, body > header > nav a:hover {
 }
 .home_content>hgroup{
     width: 591px;
-    border: 2px black solid;
 }
 .home_section>img{
     width: 688px;
