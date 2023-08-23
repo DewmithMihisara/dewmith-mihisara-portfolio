@@ -25,3 +25,7 @@ header>nav>ul>li{
     margin-left: 2vw;
     font-weight: 500;
 }
+/*------------------------body styles-------------------------*/
+body>main{
+    position: relative;
+}
