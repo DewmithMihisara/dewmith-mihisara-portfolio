@@ -6,65 +6,46 @@
     <link rel="stylesheet" href="styles/8.0.1_normalize.css">
     <link rel="stylesheet" href="styles/style.css">
     <style>
-        body > main > nav {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            height: 100%;
+        body>main{
+            position: relative;
+        }
+        body>main>nav{
             width: 20%;
             background-color: purple;
-        }
-
-        body > main > section:nth-child(2) {
+            color: white;
             position: absolute;
-            width: 80%;
-            height: 100%;
-            background-color: #03BFDA;
             top: 0;
-            right: 0;
             bottom: 0;
         }
-
-        body > main > section:nth-child(2) > div:first-child > img {
-            position: absolute;
-            width: calc(100% / 3);
+        body>main>section>div{
+            margin-left: 20%;
+            position: relative;
+        }
+        body>main>section>div:first-child>img{
+            width: calc(99%/3);
             display: inline;
         }
-
-        body > main > section:nth-child(2) > div:first-child > img:first-child {
-            left: 0;
-            top: 10%;
+        body>main>section>div:last-child{
+            padding: 1%;
         }
-
-        body > main > section:nth-child(2) > div:first-child > img:last-child {
-            right: 0;
-            top: 10%;
+        body>main>nav>ul{
+            list-style: none;
+            padding-left: 5vw;
+            padding-right: 0;
+            padding-top: 2vh;
         }
-
-        body > main > section:nth-child(2) > div:first-child > img:nth-child(2) {
-            left: calc(100% / 3);
-            top: 10%;
+        body>main>nav>ul>li{
+            font-size: 1.5em;
+            margin-top: 1vh;
+            font-weight: 500;
         }
-
-
-        /*body > footer {*/
-        /*    height: 5vh;*/
-        /*    background-color: gray;*/
-        /*    position: absolute;*/
-        /*    bottom: 0;*/
-        /*    left: 0;*/
-        /*    right: 0;*/
-        /*}*/
-
-        /*body > footer > small {*/
-        /*    position: absolute;*/
-        /*    top: 0;*/
-        /*    bottom: 0;*/
-        /*    left: 0;*/
-        /*    right: 0;*/
-        /*    color: #FFFFFF;*/
-        /*}*/
+        body > footer {
+            padding-top: 1%;
+            padding-bottom: 1%;
+            width: 100%;
+            text-align: center;
+            background: #ddd;
+        }
     </style>
 </head>
 <body>
@@ -95,36 +76,41 @@
             <img src="assests/BlandSlushyEyra-size_restricted.gif" alt="gif">
         </div>
         <div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolorum eligendi eveniet labore repellat. At
-                delectus deleniti dignissimos distinctio excepturi libero necessitatibus nisi, numquam provident quod
-                tempora tempore velit voluptate?</p>
-            <p>Accusantium aliquam assumenda blanditiis debitis deleniti dolor error esse expedita explicabo id
-                laudantium
-                maxime non nostrum nulla officiis pariatur quibusdam quis repudiandae sed sint suscipit tempora tenetur
-                ut
-                vero, voluptate.</p>
-            <p>A accusamus autem beatae cupiditate, eius facere nam ratione recusandae reprehenderit, tempore vel
-                voluptas
-                voluptatibus voluptatum. Alias assumenda corporis, dolor eligendi fugit, illo minima nulla possimus
-                quaerat
-                reiciendis, suscipit velit.</p>
-            <p>Cupiditate doloribus fuga hic mollitia nemo nihil obcaecati quam quibusdam, ratione repellendus soluta
-                vero!
-                Debitis est hic illo inventore nihil, vero voluptate! Eligendi eos ipsa recusandae suscipit. Aut iure,
-                odio.</p>
-            <p>A aperiam asperiores consequuntur dolore dolorum ducimus, harum hic ipsa laudantium magnam minima nemo
-                pariatur vitae. Dolorem facere, sed! Assumenda autem cum deserunt dolore expedita non nostrum quae
-                quisquam,
-                veritatis.</p>
-            <p>Aliquid, cupiditate deserunt distinctio enim eum ipsa nam ratione sequi tenetur veniam. Aut delectus,
-                distinctio et ex id impedit libero nostrum, numquam quas sequi, similique sint suscipit tempore tenetur
-                voluptas!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit iure minus nesciunt officiis sed? Ab
+                atque culpa esse sint! Aliquam doloremque eaque explicabo magnam omnis pariatur quas reiciendis saepe
+                ut.</p>
+            <p>Aliquam amet aspernatur blanditiis dolor ducimus eum inventore ipsa, molestiae mollitia omnis
+                perspiciatis porro reprehenderit vitae voluptate voluptatem voluptates voluptatum. Adipisci deleniti
+                doloribus inventore labore minus nam quae totam veritatis.</p>
+            <p>Aut, autem cupiditate debitis dolorem, est exercitationem facere, itaque modi officiis perferendis quos
+                ullam? Alias culpa deserunt eius et fugiat iusto molestias possimus quam quidem veritatis! Blanditiis
+                doloremque mollitia sed.</p>
+            <p>Ab accusantium animi asperiores blanditiis debitis eaque enim error et exercitationem harum id, impedit
+                ipsam minus nihil nobis odio, officiis optio quia quis recusandae repellendus suscipit tempora totam
+                voluptates voluptatibus.</p>
+            <p>Aliquam beatae blanditiis commodi consectetur culpa, cum cumque doloremque dolorum eaque error est et
+                harum impedit ipsum labore nesciunt nulla praesentium provident quidem quo rem saepe tenetur vel vero
+                vitae.</p>
+            <p>Aut, autem cupiditate debitis dolorem, est exercitationem facere, itaque modi officiis perferendis quos
+                ullam? Alias culpa deserunt eius et fugiat iusto molestias possimus quam quidem veritatis! Blanditiis
+                doloremque mollitia sed.</p>
+            <p>Ab accusantium animi asperiores blanditiis debitis eaque enim error et exercitationem harum id, impedit
+                ipsam minus nihil nobis odio, officiis optio quia quis recusandae repellendus suscipit tempora totam
+                voluptates voluptatibus.</p>
+            <p>Aut, autem cupiditate debitis dolorem, est exercitationem facere, itaque modi officiis perferendis quos
+                ullam? Alias culpa deserunt eius et fugiat iusto molestias possimus quam quidem veritatis! Blanditiis
+                doloremque mollitia sed.</p>
+            <p>Ab accusantium animi asperiores blanditiis debitis eaque enim error et exercitationem harum id, impedit
+                ipsam minus nihil nobis odio, officiis optio quia quis recusandae repellendus suscipit tempora totam
+                voluptates voluptatibus.</p>
+            <p>Aut, autem cupiditate debitis dolorem, est exercitationem facere, itaque modi officiis perferendis quos
+                ullam? Alias culpa deserunt eius et fugiat iusto molestias possimus quam quidem veritatis! Blanditiis
+                doloremque mollitia sed.</p>
         </div>
-
     </section>
 </main>
-<!--<footer>-->
-<!--    <small>Developed By IJSE</small>-->
-<!--</footer>-->
+<footer>
+    <small>Developed By IJSE</small>
+</footer>
 </body>
 </html>
