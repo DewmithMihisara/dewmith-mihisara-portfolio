@@ -61,3 +61,12 @@ body>main>section>div:first-child>img{
 body>main>section>div:last-child{
     padding: 1%;
 }
+/*-----------------------footer styles--------------------------*/
+body > footer {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 100%;
+    text-align: center;
+    background: gray;
+    color: #FFFFFF;
+}
