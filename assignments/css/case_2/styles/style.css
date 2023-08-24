@@ -1,5 +1,5 @@
 /*------------------------header styles-------------------------*/
-header{
+header {
     width: 100%;
     border-bottom: 2px solid #000000;
     position: relative;
@@ -7,17 +7,20 @@ header{
     top: 0;
     background: #FFFFFF;
 }
-body>header>img{
+
+body > header > img {
     width: 25vh;
     margin-top: 7px;
     margin-left: 20px;
 }
-header>nav>ul{
+
+header > nav > ul {
     position: absolute;
     top: 0;
     right: 5%;
 }
-header>nav>ul>li{
+
+header > nav > ul > li {
     display: inline;
     color: #000000;
     font-size: 1.5em;
@@ -25,12 +28,14 @@ header>nav>ul>li{
     margin-left: 2vw;
     font-weight: 500;
 }
+
 /*------------------------body styles-------------------------*/
-body>main{
+body > main {
     position: relative;
 }
+
 /*---------------body navigation bar styles-------------------*/
-body>main>nav{
+body > main > nav {
     width: 20%;
     background-color: purple;
     color: white;
@@ -38,29 +43,35 @@ body>main>nav{
     top: 0;
     bottom: 0;
 }
-body>main>nav>ul{
+
+body > main > nav > ul {
     list-style: none;
     padding-left: 5vw;
     padding-right: 0;
     padding-top: 2vh;
 }
-body>main>nav>ul>li{
+
+body > main > nav > ul > li {
     font-size: 1.5em;
     margin-top: 1vh;
     font-weight: 500;
 }
+
 /*--------------------body content styles----------------------*/
-body>main>section>div{
+body > main > section > div {
     margin-left: 20%;
     position: relative;
 }
-body>main>section>div:first-child>img{
-    width: calc(99%/3);
+
+body > main > section > div:first-child > img {
+    width: calc(99% / 3);
     display: inline;
 }
-body>main>section>div:last-child{
+
+body > main > section > div:last-child {
     padding: 1%;
 }
+
 /*-----------------------footer styles--------------------------*/
 body > footer {
     padding-top: 1%;
