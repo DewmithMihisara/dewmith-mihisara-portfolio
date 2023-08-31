@@ -6,6 +6,7 @@ header {
     z-index: 3;
     top: 0;
     background: #FFFFFF;
+    box-shadow: 0px 1px 20px 5px black;
 }
 
 body > header > img {
