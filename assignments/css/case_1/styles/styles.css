@@ -1,114 +1,131 @@
 /*----------------main view--------------*/
-body>section{
+body > section {
     height: 100vh;
     position: relative;
 }
+
 /*----------------uni div styles--------------*/
-div{
+div {
     width: 50vw;
     height: 50vh;
     position: absolute;
 }
+
 /*----------------main rect styles--------------*/
-body>section>div:first-child{
+body > section > div:first-child {
     top: 0;
     left: 0;
     background: red;
 }
-body>section>div:nth-child(2){
+
+body > section > div:nth-child(2) {
     top: 0;
     right: 0;
     background: green;
 }
-body>section>div:nth-child(3){
+
+body > section > div:nth-child(3) {
     bottom: 0;
     right: 0;
     background: yellow;
 }
-body>section>div:nth-child(4){
+
+body > section > div:nth-child(4) {
     bottom: 0;
     left: 0;
     background: deeppink;
 }
+
 /*----------------rect and circle centralize styles--------------*/
-body>section>div:nth-child(5), body>section>div:nth-child(5)>div, body>section>div>div,body>section>div:nth-child(2)>div,body>section>div:nth-child(3)>div,body>section>div:nth-child(4)>div, body>section>div:first-child>div>div,body>section>div:nth-child(2)>div>div,body>section>div:nth-child(3)>div>div,body>section>div:nth-child(4)>div>div{
+body > section > div:nth-child(5), body > section > div:nth-child(5) > div, body > section > div > div, body > section > div:nth-child(2) > div, body > section > div:nth-child(3) > div, body > section > div:nth-child(4) > div, body > section > div:first-child > div > div, body > section > div:nth-child(2) > div > div, body > section > div:nth-child(3) > div > div, body > section > div:nth-child(4) > div > div {
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
 }
+
 /*----------------middle rect and circle styles--------------*/
-body>section>div:nth-child(5){
+body > section > div:nth-child(5) {
     background: #FFFFFF;
     width: 20%;
     height: 40%;
     margin: auto;
 }
 
-body>section>div:nth-child(5)>div{
+body > section > div:nth-child(5) > div {
     width: 70%;
     height: 70%;
     border-radius: 100%;
     background: red;
     margin: auto;
 }
+
 /*----------------div center rect and circle styles--------------*/
-body>section>div:first-child>div, body>section>div:nth-child(2)>div,body>section>div:nth-child(3)>div,body>section>div:nth-child(4)>div{
+body > section > div:first-child > div, body > section > div:nth-child(2) > div, body > section > div:nth-child(3) > div, body > section > div:nth-child(4) > div {
     width: 40%;
     height: 80%;
     border-radius: 100%;
     background: white;
     margin: auto;
 }
-body>section>div:first-child>div>div,body>section>div:nth-child(2)>div>div,body>section>div:nth-child(3)>div>div,body>section>div:nth-child(4)>div>div{
+
+body > section > div:first-child > div > div, body > section > div:nth-child(2) > div > div, body > section > div:nth-child(3) > div > div, body > section > div:nth-child(4) > div > div {
     width: 50%;
     height: 50%;
     background: red;
     margin: auto;
 }
+
 /*----------------uni corner circle styles--------------*/
-body>section>div:nth-child(6), body>section>div:nth-child(7), body>section>div:nth-child(8), body>section>div:nth-child(9){
+body > section > div:nth-child(6), body > section > div:nth-child(7), body > section > div:nth-child(8), body > section > div:nth-child(9) {
     width: 10%;
     height: 20%;
     background: white;
     margin: auto;
 }
+
 /*----------------corner circle styles--------------*/
-body>section>div:nth-child(6){
+body > section > div:nth-child(6) {
     top: 0;
     left: 0;
-    border-bottom-right-radius:270%;
+    border-bottom-right-radius: 270%;
 }
-body>section>div:nth-child(7){
+
+body > section > div:nth-child(7) {
     top: 0;
     right: 0;
-    border-bottom-left-radius:270%;
+    border-bottom-left-radius: 270%;
 }
-body>section>div:nth-child(8){
+
+body > section > div:nth-child(8) {
     bottom: 0;
     left: 0;
-    border-top-right-radius:270%;
+    border-top-right-radius: 270%;
 }
-body>section>div:nth-child(9){
+
+body > section > div:nth-child(9) {
     bottom: 0;
     right: 0;
-    border-top-left-radius:270%;
+    border-top-left-radius: 270%;
 }
+
 /*----------------uni half circle styles--------------*/
-body>section>div:nth-child(10) , body>section>div:nth-child(11){
+body > section > div:nth-child(10), body > section > div:nth-child(11) {
     width: 200px;
     height: 100px;
     background: white;
     margin: auto;
 }
+
 /*----------------half circle styles--------------*/
-body>section>div:nth-child(10){
+body > section > div:nth-child(10) {
     bottom: 0;
     right: 0;
     left: 0;
     border-radius: 100px 100px 0 0;
 }
-body>section>div:nth-child(11){
+
+body > section > div:nth-child(11) {
     border-radius: 0 0 100px 100px;
     top: 0;
     right: 0;
