@@ -11,3 +11,14 @@ section{
     right: 0;
     margin: auto;
 }
+/*----------------fixed circle styles-------------------*/
+body>div:first-child, body>div:first-child>div{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 100%;
+    z-index: 2;
+}
