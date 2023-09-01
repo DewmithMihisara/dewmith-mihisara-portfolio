@@ -22,3 +22,13 @@ body>div:first-child, body>div:first-child>div{
     border-radius: 100%;
     z-index: 2;
 }
+body>div:first-child{
+    height: 500px;
+    width: 500px;
+    border: 50px solid #add7f6;
+}
+body>div:first-child>div{
+    height: 400px;
+    width: 400px;
+    border: 50px solid #87bfff;
+}
