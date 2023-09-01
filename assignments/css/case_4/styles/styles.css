@@ -54,3 +54,12 @@ body > section:nth-child(3) > div {
 body > section:nth-child(4) > div {
     background: #a4161a;
 }
+/*----------------universal h1 styles-------------------*/
+h1 {
+    position: absolute;
+    margin: auto;
+    width: max-content;
+    height: max-content;
+    font-family: Arial Serif, sans-serif;
+    display: inline-block;
+}
