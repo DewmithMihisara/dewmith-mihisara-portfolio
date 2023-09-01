@@ -28,7 +28,7 @@
             right: 0;
             margin: auto;
             border-radius: 100%;
-            z-index: 1;
+            z-index: 2;
         }
         body>div:first-child{
             height: 500px;
@@ -40,13 +40,26 @@
             width: 400px;
             border: 50px solid red;
         }
+        body>section:nth-child(2)>div{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            height: 410px;
+            width: 410px;
+            border-radius: 100%;
+            background-color: purple;
+            z-index: 1;
+        }
     </style>
 </head>
 <body>
 <div>
 <div></div>
 </div>
-<section></section>
+<section><div></div></section>
 <section></section>
 <section></section>
 </body>
