@@ -94,3 +94,10 @@ body>section>div:nth-child(9){
     right: 0;
     border-top-left-radius:270%;
 }
+/*----------------uni half circle styles--------------*/
+body>section>div:nth-child(10) , body>section>div:nth-child(11){
+    width: 200px;
+    height: 100px;
+    background: white;
+    margin: auto;
+}
