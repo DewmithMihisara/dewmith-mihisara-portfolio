@@ -1,8 +1,9 @@
 /*----------------main section styles-------------------*/
-body{
+body {
     position: relative;
 }
-section{
+
+section {
     position: relative;
     height: 100vh;
     top: 0;
@@ -11,8 +12,9 @@ section{
     right: 0;
     margin: auto;
 }
+
 /*----------------fixed circle styles-------------------*/
-body>div:first-child, body>div:first-child>div{
+body > div:first-child, body > div:first-child > div {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -22,18 +24,21 @@ body>div:first-child, body>div:first-child>div{
     border-radius: 100%;
     z-index: 2;
 }
-body>div:first-child{
+
+body > div:first-child {
     height: 500px;
     width: 500px;
     border: 50px solid #add7f6;
 }
-body>div:first-child>div{
+
+body > div:first-child > div {
     height: 400px;
     width: 400px;
     border: 50px solid #87bfff;
 }
+
 /*----------------session circle styles-------------------*/
-body>section:nth-child(2)>div , body>section:nth-child(3)>div , body>section:nth-child(4)>div{
+body > section:nth-child(2) > div, body > section:nth-child(3) > div, body > section:nth-child(4) > div {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -46,9 +51,26 @@ body>section:nth-child(2)>div , body>section:nth-child(3)>div , body>section:nth
     background-color: #3f8efc;
     z-index: 1;
 }
-body>section:nth-child(3)>div{
+
+body > section:nth-child(3) > div {
     background-color: #2667ff;
 }
-body>section:nth-child(4)>div{
+
+body > section:nth-child(4) > div {
     background-color: #3b28cc;
+}
+
+/*----------------header styles-------------------*/
+body > section:nth-child(2) > div > h1, body > section:nth-child(3) > div > h1, body > section:nth-child(4) > div > h1 {
+    position: absolute;
+    width: max-content;
+    height: max-content;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    font-size: 3em;
+    color: #FFFFFF;
 }
