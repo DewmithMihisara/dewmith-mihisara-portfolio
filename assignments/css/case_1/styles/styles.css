@@ -9,3 +9,24 @@ div{
     height: 50vh;
     position: absolute;
 }
+/*----------------main rect styles--------------*/
+body>section>div:first-child{
+    top: 0;
+    left: 0;
+    background: red;
+}
+body>section>div:nth-child(2){
+    top: 0;
+    right: 0;
+    background: green;
+}
+body>section>div:nth-child(3){
+    bottom: 0;
+    right: 0;
+    background: yellow;
+}
+body>section>div:nth-child(4){
+    bottom: 0;
+    left: 0;
+    background: deeppink;
+}
