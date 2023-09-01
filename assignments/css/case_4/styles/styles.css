@@ -38,3 +38,19 @@ div {
     left: 10px;
     z-index: 2;
 }
+/*----------------div styles-------------------*/
+body > section:first-child > div {
+    background: #ef233c;
+}
+
+body > section:nth-child(2) > div {
+    background: #00b4d8;
+}
+
+body > section:nth-child(3) > div {
+    background: #33415c;
+}
+
+body > section:nth-child(4) > div {
+    background: #a4161a;
+}
