@@ -20,24 +20,31 @@
             right: 0;
             margin: auto;
         }
-        body>div:first-child{
+        body>div:first-child, body>div:first-child>div{
             position: fixed;
             top: 0;
             bottom: 0;
             left: 0;
             right: 0;
             margin: auto;
-            height: 450px;
-            width: 450px;
             border-radius: 100%;
-            background-color: purple;
             z-index: 1;
+        }
+        body>div:first-child{
+            height: 500px;
+            width: 500px;
+            border: 50px solid gray;
+        }
+        body>div:first-child>div{
+            height: 400px;
+            width: 400px;
+            border: 50px solid red;
         }
     </style>
 </head>
 <body>
 <div>
-
+<div></div>
 </div>
 <section></section>
 <section></section>
