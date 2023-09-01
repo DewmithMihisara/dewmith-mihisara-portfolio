@@ -8,11 +8,20 @@ body {
     left: 0;
     right: 0;
 }
+
 /*----------------main div styles-------------------*/
-body>div {
+body > div {
     position: relative;
     margin: auto;
     height: calc(100vh / 3);
     display: flex;
     float: left;
+}
+
+/*----------------img styles-------------------*/
+img {
+    position: relative;
+    width: calc(100vw / 4);
+    height: calc(100vh / 3);
+    margin: auto;
 }
