@@ -73,3 +73,24 @@ body>section>div:nth-child(6), body>section>div:nth-child(7), body>section>div:n
     background: white;
     margin: auto;
 }
+/*----------------corner circle styles--------------*/
+body>section>div:nth-child(6){
+    top: 0;
+    left: 0;
+    border-bottom-right-radius:270%;
+}
+body>section>div:nth-child(7){
+    top: 0;
+    right: 0;
+    border-bottom-left-radius:270%;
+}
+body>section>div:nth-child(8){
+    bottom: 0;
+    left: 0;
+    border-top-right-radius:270%;
+}
+body>section>div:nth-child(9){
+    bottom: 0;
+    right: 0;
+    border-top-left-radius:270%;
+}
