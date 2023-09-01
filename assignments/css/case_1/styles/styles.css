@@ -1,0 +1,5 @@
+/*----------------main view--------------*/
+body>section{
+    height: 100vh;
+    position: relative;
+}
