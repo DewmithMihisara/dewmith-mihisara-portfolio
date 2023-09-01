@@ -37,3 +37,18 @@ body>section>div:nth-child(5), body>section>div:nth-child(5)>div, body>section>d
     left: 0;
     right: 0;
 }
+/*----------------middle rect and circle styles--------------*/
+body>section>div:nth-child(5){
+    background: #FFFFFF;
+    width: 20%;
+    height: 40%;
+    margin: auto;
+}
+
+body>section>div:nth-child(5)>div{
+    width: 70%;
+    height: 70%;
+    border-radius: 100%;
+    background: red;
+    margin: auto;
+}
