@@ -1,8 +1,9 @@
-/*----------------universal session styles-------------------*/
+/*----------------body styles-------------------*/
 body {
     position: relative;
 }
 
+/*----------------universal session styles-------------------*/
 section {
     position: relative;
     height: 100vh;
@@ -11,8 +12,8 @@ section {
     left: 0;
     right: 0;
     margin: auto;
-
 }
+
 /*----------------session styles-------------------*/
 body > section:first-child {
     background-color: #edf2f4;
@@ -29,6 +30,7 @@ body > section:nth-child(3) {
 body > section:nth-child(4) {
     background-color: #e5383b;
 }
+
 /*----------------universal div styles-------------------*/
 div {
     height: 10vh;
@@ -38,6 +40,7 @@ div {
     left: 10px;
     z-index: 2;
 }
+
 /*----------------div styles-------------------*/
 body > section:first-child > div {
     background: #ef233c;
@@ -54,6 +57,7 @@ body > section:nth-child(3) > div {
 body > section:nth-child(4) > div {
     background: #a4161a;
 }
+
 /*----------------universal h1 styles-------------------*/
 h1 {
     position: absolute;
@@ -62,4 +66,23 @@ h1 {
     height: max-content;
     font-family: Arial Serif, sans-serif;
     display: inline-block;
+}
+
+/*----------------h1 styles (card txt)-------------------*/
+body > section > div > h1 {
+    top: 0;
+    bottom: 0;
+    left: 1vw;
+    color: #FFFFFF;
+    font-size: 2.5em;
+}
+
+/*----------------h1 styles (body content)-------------------*/
+body > section > h1 {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 10em;
+    z-index: 1;
 }
