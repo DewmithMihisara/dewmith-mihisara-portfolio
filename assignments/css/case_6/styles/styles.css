@@ -23,6 +23,7 @@ img {
     width: calc(100vw / 4);
     height: calc(100vh / 3);
     margin: auto;
+    transition: .5s ease;
 }
 
 img:hover {
