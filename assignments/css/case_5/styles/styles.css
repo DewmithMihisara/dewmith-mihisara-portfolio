@@ -7,13 +7,8 @@ section{
     grid-template-rows: repeat(3,1fr);
 
 }
-/*---------------img styles---------------*/
-img{
-    width: 100%;
-    height: 100%;
-    transition: 0.5s ease;
-}
-/*---------------img hover styles---------------*/
-img:hover {
-    opacity: 0.5;
+/*---------------div styles---------------*/
+div{
+    background-position: center;
+    background-size: cover;
 }
