@@ -1,51 +1,44 @@
-*{
-    font-size: 0;
-    box-sizing: border-box;
-}
-body {
-    position: relative;
-    margin: auto;
+/*-------------section---------------*/
+section{
     height: 100vh;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
 }
-
-/*----------------main div styles-------------------*/
-body > div {
-    position: relative;
-    margin: auto;
-    height: calc(100vh / 3);
-    display: flex;
-    float: left;
+/*-------------uni div---------------*/
+div{
+    background-position: center;
+    background-size: cover;
 }
-
-/*----------------img styles-------------------*/
-img {
-    position: relative;
-    width: calc(100vw / 4);
-    height: calc(100vh / 3);
-    margin: auto;
-    transition: .5s ease;
+/*-------------div---------------*/
+body>section>div:nth-child(1){
+    grid-column: 1/3 ;
+    grid-row: 1/2;
+    background-image: url("../assets/bc/9.jpg");
 }
-
-img:hover {
-    opacity: 0.3;
+body>section>div:nth-child(2){
+    background-image: url("../assets/bc/3.webp");
 }
-
-/*----------------horizontal img styles-------------------*/
-body > div:nth-child(2) > img:first-child, body > div:nth-child(4) > img:nth-child(2) {
-    width: calc(100vw / 2);
+body>section>div:nth-child(3){
+    grid-row: 1/4;
+    grid-column: 4/5;
+    background-image: url("../assets/bc/8.webp");
 }
-
-/*----------------full size img bar(orange bar) styles-------------------*/
-body > img:first-child {
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    height: 100%;
-    width: 100%;
+body>section>div:nth-child(4){
+    background-image: url("../assets/bc/4.jpeg");
+}
+body>section>div:nth-child(5){
+    background-image: url("../assets/bc/5.jpeg");
+}
+body>section>div:nth-child(6){
+    background-image: url("../assets/bc/6.jpeg");
+}
+body>section>div:nth-child(7){
+    background-image: url("../assets/bc/7.webp");
+}
+body>section>div:nth-child(8){
+    grid-column: 2/4;
+    grid-row: 3/4;
+    background-image: url("../assets/bc/0.jpg");
 }
