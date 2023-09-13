@@ -51,7 +51,6 @@ body > header > nav a {
     height: 80vh;
     display: flex;
 }
-/*----------------------------text dev------------------------------*/
 .header-container>div:first-child{
     font-size: 1px;
     position: relative;
@@ -60,7 +59,6 @@ body > header > nav a {
     left: 12vw;
     top: 10.5vh;
 }
-/*----------------------------DEW word------------------------------*/
 .header-container>div:first-child>hgroup>h1:first-child{
     position: absolute;
     top: -23.5vh;
@@ -76,7 +74,6 @@ body > header > nav a {
     z-index: 1;
     color: #E5F3F4;
 }
-/*----------------------------hello word------------------------------*/
 .header-container>div:first-child>hgroup>h6:nth-child(3){
     font-family: Arial, serif;
     font-style: normal;
@@ -89,7 +86,6 @@ body > header > nav a {
     top: 0.5vh;
     z-index: 2;
 }
-/*----------------------------i'm <name>------------------------------*/
 .header-container>div:first-child>hgroup>h1:nth-child(4){
     font-family: Georgia, serif;
     font-style: normal;
@@ -99,12 +95,10 @@ body > header > nav a {
     z-index: 2;
 
 }
-/*----------------------------highlight name------------------------------*/
 #special_word{
     color: #03BFDA;
     z-index: 2;
 }
-/*----------------------------paragraph------------------------------*/
 .header-container>div:first-child>hgroup>p:nth-child(5){
     font-family: Arial, serif;
     font-size: 18em;
@@ -113,7 +107,6 @@ body > header > nav a {
     color: #343A40;
     z-index: 2;
 }
-/*----------------------------button------------------------------*/
 .header-container>div:first-child>hgroup>div:nth-child(6){
     position: absolute;
     right: 0;
@@ -139,7 +132,6 @@ body > header > nav a {
     border: none;
     background-color: #03BFDA;
 }
-/*----------------------------my img------------------------------*/
 .header-container>div:last-child{
     margin: auto;
     width: 35vw;
@@ -233,4 +225,28 @@ body > header > nav a {
     top: 65%;
     font-size: 18em;
     color: #343A40;
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<summery oneliner>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.tool-container{
+    margin-top: 3%;
+    width: 100%;
+    height:max-content;
+    /*!*testing*!border: 2px solid red;*/
+    font-size: 1px;
+}
+
+.tool-container>h1{
+    display: flex;
+    justify-content: center;
+    font-family: Georgia, serif;
+    font-size: 48em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #000;
+}
+.tool-container>div{
+    display: flex;
+    justify-content: space-evenly;
 }
