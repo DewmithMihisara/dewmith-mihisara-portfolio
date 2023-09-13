@@ -43,6 +43,7 @@ body > header > nav a {
 /*    -webkit-background-clip: text;*/
 /*}*/
 
+
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<home section>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 .header-container{
     margin-top: 6%;
@@ -147,11 +148,12 @@ body > header > nav a {
     background-size: cover;
     z-index: 10;
 }
+
+
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<job roll loop>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 .job-roll-loop{
     width: 100%;
     height: 9vh;
-    /*testing styles*/border-bottom: 1px solid red;
     display: flex;
     justify-content: space-between;
     background-color:#E5F3F4;
@@ -160,6 +162,7 @@ body > header > nav a {
 .job-roll-loop>div{
     height: 100%;
     width: max-content;
+
 }
 .job-roll-loop>div>h4{
     display: inline-block;
@@ -169,5 +172,65 @@ body > header > nav a {
 .job-roll-loop>div>img{
     position: relative;
     top: 1.5vh;
-    width: 6vh;
+    width: 5vh;
+}
+
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<summery oneliner>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.summery-container{
+    margin-top: 3%;
+    width: 100%;
+    height:max-content;
+    /*testing*/border-bottom: 2px solid red;
+}
+.summery-container>div{
+    display: flex;
+    justify-content: space-evenly;
+}
+.summery-container>div:nth-child(2){
+    margin-top: 4vh;
+}
+.summery-container>div>div{
+    position: relative;
+    width: 20vw;
+    height: 40vh;
+    text-align: center;
+    font-size: 1px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 0.2vh solid #343A40;
+    background: #FFF;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+.summery-container>div>div>img{
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 5vw;
+}
+.summery-container>div>div>h5{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: inline-block;
+    width: max-content;
+    height: max-content;
+    font-family: Georgia, serif;
+    font-size: 32em;
+    font-style: normal;
+    font-weight: 400;
+}
+.summery-container>div>div>p{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 65%;
+    font-size: 18em;
+    color: #343A40;
 }
