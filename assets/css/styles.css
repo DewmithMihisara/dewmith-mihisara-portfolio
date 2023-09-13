@@ -1,105 +1,156 @@
-/*=======================section separation=======================================*/
-body>section{
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-}
-/*=======================font styles main=======================================*/
-.sub_title{
-    font-size: 20px;
-    font-style: normal;
-    font-family: Arial, serif;
-    font-weight: 100;
-    letter-spacing: 8px;
-}
-.main_header{
-    font-size: 48px;
-    font-family: Georgia, sans-serif;
-    font-style: normal;
-}
-.main_para{
-    font-size: 18px;
-    font-family: Arial, serif;
-}
-#special_word{
-    color: #03BFDA;
-}
-
-/*====================navi bar styles==========================================*/
 * {
+    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     background: #FFFFFF;
 }
+
 .header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 10%;
-    background: transparent;
+    padding: 2vh 10%;
+    background: #FFFFFF;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    font-size: 1px;
 }
-body>header>div>img{
-    width: 45px;
+
+body > header > div > img {
+    width: 3vw;
     margin-left: 5%;
 }
 
 body > header > nav a {
     font-family: Arial, sans-serif;
-    font-size: 18px;
+    font-size: 24em;
     color: #000000;
     text-decoration: none;
     font-weight: 500;
-    margin-left: 35px;
-}
-body > header > nav a.active, body > header > nav a:hover {
-    background: linear-gradient(45deg, #03BFDA, #000000);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    margin-left: 3vw;
 }
 
-/*==============================================================*/
+main > section:nth-child(2) {
+    margin-top: 6%;
+    height: 80vh;
+    display: flex;
 
-/*body>main>section>section>hgroup>h6:before{*/
-/*    background-color: #000000;*/
-/*    display: block;*/
-/*    width: 120px;*/
-/*    height: 2px;*/
-/*    content: "";*/
-/*    position: absolute;*/
-/*    left: 0;*/
-/*    top: 50%;*/
-/*    z-index: -1;*/
+}
+
+/*body > header > nav a.active, body > header > nav a:hover {*/
+/*    background: linear-gradient(45deg, #03BFDA, #000000);*/
+/*    -webkit-text-fill-color: transparent;*/
+/*    -webkit-background-clip: text;*/
 /*}*/
 
-/*======================home page========================================*/
-
-.home_section{
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<home section>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.header-container{
     width: 100%;
     height: 100vh;
+    /*testing styles*/border: 1px solid red;
     display: flex;
-    align-items: center;
 }
-.home_content{
-    padding-left: 10%;
+/*----------------------------text dev------------------------------*/
+.header-container>div:first-child{
+    font-size: 1px;
+    position: relative;
+    width: 33.5vw;
+    margin: auto;
+    left: 12vw;
+    top: 10.5vh;
 }
-.home_content>hgroup>h1{
-    margin-top: 10px;
-    margin-bottom: 10px;
+/*----------------------------DEW word------------------------------*/
+.header-container>div:first-child>hgroup>h1:first-child{
+    position: absolute;
+    top: -23.5vh;
+    left: 13vw;
+    right: 0;
+    width: max-content;
+    height: max-content;
+    margin: auto;
+    font-size: 250em;
+    font-style: normal;
+    font-weight: 700;
+    font-family: Georgia, serif;
+    z-index: 1;
+    color: #E5F3F4;
 }
-.home_content>hgroup{
-    width: 591px;
+/*----------------------------hello word------------------------------*/
+.header-container>div:first-child>hgroup>h6:nth-child(3){
+    font-family: Arial, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20em;
+    letter-spacing: 1em;
+    display: inline-block;
+    position: relative;
+    left: 1em;
+    top: 0.5vh;
+    z-index: 2;
 }
-.home_section>img{
-    width: 688px;
-    margin-left: 230px;
-    margin-top: 50px;
-}
+/*----------------------------i'm <name>------------------------------*/
+.header-container>div:first-child>hgroup>h1:nth-child(4){
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: 700;
+    color: #000;
+    font-size: 48em;
+    z-index: 2;
 
+}
+/*----------------------------highlight name------------------------------*/
+#special_word{
+    color: #03BFDA;
+    z-index: 2;
+}
+/*----------------------------paragraph------------------------------*/
+.header-container>div:first-child>hgroup>p:nth-child(5){
+    font-family: Arial, serif;
+    font-size: 18em;
+    font-style: normal;
+    font-weight: 400;
+    color: #343A40;
+    z-index: 2;
+}
+/*----------------------------button------------------------------*/
+.header-container>div:first-child>hgroup>div:nth-child(6){
+    position: absolute;
+    right: 0;
+    bottom: -6vh;
+    height: 4vh;
+    width: 10vw;
+    border: 0.2vh solid #000;
+}
+.header-container>div:first-child>hgroup>div:nth-child(6)>a{
+    position: absolute;
+    font-size: 14em;
+    margin: auto;
+    text-decoration: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: max-content;
+    height: max-content;
+    color: #000;
+}
+.header-container>div:first-child>hgroup>div:nth-child(6):hover{
+    border: none;
+    background-color: #03BFDA;
+}
+/*----------------------------my img------------------------------*/
+.header-container>div:last-child{
+    margin: auto;
+    width: 35vw;
+    height: 80vh;
+    background: url("/assets/img/my-pic/open-img-second.png");
+    background-size: cover;
+    z-index: 10;
+}
