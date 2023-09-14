@@ -72,10 +72,13 @@ body > main > nav > ul > li:hover{
 body > main > section > div {
     margin-left: 20%;
     position: relative;
+    font-size: 0;
 }
-
+body > main > section > div:nth-child(2){
+    font-size: 14px;
+}
 body > main > section > div:first-child > img {
-    width: calc(99% / 3);
+    width: calc(100% / 3);
     display: inline;
 }
 
@@ -91,4 +94,79 @@ body > footer {
     text-align: center;
     background: gray;
     color: #FFFFFF;
+}
+@media all  and (max-width: 425px) {
+    header{
+        display: flex;
+        height: 16vh;
+        position: relative;
+        flex-direction: column;
+    }
+    body > header > img{
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 10vh;
+
+    }
+    header > nav > ul{
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 13vh;
+        padding-top: 1vh;
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+    header > nav > ul > li {
+        font-size: 1em;
+        margin-top: 9vh;
+        margin-left: 1vw;
+        font-weight: 400;
+        padding: 1vh;
+        text-align: center;
+    }
+    body > main > nav {
+        display: none;
+    }
+    body > main > section > div{
+        margin: 3%;
+    }
+    body > main > section > div:first-child{
+        font-size: 0;
+    }
+    body > main > section > div:first-child > img {
+        width: 100%;
+        display: inline;
+    }
+}
+@media all  and (min-width: 426px) and (max-width: 768px){
+    header > nav > ul{
+        top: 3vh;
+    }
+    header > nav > ul > li {
+        font-size: 1em;
+    }
+    body > main > nav{
+        width: 25%;
+    }
+    body > main > nav > ul > li{
+        font-size: 1em;
+    }
+    body > main > section > div{
+        margin-left: 25%;
+    }
+    body > main > section > div{
+        font-size: 0;
+    }
+    body > main > section > div:nth-child(2){
+        font-size: 14px;
+    }
+    body > main > section > div:first-child > img{
+        box-sizing: border-box;
+        width: calc(100% / 3);
+    }
 }
