@@ -114,27 +114,38 @@ body > header > nav a {
     z-index: 2;
 }
 
-.header-container > div:first-child > hgroup > div:nth-child(6) {
+/*.header-container > div:first-child > hgroup > div:nth-child(6) {*/
+
+/*    border: 0.2vh solid #000;*/
+/*}*/
+
+/*.header-container > div:first-child > hgroup > div:nth-child(6) > a {*/
+/*    position: absolute;*/
+/*    font-size: 14em;*/
+/*    margin: auto;*/
+/*    text-decoration: none;*/
+/*    top: 0;*/
+/*    bottom: 0;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    width: max-content;*/
+/*    height: max-content;*/
+/*    color: #000;*/
+/*}*/
+.header-container > div:first-child > hgroup > a:nth-child(6) > button {
     position: absolute;
     right: 0;
     bottom: -6vh;
     height: 4vh;
     width: 10vw;
-    border: 0.2vh solid #000;
+    font-size: 14em;
+    background: #FFFFFF;
 }
 
-.header-container > div:first-child > hgroup > div:nth-child(6) > a {
-    position: absolute;
-    font-size: 14em;
-    margin: auto;
-    text-decoration: none;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: max-content;
-    height: max-content;
-    color: #000;
+.header-container > div:first-child > hgroup > a:nth-child(6) > button:hover {
+    background-color: #03BFDA;
+    color: #FFFFFF;
+    border: none;
 }
 
 .header-container > div:first-child > hgroup > div:nth-child(6):hover {
@@ -191,21 +202,19 @@ body > header > nav a {
 
 .summery-container > div {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 75%;
 }
 
 .summery-container > div:nth-child(1) {
-    width: max-content;
+    width: 66%;
     height: max-content;
     margin: auto;
 }
 
 .summery-container > div:nth-child(2) {
     padding-top: 5vh;
-    position: relative;
-    top: 5%;
-    width: max-content;
+    width: 43%;
     height: max-content;
     margin: auto;
 }
@@ -218,11 +227,10 @@ body > header > nav a {
     font-size: 1px;
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
+    border-radius: 5%;
     border: 0.2vh solid #343A40;
     background: #FFF;
-    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
-    margin-right: 5vw;
+    box-shadow: 2em 2em 10px 0 rgba(0, 0, 0, 0.25);
 }
 
 .summery-container > div > div > img {
@@ -259,7 +267,7 @@ body > header > nav a {
     color: #343A40;
 }
 
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<summery oneliner>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<tool oneliner>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 .tool-container {
     margin-top: 3%;
     width: 100%;
@@ -287,7 +295,7 @@ body > header > nav a {
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<project container>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-.project-container{
+.project-container {
     margin-top: 3%;
     width: 100%;
     height: max-content;
@@ -296,7 +304,8 @@ body > header > nav a {
     align-items: center;
     font-size: 1px;
 }
-.project-container>h1:first-child{
+
+.project-container > h1:first-child {
     position: absolute;
     left: 0;
     right: 0;
@@ -313,7 +322,8 @@ body > header > nav a {
     line-height: normal;
     z-index: 1;
 }
-.project-container>h1:nth-child(2){
+
+.project-container > h1:nth-child(2) {
     margin-top: 21vh;
     font-size: 48em;
     font-family: Georgia, serif;
@@ -321,4 +331,50 @@ body > header > nav a {
     font-weight: 700;
     line-height: normal;
     z-index: 2;
+}
+
+.project-container > section:nth-child(3) {
+    margin-top: 2%;
+    width: 80%;
+    height: 50vh;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.project-container > section:nth-child(3) > div {
+    box-shadow: 1px 4px 5px 0 #1a1616;
+    background: url("/assets/img/projects/projectimg.png") center;
+    background-size: cover;
+    filter: opacity(60%);
+    -webkit-filter: opacity(60%);
+    -moz-filter: opacity(60%);
+}
+
+.project-container > section:nth-child(3) > div:first-child {
+}
+
+.project-container > section:nth-child(3) > div:nth-child(2) {
+}
+
+.project-container > section:nth-child(3) > div:nth-child(3) {
+}
+
+.project-container > section:nth-child(3) > div:nth-child(4) {
+}
+
+.project-container > a > button {
+    margin-top: 10%;
+    width: 283px;
+    height: 40px;
+    font-size: 14em;
+    background-color: #FFFFFF;
+    font-family: Arial, serif;
+}
+
+.project-container > a > button:hover {
+    background-color: #03BFDA;
+    color: #FFFFFF;
+    border: none;
 }
