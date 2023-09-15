@@ -173,7 +173,6 @@ body > header > nav a {
     width: 5vh;
 }
 
-
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<summery oneliner>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 .summery-container {
     margin-top: 3%;
@@ -249,6 +248,87 @@ body > header > nav a {
     color: #343A40;
 }
 
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<journey container>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.journey-container {
+    width: 100%;
+    height: max-content;
+    background-color: #E5F3F4;
+}
+
+.journey-container > h1 {
+    padding-top: 5vh;
+    width: max-content;
+    height: max-content;
+    margin: auto;
+    color: #000;
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.journey-container > section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.journey-container > section:nth-child(2) > div {
+    padding-top: 4vh;
+    display: flex;
+    justify-content: space-around;
+}
+.journey-container>section:nth-child(2)>div>div>h3{
+    font-family: Arial, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 1em;
+    display: inline-block;
+    position: relative;
+    left: 1em;
+    top: 0.5vh;
+    z-index: 2;
+}
+.journey-container>section:nth-child(2)>div>div{
+    position: relative;
+}
+.journey-container>section:nth-child(2)>div>div>svg:nth-child(3){
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin-top: 5vh;
+}
+.journey-container>section:nth-child(2)>div>div>div{
+    margin-top: 2vh;
+    margin-left: 2vw;
+    width: 24vw;
+}
+.journey-container>section:nth-child(2)>div>div>div:nth-child(5){
+    margin-top: 3vh;
+}
+.journey-container>section:nth-child(2)>div>div>div>h4{
+    color: #000;
+    font-family: Arial, serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+.journey-container>section:nth-child(2)>div>div>div>p:nth-child(2){
+    padding-top: 2vh;
+    color: #343A40;
+    font-family: Arial, serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+.journey-container>section:nth-child(2)>div>div>div>p:nth-child(3){
+    padding-top: 2vh;
+    color: #343A40;
+    font-family: Arial, serif;
+    font-size: 14px;
+    font-weight: 400;
+}
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<tool oneliner>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 .tool-container {
     margin-top: 3%;
@@ -277,7 +357,7 @@ body > header > nav a {
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<project container | gallery container common>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-.project-container , .gallery-container{
+.project-container, .gallery-container {
     margin-top: 3%;
     width: 100%;
     height: max-content;
@@ -287,7 +367,7 @@ body > header > nav a {
     font-size: 1px;
 }
 
-.project-container > h1:first-child , .gallery-container > h1:first-child{
+.project-container > h1:first-child, .gallery-container > h1:first-child {
     position: absolute;
     left: 0;
     right: 0;
@@ -305,7 +385,7 @@ body > header > nav a {
     z-index: 1;
 }
 
-.project-container > h1:nth-child(2) ,.gallery-container > h1:nth-child(2){
+.project-container > h1:nth-child(2), .gallery-container > h1:nth-child(2) {
     margin-top: 21vh;
     font-size: 48em;
     font-family: Georgia, serif;
@@ -364,7 +444,7 @@ body > header > nav a {
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<gallery section>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-.gallery-container>section{
+.gallery-container > section {
     padding-top: 3%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -372,7 +452,8 @@ body > header > nav a {
     grid-column-gap: 1vw;
     grid-row-gap: 1vh;
 }
-.gallery-container>section>div{
+
+.gallery-container > section > div {
     box-shadow: 1px 4px 5px 0 #1a1616;
     background-size: cover;
     filter: grayscale(100%);
@@ -382,34 +463,41 @@ body > header > nav a {
     transition-duration: 1s;
     transition-property: all;
 }
-.gallery-container>section>div:hover{
+
+.gallery-container > section > div:hover {
     filter: grayscale(0);
     -webkit-filter: grayscale(0);
     -moz-filter: grayscale(0);
 }
-.gallery-container>section>div:first-child{
+
+.gallery-container > section > div:first-child {
     background: url("/assets/img/gallery/WhatsApp Image 2023-06-25 at 18.46.56 (1).jpeg") center;
     grid-area: 1 / 1 / 2 / 2;
     height: 20vh;
     width: 13vw;
 }
-.gallery-container>section>div:nth-child(2){
+
+.gallery-container > section > div:nth-child(2) {
     background: url("/assets/img/gallery/WhatsApp Image 2023-06-25 at 18.50.47.jpeg") center;
     grid-area: 1 / 2 / 2 / 4;
 }
-.gallery-container>section>div:nth-child(3){
+
+.gallery-container > section > div:nth-child(3) {
     background: url("/assets/img/gallery/WhatsApp Image 2023-06-25 at 18.51.36.jpeg") center;
     grid-area: 1 / 4 / 2 / 6;
 }
-.gallery-container>section>div:nth-child(4){
+
+.gallery-container > section > div:nth-child(4) {
     background: url("/assets/img/gallery/WhatsApp Image 2023-06-25 at 18.49.10.jpeg") center;
     grid-area: 2 / 1 / 4 / 3;
 }
-.gallery-container>section>div:nth-child(5){
+
+.gallery-container > section > div:nth-child(5) {
     background: url("/assets/img/gallery/WhatsApp Image 2023-06-25 at 18.46.57.jpeg") center;
     grid-area: 2 / 3 / 4 / 4;
 }
-.gallery-container>section>div:nth-child(6){
+
+.gallery-container > section > div:nth-child(6) {
     background: url("/assets/img/gallery/WhatsApp Image 2023-06-25 at 18.48.08.jpeg") center;
     grid-area: 2 / 4 / 4 / 6;
 }
@@ -425,7 +513,8 @@ body > header > nav a {
     display: flex;
     font-size: 1px;
 }
-.contact-container>section{
+
+.contact-container > section {
     width: 50vw;
     padding-top: 5vh;
     padding-bottom: 8vh;
@@ -433,7 +522,8 @@ body > header > nav a {
     display: flex;
     flex-direction: column;
 }
-.contact-container>section>h1:first-child{
+
+.contact-container > section > h1:first-child {
     color: #000;
     font-family: Georgia, serif;
     font-size: 48em;
@@ -441,7 +531,8 @@ body > header > nav a {
     font-weight: 700;
     width: 25vw;
 }
-.contact-container>section>p:nth-child(2){
+
+.contact-container > section > p:nth-child(2) {
     width: 22vw;
     font-family: Arial, serif;
     font-size: 18em;
@@ -449,14 +540,17 @@ body > header > nav a {
     font-weight: 400;
     line-height: normal;
 }
-.contact-container>section>div:nth-child(3){
+
+.contact-container > section > div:nth-child(3) {
     display: flex;
     padding-top: 10vh;
 }
-.contact-container>section>div:nth-child(3)>img{
+
+.contact-container > section > div:nth-child(3) > img {
     height: 5vh;
 }
-.contact-container>section>div:nth-child(3)>h4>a{
+
+.contact-container > section > div:nth-child(3) > h4 > a {
     margin-left: 1vw;
     font-size: 30em;
     text-decoration: none;
@@ -465,16 +559,19 @@ body > header > nav a {
     font-style: normal;
     font-weight: 400;
 }
-.contact-container>section>div:nth-child(4){
+
+.contact-container > section > div:nth-child(4) {
     padding-top: 4vh;
     display: flex;
     justify-content: space-between;
     width: 50%;
 }
-.contact-container>section>div:nth-child(4)>div img{
+
+.contact-container > section > div:nth-child(4) > div img {
     height: 4vh;
 }
-.contact-container>form{
+
+.contact-container > form {
     width: 50vw;
     padding-top: 9vh;
     padding-bottom: 8vh;
@@ -487,14 +584,16 @@ body > header > nav a {
     font-style: normal;
     font-weight: 400;
 }
-.contact-container>form>fieldset{
+
+.contact-container > form > fieldset {
     border: none;
     font-family: Arial, serif;
     font-size: 14em;
     font-style: normal;
     font-weight: 400;
 }
-.contact-container>form>fieldset>input, .contact-container>form>fieldset>textarea{
+
+.contact-container > form > fieldset > input, .contact-container > form > fieldset > textarea {
     width: 34vw;
     height: 5vh;
     border-radius: 10px;
@@ -503,16 +602,20 @@ body > header > nav a {
     margin-top: 1vh;
     margin-bottom: 1vh;
 }
-.contact-container>form>fieldset>input:first-child, .contact-container>form>fieldset>input:nth-child(2){
+
+.contact-container > form > fieldset > input:first-child, .contact-container > form > fieldset > input:nth-child(2) {
     width: 16.5vw;
 }
-.contact-container>form>fieldset>input:nth-child(2){
+
+.contact-container > form > fieldset > input:nth-child(2) {
     margin-left: 1vw;
 }
-.contact-container>form>fieldset>textarea{
+
+.contact-container > form > fieldset > textarea {
     height: 20vh;
 }
-.contact-container>form>fieldset>button{
+
+.contact-container > form > fieldset > button {
     width: 34vw;
     height: 5vh;
     border-radius: 10px;
@@ -521,7 +624,8 @@ body > header > nav a {
     margin-top: 2vh;
     font-size: 1.5em;
 }
-.contact-container>form>fieldset>button:hover{
+
+.contact-container > form > fieldset > button:hover {
     background-color: #03BFDA;
     color: #FFFFFF;
     border: none;
@@ -529,16 +633,18 @@ body > header > nav a {
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<contact section>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
-footer{
+footer {
     display: flex;
     justify-content: center;
 }
-footer>div{
+
+footer > div {
     height: 7vh;
     width: 30vw;
     position: relative;
 }
-footer>div>img, footer>div>small>a{
+
+footer > div > img, footer > div > small > a {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -546,7 +652,8 @@ footer>div>img, footer>div>small>a{
     margin: auto;
     height: 5vh;
 }
-footer>div>small>a{
+
+footer > div > small > a {
     padding-top: 1.5vh;
     display: inline-block;
     max-width: max-content;
