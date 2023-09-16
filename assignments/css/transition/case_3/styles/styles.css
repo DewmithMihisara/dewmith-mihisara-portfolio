@@ -51,3 +51,7 @@ body{
     height:max-content;
     z-index: 10;
 }
+/*----------------------------transition-------------------*/
+.main-div:hover .down-box,.main-div:hover .top-box{
+    height: 100%;
+}
