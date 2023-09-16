@@ -269,6 +269,7 @@ body > header > nav a {
     width: 100%;
     height: max-content;
     background-color: #E5F3F4;
+    font-size: 1px;
 }
 
 .journey-container > h1 {
@@ -279,7 +280,7 @@ body > header > nav a {
     color: #000;
     text-align: center;
     font-family: Georgia, serif;
-    font-size: 48px;
+    font-size: 48em;
     font-style: normal;
     font-weight: 700;
 }
@@ -304,7 +305,7 @@ body > header > nav a {
     font-family: Arial, serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 20em;
     letter-spacing: 1em;
     display: inline-block;
     position: relative;
@@ -333,21 +334,21 @@ body > header > nav a {
 .journey-container>section:nth-child(2)>div>div>div>h4{
     color: #000;
     font-family: Arial, serif;
-    font-size: 20px;
+    font-size: 20em;
     font-weight: 700;
 }
 .journey-container>section:nth-child(2)>div>div>div>p:nth-child(2){
     padding-top: 2vh;
     color: #343A40;
     font-family: Arial, serif;
-    font-size: 18px;
+    font-size: 18em;
     font-weight: 400;
 }
 .journey-container>section:nth-child(2)>div>div>div>p:nth-child(3){
     padding-top: 2vh;
     color: #343A40;
     font-family: Arial, serif;
-    font-size: 14px;
+    font-size: 14em;
     font-weight: 400;
 }
 .journey-container>section:nth-child(3){
@@ -363,7 +364,7 @@ body > header > nav a {
     position: relative;
     color: #343A40;
     font-family: Arial, serif;
-    font-size: 20px;
+    font-size: 20em;
     font-style: normal;
     font-weight: 400;
     top: 0.5vh;
@@ -387,21 +388,21 @@ body > header > nav a {
 .journey-container>section:nth-child(3)>div:nth-child(2)>div>hgroup>h4{
     color: #000;
     font-family: Georgia, serif;
-    font-size: 20px;
+    font-size: 20em;
     font-weight: 700;
 }
 .journey-container>section:nth-child(3)>div:nth-child(2)>div>hgroup>h6{
     padding-top: 1vh;
     color: #000;
     font-family: Georgia, serif;
-    font-size: 16px;
+    font-size: 16em;
     font-weight: 700;
 }
 .journey-container>section:nth-child(3)>div:nth-child(2)>div>hgroup>p{
     padding-top:1.5vh;
     color: #343A40;
     font-family: Arial, serif;
-    font-size: 18px;
+    font-size: 18em;
     font-weight: 400;
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<tool oneliner>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
