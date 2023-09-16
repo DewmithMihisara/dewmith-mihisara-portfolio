@@ -39,3 +39,15 @@ body{
     backdrop-filter: blur( 6px );
     -webkit-backdrop-filter: blur( 6px );
 }
+/*----------------------------logo style-------------------*/
+.top-box>img{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: max-content;
+    height:max-content;
+    z-index: 10;
+}
