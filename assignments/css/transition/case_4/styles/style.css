@@ -7,3 +7,13 @@ body{
     height: 100vh;
     background-color: #edf2f4;
 }
+/*--------------------------middle circle styles------------------------*/
+.circle-div{
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+    border: 20px solid #2b2d42;
+    position: relative;
+    border-top: 20px solid #ef233c;
+
+}
