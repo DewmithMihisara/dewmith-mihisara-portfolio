@@ -37,3 +37,8 @@ body{
     right: 30px;
     top: 58px;
 }
+/*----------------------------transition-------------------*/
+.circle-div:hover{
+    rotate: 360deg;
+    transition: 1.5s;
+}
