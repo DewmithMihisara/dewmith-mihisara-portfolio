@@ -3,8 +3,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: #03BFDA #F0F0F0;
+}
+*::-webkit-scrollbar {
+    width: 12px;
 }
 
+*::-webkit-scrollbar-track {
+    background: #F0F0F0;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #03BFDA;
+    border-radius: 20px;
+    border: 3px solid #F0F0F0;
+}
 body {
     background: #FFFFFF;
 }
@@ -248,6 +262,8 @@ body > header > nav a {
     color: #343A40;
 }
 
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<about container>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<journey container>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 .journey-container {
     width: 100%;
@@ -272,12 +288,17 @@ body > header > nav a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /*width: 70vw;*/
+    margin: auto;
+    width: max-content;
+    height: max-content;
 }
 
 .journey-container > section:nth-child(2) > div {
     padding-top: 4vh;
     display: flex;
     justify-content: space-around;
+    width: 80vw;
 }
 .journey-container>section:nth-child(2)>div>div>h3{
     font-family: Arial, serif;
@@ -327,6 +348,60 @@ body > header > nav a {
     color: #343A40;
     font-family: Arial, serif;
     font-size: 14px;
+    font-weight: 400;
+}
+.journey-container>section:nth-child(3){
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+.journey-container>section:nth-child(3)>div:first-child{
+    text-align: center;
+}
+.journey-container>section:nth-child(3)>div:first-child>h3:nth-child(2){
+    letter-spacing: 1em;
+    display: inline-block;
+    position: relative;
+    color: #343A40;
+    font-family: Arial, serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    top: 0.5vh;
+    padding-left: 2em;
+    padding-right: 1em;
+}
+.journey-container>section:nth-child(3)>div:nth-child(2){
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 3vw;
+    grid-row-gap: 3vh;
+}
+.journey-container>section:nth-child(3)>div:nth-child(2)>div{
+    border: 1px solid #000;
+    text-align: center;
+    padding: 3vh 3vw;
+    box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.25);
+}
+.journey-container>section:nth-child(3)>div:nth-child(2)>div>hgroup>h4{
+    color: #000;
+    font-family: Georgia, serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+.journey-container>section:nth-child(3)>div:nth-child(2)>div>hgroup>h6{
+    padding-top: 1vh;
+    color: #000;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+.journey-container>section:nth-child(3)>div:nth-child(2)>div>hgroup>p{
+    padding-top:1.5vh;
+    color: #343A40;
+    font-family: Arial, serif;
+    font-size: 18px;
     font-weight: 400;
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<tool oneliner>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
