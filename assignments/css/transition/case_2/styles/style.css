@@ -1,13 +1,13 @@
 body{
-    background-color: #3f37c9;
+    background-color: #edf2f4;
 }
 div{
     width: 400px;
     height: 400px;
-    background-color: #4cc9f0;
+    background-color: #8d99ae;
     border-radius: 100%;
-    border: 30px solid #3a0ca3;
-    border-top: 30px solid #4361ee;
+    border: 30px solid #2b2d42;
+    border-top: 30px solid #ef233c;
     position: absolute;
     top:0;
     left: 0;
@@ -19,14 +19,14 @@ div>h1{
     position: absolute;
     height: max-content;
     width: max-content;
-    font-size: 60px;
+    font-size: 70px;
     top:0;
     left: 0;
     right: 0;
     bottom: 0;
     margin: auto;
     display: inline-block;
-    color: #FFFFFF;
+    color: #edf2f4;
 }
 div:hover{
     transition: 2s;
