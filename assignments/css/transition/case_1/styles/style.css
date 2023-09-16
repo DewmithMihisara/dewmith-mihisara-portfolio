@@ -12,7 +12,7 @@
     right: 280px;
     border-radius: 20px;
     background-color: #2667ff;
-    transition-duration: 2s;
+    transition-duration: 1s;
 }
 .side-container>div:hover{
     transition-property: all;
