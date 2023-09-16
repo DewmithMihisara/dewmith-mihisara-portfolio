@@ -15,5 +15,15 @@ body{
     border: 20px solid #2b2d42;
     position: relative;
     border-top: 20px solid #ef233c;
-
+}
+/*--------------------------line styles------------------------*/
+.middle-line{
+    width: 50%;
+    height: 20px;
+    background: #ef233c;
+    position: absolute;
+    top: 162PX;
+    right: 30PX;
+    bottom: 0;
+    rotate: 140deg;
 }
