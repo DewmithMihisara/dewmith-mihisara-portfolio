@@ -34,7 +34,17 @@
         .top-box{
             top: 0;
             height: 0;
-            background-color: #03BFDA;
+        }
+        .top-box>img{
+            position: absolute;
+            margin: auto;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: max-content;
+            height:max-content;
+            z-index: 10;
         }
         .down-box{
             bottom: 0;
@@ -50,7 +60,9 @@
 </head>
 <body>
 <div class="main-div">
-    <div class="top-box"></div>
+    <div class="top-box">
+        <img src="asserts/bin.png" alt="img">
+    </div>
     <div class="down-box"></div>
 </div>
 </body>
