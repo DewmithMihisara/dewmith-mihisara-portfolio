@@ -26,3 +26,8 @@ body{
     width: 100%;
     transition: 0.5s;
 }
+/*----------------------------logo div style-------------------*/
+.top-box{
+    top: 0;
+    height: 0;
+}
