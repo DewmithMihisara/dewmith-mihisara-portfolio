@@ -27,3 +27,13 @@ body{
     bottom: 0;
     rotate: 140deg;
 }
+/*--------------------------dot styles------------------------*/
+.dot{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background: #ef233c;
+    right: 30px;
+    top: 58px;
+}
