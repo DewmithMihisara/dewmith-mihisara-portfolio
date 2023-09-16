@@ -273,8 +273,55 @@ body > header > nav a {
     justify-content: center;
     margin-top: 3%;
 }
+.about-container>div:first-child{
+    background: url("/assets/img/my-pic/about-me.png");
+    background-size: cover;
+    height: 100vh;
+    width: 40vw;
+    z-index: 10;
+}
 
+.about-container>aside:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.about-container>aside:nth-child(2) button{
+    color: #000;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 14em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    height: 4vh;
+    width: 10vw;
+    background: #FFFFFF;
+    position: absolute;
+    bottom: 7vh;
+    right: 0;
+}
+.about-container>aside:nth-child(2) button:hover{
+    background-color: #03BFDA;
+    color: #FFFFFF;
+    border: none;
+}
+.about-container>aside:nth-child(2)>h1{
+    color: #E5F3F4;
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 250em;
+    font-style: normal;
+    font-weight: 700;
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    top: -15vh;
+    left: -24vw;
+}
 .accordion{
+    margin-top: 13vh;
     width: 40vw;
 }
 .accordion .accordion-content{
