@@ -263,7 +263,13 @@ body > header > nav a {
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<about container>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-
+.about-container{
+    width: 100%;
+    height: max-content;
+    /*font-size: 1px;*/
+    display: flex;
+    margin-top: 3%;
+}
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<journey container>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 .journey-container {
     width: 100%;
