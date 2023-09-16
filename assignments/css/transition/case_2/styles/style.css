@@ -29,10 +29,10 @@ div>h1{
     color: #edf2f4;
 }
 div:hover{
-    transition: 2s;
+    transition: 1.5s;
     transform: rotate(360deg);
 }
 div:hover h1{
-    transition: 2s;
+    transition: 1.5s;
     transform: rotate(-360deg);
 }
