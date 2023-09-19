@@ -228,10 +228,12 @@ body > header > nav a {
     box-shadow: 2em 2em 10px 0 rgba(0, 0, 0, 0.25);
     transition: 0.5s;
 }
-.summery-container > div > div:hover{
-    box-shadow: 2em 2em 10px 0 rgba(3,191,218,1.000);
+
+.summery-container > div > div:hover {
+    box-shadow: 2em 2em 10px 0 rgba(3, 191, 218, 1.000);
     border: 0.2vh solid #03BFDA;
 }
+
 .summery-container > div > div > img {
     position: absolute;
     top: 10%;
@@ -548,7 +550,8 @@ body > header > nav a {
     padding-bottom: 1vh;
     background: #FFFFFF;
 }
-.hidden-box>button:hover{
+
+.hidden-box > button:hover {
     background-color: #03BFDA;
     color: #FFFFFF;
     border: none;
@@ -607,13 +610,15 @@ body > header > nav a {
     width: 70%;
     margin: auto;
 }
-.tool-container>div>div{
+
+.tool-container > div > div {
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     transition: 0.5s;
 }
-.tool-container>div>div:hover{
+
+.tool-container > div > div:hover {
     filter: grayscale(0%);
     -webkit-filter: grayscale(0%);
     -moz-filter: grayscale(0%);
@@ -679,7 +684,8 @@ body > header > nav a {
     -moz-filter: opacity(60%);
     border: 1px solid #000000;
 }
-.project-box{
+
+.project-box {
     position: absolute;
     background-color: #FFFFFF;
     left: 0;
@@ -689,7 +695,8 @@ body > header > nav a {
     width: 100%;
     transition: 1s;
 }
-.project-box>h1{
+
+.project-box > h1 {
     position: absolute;
     left: 0;
     right: 0;
@@ -701,7 +708,8 @@ body > header > nav a {
     font-style: normal;
     font-weight: 700;
 }
-.project-box>h6{
+
+.project-box > h6 {
     position: absolute;
     left: 0;
     right: 0;
@@ -713,7 +721,8 @@ body > header > nav a {
     font-style: normal;
     font-weight: 400;
 }
-.project-box>button{
+
+.project-box > button {
     position: absolute;
     left: 0;
     right: 0;
@@ -733,12 +742,14 @@ body > header > nav a {
     padding-bottom: 1vh;
     background: #FFFFFF;
 }
-.project-box>button:hover{
+
+.project-box > button:hover {
     background-color: #03BFDA;
     color: #FFFFFF;
     border: none;
 }
-.project-container > section:nth-child(3) > div:hover .project-box{
+
+.project-container > section:nth-child(3) > div:hover .project-box {
     transition-property: all;
     height: 100%;
 }
@@ -789,6 +800,7 @@ body > header > nav a {
     border-radius: 5%;
     transition-duration: 1s;
     transition-property: all;
+    overflow: hidden;
 }
 
 .gallery-container > section > div:hover {
@@ -796,36 +808,33 @@ body > header > nav a {
     -webkit-filter: grayscale(0);
     -moz-filter: grayscale(0);
 }
-
+.gallery-container > section > div>img{
+    width: 100%;
+    position: relative;
+}
 .gallery-container > section > div:first-child {
-    background: url("/assets/img/gallery/WhatsApp Image 2023-06-25 at 18.46.56 (1).jpeg") center;
     grid-area: 1 / 1 / 2 / 2;
     height: 20vh;
     width: 13vw;
 }
 
 .gallery-container > section > div:nth-child(2) {
-    background: url("/assets/img/gallery/WhatsApp Image 2023-06-25 at 18.50.47.jpeg") center;
     grid-area: 1 / 2 / 2 / 4;
 }
 
 .gallery-container > section > div:nth-child(3) {
-    background: url("/assets/img/gallery/WhatsApp Image 2023-06-25 at 18.51.36.jpeg") center;
     grid-area: 1 / 4 / 2 / 6;
 }
 
 .gallery-container > section > div:nth-child(4) {
-    background: url("/assets/img/gallery/WhatsApp Image 2023-06-25 at 18.49.10.jpeg") center;
     grid-area: 2 / 1 / 4 / 3;
 }
 
 .gallery-container > section > div:nth-child(5) {
-    background: url("/assets/img/gallery/WhatsApp Image 2023-06-25 at 18.46.57.jpeg") center;
     grid-area: 2 / 3 / 4 / 4;
 }
 
 .gallery-container > section > div:nth-child(6) {
-    background: url("/assets/img/gallery/WhatsApp Image 2023-06-25 at 18.48.08.jpeg") center;
     grid-area: 2 / 4 / 4 / 6;
 }
 
@@ -992,3 +1001,6 @@ footer > div > small > a {
     font-weight: 400;
     text-decoration: none;
 }
+
+
+
