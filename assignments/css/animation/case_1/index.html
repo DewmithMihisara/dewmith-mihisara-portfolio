@@ -19,7 +19,6 @@
             background-color: red;
             border-radius: 10px;
             position: relative;
-            margin: auto;
             animation-name: rotate;
             animation-duration: 20s;
             animation-iteration-count: infinite;
@@ -29,32 +28,33 @@
         @keyframes rotate {
             0%{
                 background-color: red;
-                top: 0;
-                left: 0;
+                top: 10vh;
+                left: 5vw;
+                rotate: 0deg;
             }
             25%{
                 background-color: yellow;
-                top: 500px;
-                left: 0;
-                rotate: 90deg;
+                top: 80vh;
+                left: 5vw;
+                rotate: 180deg;
             }
             50%{
                 background-color: green;
-                top: 500px;
-                left: 80vh;
-                rotate: 180deg;
+                top: 80vh;
+                left: 75vw;
+                rotate: 360deg;
             }
             75%{
                 background-color: white;
-                top: 0;
-                left: 80vh;
-                rotate: 270deg;
+                top: 10vh;
+                left: 75vw;
+                rotate: 180deg;
             }
             100%{
                 background-color: red;
-                top: 0;
-                left: 0;
-                rotate: 360deg;
+                top: 10vh;
+                left: 5vw;
+                rotate: 0deg;
             }
         }
     </style>
