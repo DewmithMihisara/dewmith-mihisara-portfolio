@@ -1,12 +1,15 @@
 @media all and (min-width: 2560px) and (max-width: 3280px){
+    .header-container > div:first-child{
+        top: 7vh;
+    }
     .header-container > div:first-child > hgroup > h1:first-child{
-        top: -28.5vh;
+        top: -25.5vh;
         left: 10vw;
         right: 0;
         width: max-content;
         height: max-content;
         margin: auto;
-        font-size: 400em;
+        font-size: 450em;
         font-style: normal;
         font-weight: 700;
     }
@@ -41,5 +44,8 @@
     }
     .project-container > h1:first-child, .gallery-container > h1:first-child {
         font-size: 400em;
+    }
+    .contact-container{
+        margin-top: 0;
     }
 }

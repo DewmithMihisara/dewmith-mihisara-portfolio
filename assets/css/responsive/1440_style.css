@@ -1,0 +1,44 @@
+@media all and (min-width: 1024px) and (max-width: 1440px){
+    body > header > nav a {
+        font-size: 18em;
+        font-weight: 400;
+        margin-left: 2vw;
+    }
+    .header-container > div:first-child{
+        left: 6vw;
+        width: 38.5vw;
+    }
+    .header-container > div:first-child > hgroup > h1:nth-child(4){
+        width: 39vw;
+    }
+    .header-container > div:first-child > hgroup > h1:first-child{
+        top: -20.5vh;
+        left: 16vw;
+    }
+    .header-container > div:last-child{
+        width: 41vw;
+        height: 76vh;
+        position: relative;
+        bottom: -2vh;
+    }
+    .about-container > div:first-child {
+        height: 84vh;
+        position: relative;
+        left: -2vw;
+    }
+    .project-container > h1:nth-child(2), .gallery-container > h1:nth-child(2) {
+       font-size: 48em;
+        position: relative;
+        top: -3vh;
+    }
+    .gallery-container > section {
+        height: 101vh;
+    }
+    .contact-container > section > h1:first-child{
+        width: 27vw;
+    }
+    .contact-container > section > p:nth-child(2){
+        width: 26vw;
+    }
+
+}

@@ -332,6 +332,7 @@ body > header > nav a {
 .accordion {
     margin-top: 13vh;
     width: 40vw;
+    z-index: 10;
 }
 
 .accordion .accordion-content {
@@ -616,6 +617,7 @@ body > header > nav a {
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     transition: 0.5s;
+    width: 3vw;
 }
 
 .tool-container > div > div:hover {
@@ -789,6 +791,8 @@ body > header > nav a {
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 1vw;
     grid-row-gap: 1vh;
+    height: max-content;
+    width: max-content;
 }
 
 .gallery-container > section > div {
