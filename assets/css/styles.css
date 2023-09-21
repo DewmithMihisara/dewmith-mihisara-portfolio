@@ -223,7 +223,6 @@ body > header > nav a {
     display: flex;
     flex-direction: column;
     border-radius: 5%;
-    border: 0.2vh solid #343A40;
     background: #FFF;
     box-shadow: 2em 2em 10px 0 rgba(0, 0, 0, 0.25);
     transition: 0.5s;
@@ -231,7 +230,6 @@ body > header > nav a {
 
 .summery-container > div > div:hover {
     box-shadow: 2em 2em 10px 0 rgba(3, 191, 218, 1.000);
-    border: 0.2vh solid #03BFDA;
 }
 
 .summery-container > div > div > img {
@@ -511,7 +509,7 @@ body > header > nav a {
 }
 
 .journey-container > section:nth-child(3) > div:nth-child(2) > div {
-    border: 1px solid #000;
+    /*border: 1px solid #000;*/
     text-align: center;
     padding: 3vh 3vw;
     box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.25);
