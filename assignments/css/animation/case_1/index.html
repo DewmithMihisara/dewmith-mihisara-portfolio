@@ -3,61 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Animation | Case | 1</title>
-    <link rel="stylesheet" href="8.0.1_normalize.css">
+    <link rel="stylesheet" href="styles/8.0.1_normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
     <meta name="viewport" content="width=device-width initial-scale=1.0 user-scalable=no">
-    <style>
-        .main {
-            width: 100vw;
-            height: 100vh;
-            background-color: #caf0f8;
-            position: relative;
-        }
-
-        .main > div {
-            width: 20%;
-            height: 15%;
-            background-color: red;
-            border-radius: 10px;
-            position: relative;
-            animation-name: rotate;
-            animation-duration: 10s;
-            animation-iteration-count: infinite;
-            animation-direction:alternate;
-        }
-
-        @keyframes rotate {
-            0%{
-                background-color: #90e0ef;
-                top: 10vh;
-                left: 5vw;
-                rotate: 0deg;
-            }
-            25%{
-                background-color: #00b4d8;
-                top: 80vh;
-                left: 5vw;
-                rotate: 180deg;
-            }
-            50%{
-                background-color: #0077b6;
-                top: 80vh;
-                left: 75vw;
-                rotate: 360deg;
-            }
-            75%{
-                background-color: #03045e;
-                top: 10vh;
-                left: 75vw;
-                rotate: 180deg;
-            }
-            100%{
-                background-color: #90e0ef;
-                top: 10vh;
-                left: 5vw;
-                rotate: 0deg;
-            }
-        }
-    </style>
 </head>
 <body>
 <div class="main">
