@@ -3,71 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Animation | Case | 3</title>
-    <link rel="stylesheet" href="8.0.1_normalize.css">
+    <link rel="stylesheet" href="styles/8.0.1_normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
     <meta name="viewport" content="width=device-width initial-scale=1.0 user-scalable=no">
-    <style>
-        body {
-            position: relative;
-            height: 100vh;
-            width: 100vw;
-            overflow: hidden;
-        }
-
-        .main-box {
-            position: relative;
-            height: 100vh;
-            width: 100vw;
-            display: flex;
-            animation-name: slide-show;
-            animation-duration: 5s;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-        }
-
-        .main-box > div {
-            background-color: #1a1616;
-            height: 100vh;
-            width: 100vw;
-            flex-shrink: 0;
-
-        }
-
-        .main-box > div:first-child {
-            background-image: url("assets/bc/1.jpeg");
-        }
-
-        .main-box > div:nth-child(2) {
-            background-image: url("assets/bc/2.jpeg");
-        }
-
-        .main-box > div:nth-child(3) {
-            background-image: url("assets/bc/3.jpeg");
-        }
-
-        .main-box > div:nth-child(4) {
-            background-image: url("assets/bc/4.jpeg");
-        }
-        .main-box > div:nth-child(5) {
-            background-image: url("assets/bc/5.png");
-        }
-        @keyframes slide-show {
-            0% {
-                left: 0;
-            }
-            25% {
-                left: -100vw;
-            }
-            50% {
-                left: -200vw;
-            }
-            75% {
-                left: -300vw;
-            }
-            100% {
-                left: -400vw;
-            }
-        }
-    </style>
 </head>
 <body>
 <div class="main-box">
