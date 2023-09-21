@@ -40,7 +40,7 @@ body {
     background-image: url("../assets/bc/4.jpeg");
 }
 .main-box > div:nth-child(5) {
-    background-image: url("../assets/bc/5.png");
+    background-image: url("../assets/bc/img.png");
 }
 @keyframes slide-show {
     0% {
