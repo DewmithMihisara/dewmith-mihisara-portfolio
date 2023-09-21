@@ -5,9 +5,62 @@
     <title>Animation | Case | 1</title>
     <link rel="stylesheet" href="8.0.1_normalize.css">
     <meta name="viewport" content="width=device-width initial-scale=1.0 user-scalable=no">
+    <style>
+        .main {
+            width: 100vw;
+            height: 100vh;
+            background-color: #03BFDA;
+            position: relative;
+        }
+
+        .main > div {
+            width: 20%;
+            height: 15%;
+            background-color: red;
+            border-radius: 10px;
+            position: relative;
+            margin: auto;
+            animation-name: rotate;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-direction:alternate;
+        }
+
+        @keyframes rotate {
+            0%{
+                background-color: red;
+                top: 0;
+                left: 0;
+            }
+            25%{
+                background-color: yellow;
+                top: 500px;
+                left: 0;
+                rotate: 90deg;
+            }
+            50%{
+                background-color: green;
+                top: 500px;
+                left: 80vh;
+                rotate: 180deg;
+            }
+            75%{
+                background-color: white;
+                top: 0;
+                left: 80vh;
+                rotate: 270deg;
+            }
+            100%{
+                background-color: red;
+                top: 0;
+                left: 0;
+                rotate: 360deg;
+            }
+        }
+    </style>
 </head>
 <body>
-<div>
+<div class="main">
     <div></div>
 </div>
 </body>
