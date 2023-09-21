@@ -11,7 +11,7 @@ body {
     width: 100vw;
     display: flex;
     animation-name: slide-show;
-    animation-duration: 5s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
