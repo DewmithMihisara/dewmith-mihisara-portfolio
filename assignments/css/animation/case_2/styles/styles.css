@@ -1,0 +1,42 @@
+body{
+    background-color: #03071e;
+}
+div {
+    height: 500px;
+    width: 500px;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #03071e;
+}
+
+body > div:nth-child(1) {
+    background-color: #faa307;
+    animation-name: sun;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes sun {
+    0% {
+        left: 70px;
+        bottom: 70px;
+    }
+    50% {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        box-shadow: 0 0 20px 10px #ffba08;
+    }
+    100% {
+        right: 70px;
+        top: 70px;
+    }
+}
