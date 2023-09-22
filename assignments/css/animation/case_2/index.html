@@ -5,6 +5,9 @@
     <title>Animation | Case | 2</title>
     <link rel="stylesheet" href="styles/8.0.1_normalize.css">
     <style>
+        body{
+            background-color: #03071e;
+        }
         div {
             height: 500px;
             width: 500px;
@@ -15,11 +18,11 @@
             left: 0;
             right: 0;
             margin: auto;
-            background-color: black;
+            background-color: #03071e;
         }
 
         body > div:nth-child(1) {
-            background-color: yellow;
+            background-color: #faa307;
             animation-name: sun;
             animation-duration: 5s;
             animation-iteration-count: infinite;
@@ -28,20 +31,20 @@
         }
 
         @keyframes sun {
-            0%{
-                left: 60px;
-                bottom: 60px;
+            0% {
+                left: 70px;
+                bottom: 70px;
             }
-            50%{
+            50% {
                 top: 0;
                 bottom: 0;
                 left: 0;
                 right: 0;
-                box-shadow: 0 1px 20px 5px black;
+                box-shadow: 0 0 20px 10px #ffba08;
             }
-            100%{
-                right: 60px;
-                top: 60px;
+            100% {
+                right: 70px;
+                top: 70px;
             }
         }
     </style>
