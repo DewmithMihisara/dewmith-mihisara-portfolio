@@ -1,6 +1,7 @@
 @media all and (min-width: 768px) and (max-width: 1024px){
     .header-container > div:first-child{
-        left: 6vw;
+        top: 15vh;
+        left: 4vw;
         width: 38.5vw;
     }
 
@@ -40,7 +41,9 @@
     .job-roll-loop > div > h4 {
         font-size: 18em;
     }
-
+    .summery-container > div > div{
+        height: 32vh;
+    }
     .summery-container > div > div > h5 {
         font-size: 21em;
     }
