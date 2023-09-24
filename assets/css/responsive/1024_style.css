@@ -1,4 +1,4 @@
-@media all and (min-width: 768px) and (max-width: 1024px){
+@media all and (min-width: 769px) and (max-width: 1024px){
     .header-container > div:first-child{
         top: 15vh;
         left: 4vw;
@@ -141,14 +141,11 @@
 
     .contact-container > section > h1:first-child {
         font-size: 32em;
-
     }
 
     .contact-container > section > p:nth-child(2) {
         font-size: 16em;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+
     }
 
     .contact-container > section > div:nth-child(3) > img {

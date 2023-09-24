@@ -1,0 +1,323 @@
+@media all and (min-width: 425px) and (max-width: 768px) {
+    .header {
+        padding: 2vh 5%
+    }
+
+    body > header > nav a {
+        font-size: 18em;
+    }
+
+    .header-container > div:last-child {
+        width: 53vw;
+        height: 80vh;
+    }
+
+    .header-container > div:first-child > hgroup > h6:nth-child(3) {
+        font-size: 10em;
+    }
+
+    .header-container > div:first-child {
+        left: 2vw;
+        top: 4vw;
+        z-index: 1;
+    }
+
+    .header-container > div:first-child > hgroup > h1:first-child {
+        font-size: 180em;
+        left: 20vw;
+        top: -20.5vh;
+    }
+
+    .header-container > div:first-child > hgroup {
+        width: 50vw;
+
+    }
+
+    .header-container > div:first-child > hgroup > h1:nth-child(4) {
+        font-size: 32em;
+    }
+
+    .header-container > div:first-child > hgroup > p:nth-child(5) {
+        font-size: 12em;
+    }
+
+    .header-container > div:first-child > hgroup > a:nth-child(6) > button {
+        left: 36vw;
+        bottom: -8vh;
+        height: 3vh;
+        width: 13vw;
+        font-size: 10em;
+        z-index: 10;
+    }
+
+    .job-roll-loop {
+        height: 7vh;
+    }
+
+    .job-roll-loop > div > h4 {
+        font-size: 16em;
+    }
+
+    .job-roll-loop > div > img {
+        width: 4vh;
+    }
+
+    .summery-container {
+        display: none;
+    }
+    #tab-mobile-container{
+        display: flex;
+        justify-content: space-between;
+        width: 60vw;
+        height: 33vh;
+        overflow: hidden;
+        margin: 10vh 20vw;
+    }
+
+    #tab-mobile-container > div {
+        width: 25vw;
+        height: 30vh;
+        flex-shrink: 0;
+    }
+
+    #tab-mobile-container > div > img {
+    }
+
+    #tab-mobile-container > div > h5 {
+        font-size: 22em;
+    }
+
+    #tab-mobile-container > div > p {
+        font-size: 12em;
+    }
+
+    .about-container > aside:nth-child(2) > h1 {
+        font-size: 150em;
+        top: -16vw;
+        left: -27vw;
+    }
+
+    .about-container > div:first-child {
+        height: 60vh;
+        width: 45vw;
+    }
+
+    .accordion {
+        margin-top: 10vh;
+        width: 45vw;
+    }
+
+    .accordion-content header .title {
+        font-size: 16em;
+    }
+
+    .accordion-content .description {
+        font-size: 12em;
+    }
+
+    .accordion-content.open header {
+        min-height: 2vh;
+    }
+
+    .about-container > aside:nth-child(2) button {
+        height: 3vh;
+        width: 13vw;
+        font-size: 10em;
+    }
+
+    .journey-container > h1 {
+        font-size: 32em;
+    }
+
+    .journey-container > section:nth-child(2) > div > div > h3 {
+        font-size: 14em;
+    }
+
+    .journey-container > section:nth-child(2) > div > div > div > h4 {
+        font-size: 12em;
+    }
+
+    .journey-container > section:nth-child(2) > div > div > div > p:nth-child(2) {
+        font-size: 10em;
+    }
+
+    .journey-container > section:nth-child(2) > div > div > div > p:nth-child(3) {
+        font-size: 8em;
+    }
+
+    .journey-container > section:nth-child(2) > div > div > div {
+        margin-top: 3vh;
+        margin-left: 5vw;
+    }
+
+    .journey-container > section:nth-child(2) > div > div > svg:nth-child(3) {
+        height: 215px;
+    }
+
+    .journey-container > section:nth-child(3) > div:first-child > h3:nth-child(2) {
+        font-size: 14em;
+    }
+
+    .journey-container > section:nth-child(3) > div:nth-child(2) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        height: 25vh;
+        width: 70vw;
+        overflow: hidden;
+        overflow-y: scroll
+    }
+
+    .journey-container > section:nth-child(3) > div:nth-child(2)::-webkit-scrollbar-thumb {
+        background-color: #000000;
+        width: 5px;
+        border-radius: 10px;
+        border: 3px solid #F0F0F0;
+    }
+
+    .journey-container > section:nth-child(3) > div:nth-child(2) > div {
+        width: 30vw;
+    }
+
+    .journey-container > section:nth-child(3) > div:nth-child(2) > div > hgroup > h4 {
+        font-size: 14em;
+    }
+
+    .journey-container > section:nth-child(3) > div:nth-child(2) > div > hgroup > h6 {
+        font-size: 12em;
+    }
+
+    .journey-container > section:nth-child(3) > div:nth-child(2) > div > hgroup > p {
+        font-size: 10em;
+    }
+
+    .hidden-box > button {
+        font-size: 14em;
+        height: 25%;
+    }
+
+    .tool-container > h1 {
+        font-size: 38em;
+    }
+
+    /*.tool-container > div>div:nth-child(6){*/
+    /*    flex-flow: wrap;*/
+    /*}*/
+    .project-container > h1:first-child, .gallery-container > h1:first-child {
+        font-size: 140em;
+    }
+
+    .project-container > h1:nth-child(2), .gallery-container > h1:nth-child(2) {
+        font-size: 32em;
+        position: relative;
+        top: -8vh;
+    }
+
+    .project-container > section:nth-child(3) {
+        width: 70%;
+        height: 25vh;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        overflow: hidden;
+        overflow-x: scroll
+    }
+    .project-container > section:nth-child(3)::-webkit-scrollbar-thumb {
+        background-color: #000000;
+        width: 5px;
+        border-radius: 10px;
+        border: 3px solid #F0F0F0;
+    }
+    .project-container > section:nth-child(3) > div{
+        width: 45vw;
+    }
+    .project-box > h1{
+        font-size: 16em;
+    }
+    .project-box > h6{
+        font-size: 12em;
+    }
+    .project-box > button{
+        width: 35%;
+        font-size: 14em;
+    }
+    .project-container>a>button{
+        width: 30vw;
+        font-size: 12em;
+    }
+    .gallery-container > section > div:first-child {
+        height: 20vh;
+        width: 15vw;
+    }
+
+    .gallery-container > section > div:nth-child(2) {
+        height: 20vh;
+        width: 30vw;
+    }
+
+    .gallery-container > section > div:nth-child(3) {
+        height: 20vh;
+        width: 30vw;
+    }
+
+    .gallery-container > section > div:nth-child(4) {
+        height: 30vh;
+        width: 30vw;
+    }
+
+    .gallery-container > section > div:nth-child(5) {
+        height: 30vh;
+        width: 15vw;
+    }
+
+    .gallery-container > section > div:nth-child(6) {
+        height: 30vh;
+        width: 30vw;
+    }
+    .contact-container>section{
+        padding-left: 8vw;
+    }
+    .contact-container > section > h1:first-child{
+        font-size: 24em;
+    }
+    .contact-container > section > p:nth-child(2){
+        font-size: 12em;
+    }
+    .contact-container > section > div:nth-child(3) > h4 > a{
+        font-size: 16em;
+    }
+    .contact-container > section > div:nth-child(3) > img {
+        height: 3vh;
+    }
+    .contact-container > section > div:nth-child(4) > div img {
+        height: 3vh;
+    }
+    .contact-container > form > fieldset{
+        font-size: 12em;
+    }
+    .contact-container > form > fieldset > input {
+        height: 4vh;
+    }
+    .contact-container > form{
+        padding-top: 5vh;
+        padding-left: 0;
+        padding-bottom: 5vh;
+    }
+    .contact-container > form > fieldset > input, .contact-container > form > fieldset > textarea{
+        width: 45vw;
+    }
+    .contact-container > form > fieldset > input:first-child, .contact-container > form > fieldset > input:nth-child(2){
+        width: calc(44vw/2);
+    }
+    .contact-container > form > fieldset > button{
+        font-size: 1em;
+        width: 45vw;
+    }
+    footer > div > img, footer > div > small > a{
+        height: 3vh;
+    }
+    footer > div > small > a{
+        font-size: 0.5em;
+    }
+    footer > div {
+        height: 5vh;
+    }
+}
