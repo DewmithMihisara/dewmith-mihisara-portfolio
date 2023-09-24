@@ -43,6 +43,19 @@
             height: 50%;
             width: 100%;
         }
+        #car{
+            position: relative;
+            left: 0;
+            right: 0;
+            top: 60vh;
+            margin: auto;
+            height: max-content;
+            width: 30vw;
+            z-index: 2;
+        }
+        #car>img:first-child{
+            width: 30vw;
+        }
         @keyframes slide-show {
             0% {
                 left: 0;
@@ -63,7 +76,9 @@
     </style>
 </head>
 <body>
-<div></div>
+<div id="car">
+    <img src="assets/img/car.png" alt="car">
+</div>
 <div id="road">
     <div class="road-line">
         <img class="building-img" src="assets/img/city.png" alt="city">
