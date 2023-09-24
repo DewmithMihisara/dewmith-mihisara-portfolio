@@ -22,13 +22,10 @@ body {
     height: 100vh;
     width: 100vw;
     flex-shrink: 0;
-
-}
-.main-box>div{
     background-size: cover;
     background-position: center;
-}
 
+}
 .main-box > div:first-child {
     background-image: url("../assets/bc/1.jpeg");
 }
