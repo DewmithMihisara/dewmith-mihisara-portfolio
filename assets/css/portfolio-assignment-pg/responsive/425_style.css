@@ -1,0 +1,46 @@
+@media all and (min-width: 321px) and (max-width: 425px){
+    body>h1:first-child{
+        font-size: 50em;
+        top: 6.5vh;
+    }
+    body>section:nth-child(2) {
+        margin-top: 15vh;
+    }
+    .title{
+        font-size: 21em;
+    }
+    .project-container{
+        grid-template-columns: repeat(1, 1fr);
+        height: 50vh;
+        overflow: hidden;
+        overflow-y: scroll
+    }
+    .project-container::-webkit-scrollbar-thumb {
+        background-color: #000000;
+        width: 5px;
+        border-radius: 10px;
+        border: 3px solid #F0F0F0;
+    }
+    .project-container>div {
+        border: 1px solid black;
+        width: 60vw;
+        height: 20vh;
+        position: relative;
+        left: 10vw;
+        top: 2vh;
+    }
+    .img{
+        height: 18vh;
+    }
+    .project-container>div>div:nth-child(2){
+        height: 18vh;
+    }
+    .pro-h1{
+        font-size: 16em;
+    }
+    .pro-button{
+        font-size: 12em;
+        top: 12vh;
+        width: 50%;
+    }
+}

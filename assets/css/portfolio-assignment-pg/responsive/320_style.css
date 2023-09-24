@@ -1,0 +1,50 @@
+@media all and (max-width: 320px){
+    body>h1:first-child{
+        font-size: 40em;
+        top: 6.5vh;
+    }
+    body>section:nth-child(2) {
+        margin-top: 15vh;
+    }
+    section{
+        margin-top: 5vh;
+    }
+    .title{
+        font-size: 21em;
+    }
+    .project-container{
+        grid-template-columns: repeat(1, 1fr);
+        height: 50vh;
+        overflow: hidden;
+        overflow-y: scroll
+    }
+    .project-container::-webkit-scrollbar-thumb {
+        background-color: #000000;
+        width: 5px;
+        border-radius: 10px;
+        border: 3px solid #F0F0F0;
+    }
+    .project-container>div {
+        border: 1px solid black;
+        width: 60vw;
+        height: 15vh;
+        position: relative;
+        left: 10vw;
+        top: 2vh;
+    }
+    .img{
+        height: 13vh;
+    }
+    .project-container>div>div:nth-child(2){
+        height: 13vh;
+    }
+    .pro-h1{
+        font-size: 16em;
+        top: 3vh;
+    }
+    .pro-button{
+        font-size: 9em;
+        top: 8vh;
+        width: 50%;
+    }
+}

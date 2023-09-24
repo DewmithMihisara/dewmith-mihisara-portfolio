@@ -1,5 +1,30 @@
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: #03BFDA #F0F0F0;
+}
+
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #F0F0F0;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #03BFDA;
+    border-radius: 20px;
+    border: 3px solid #F0F0F0;
+}
 body{
     font-size: 1px;
+    /*position: relative;*/
+    width: max-content;
+    height: max-content;
 }
 body>h1:first-child{
     position: absolute;
@@ -109,7 +134,7 @@ section{
     top: 18vh;
     transition: 0.5s;
 }
-.pro-button:hover{
+.pro-button:hover, body>div>a>button:hover{
     transition-property: background-color, color, border;
     background-color: #03BFDA;
     color: #FFFFFF;
@@ -172,3 +197,24 @@ section{
     /*background: url("/assets/img/assignment-ss/css-anima/case-4.png") center;*/
     /*background-size: cover;*/
 }
+/*body>div{*/
+/*    !*display: inline-block;*!*/
+/*    position: sticky;*/
+/*    left:  0;*/
+/*    bottom: 10vh;*/
+/*    width: 40%;*/
+/*    height: 30%;*/
+/*    margin: 0;*/
+/*    z-index: 10;*/
+
+/*}*/
+/*body>div>a>button{*/
+/*    color: #000;*/
+/*    background: #FFFFFF;*/
+/*    text-align: center;*/
+/*    font-family: Arial, sans-serif;*/
+/*    font-size: 20em;*/
+/*    font-style: normal;*/
+/*    font-weight: 400;*/
+/*    display: block;*/
+/*}*/

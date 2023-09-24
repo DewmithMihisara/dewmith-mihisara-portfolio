@@ -1,0 +1,16 @@
+@media all and (min-width: 426px) and (max-width: 768px){
+    body>h1:first-child{
+        font-size: 100em;
+        top: 6.5vh;
+    }
+    body>section:nth-child(2) {
+        margin-top: 20vh;
+    }
+    .project-container{
+        grid-template-columns: repeat(2, 1fr);
+        height: max-content;
+    }
+    .project-container>div{
+        width: 40vw;
+    }
+}

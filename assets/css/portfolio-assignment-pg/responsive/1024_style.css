@@ -1,0 +1,14 @@
+@media all and (min-width: 769px) and (max-width: 1024px){
+    body>h1:first-child {
+        font-size: 130em;
+    }
+    .title{
+        font-size: 38em;
+    }
+    .pro-h1{
+        font-size: 24em;
+    }
+    .pro-button{
+        font-size: 14em;
+    }
+}

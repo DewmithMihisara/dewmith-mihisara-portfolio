@@ -1,0 +1,17 @@
+@media all and (min-width: 1024px) and (max-width: 1440px){
+    body>h1:first-child{
+        font-size: 180em;
+    }
+    .project-container>div{
+        height: 25vh;
+    }
+    .project-container>div>div:nth-child(2){
+        height: 23vh;
+    }
+    .img{
+        height: 23vh;
+    }
+    #case4{
+        background-position: unset;
+    }
+}
