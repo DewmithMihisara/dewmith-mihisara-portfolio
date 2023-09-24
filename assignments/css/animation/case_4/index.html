@@ -20,10 +20,10 @@
             height: 60%;
             width: 100%;
             display: flex;
-            animation-name: slide-show;
-            animation-duration: 20s;
+            animation-name: road;
+            animation-duration: 10s;
             animation-iteration-count: infinite;
-            animation-timing-function: linear;
+            animation-timing-function: ease-in-out;
         }
         .road-line {
             height: 100%;
@@ -68,21 +68,27 @@
             left: 21vw;
             position: absolute;
         }
-        @keyframes slide-show {
-            0% {
+        .wheel{
+            animation-name: wheel;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+
+        }
+        @keyframes road {
+            from{
                 left: 0;
             }
-            25% {
-                left: -100vw;
-            }
-            50% {
-                left: -200vw;
-            }
-            75% {
-                left: -300vw;
-            }
-            100% {
+            to{
                 left: -400vw;
+            }
+        }
+        @keyframes wheel{
+            0%{
+                rotate: 360deg;
+            }
+            80%{
+                rotate: -120deg;
             }
         }
     </style>
@@ -90,8 +96,8 @@
 <body>
 <div id="car">
     <img src="assets/img/car.png" alt="car">
-    <img src="assets/img/wheel.png" alt="wheel">
-    <img src="assets/img/wheel.png" alt="wheel">
+    <img class="wheel" src="assets/img/wheel.png" alt="wheel">
+    <img class="wheel" src="assets/img/wheel.png" alt="wheel">
 </div>
 <div id="road">
     <div class="road-line">
