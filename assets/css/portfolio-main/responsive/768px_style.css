@@ -198,10 +198,14 @@
     .tool-container > h1 {
         font-size: 38em;
     }
+    .tool-container > div{
+        flex-basis: 100%;
+        width: 0;
+        /*height: 0;*/
+    }
+    .tool-container > div>div:nth-child(6){
 
-    /*.tool-container > div>div:nth-child(6){*/
-    /*    flex-flow: wrap;*/
-    /*}*/
+    }
     .project-container > h1:first-child, .gallery-container > h1:first-child {
         font-size: 140em;
     }

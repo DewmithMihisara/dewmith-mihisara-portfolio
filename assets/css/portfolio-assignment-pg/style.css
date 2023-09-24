@@ -1,0 +1,174 @@
+body{
+    font-size: 1px;
+}
+body>h1:first-child{
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    right: 0;
+    top: 0.5vh;
+    margin: auto;
+    width: max-content;
+    height: max-content;
+    color: #E5F3F4;
+    text-align: center;
+    font-family: Georgia, sans-serif;
+    font-size: 200em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    z-index: 1;
+}
+body>section:nth-child(2){
+    margin-top: 25vh;
+}
+section{
+    margin-top: 10vh;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    margin-left: 5vw;
+    font-size: 48em;
+    font-family: Georgia, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    z-index: 2;
+}
+.project-container{
+    margin-left: 5vw;
+    margin-bottom: 3vh;
+    padding-top: 1%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 1vw;
+    grid-row-gap: 1vh;
+    height: max-content;
+    width: 80vw;
+}
+.project-container>div{
+    height: 30vh;
+    display: flex;
+    width: calc(80vw/3);
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.25);
+    transition: 1s;
+    position: relative;
+}
+.project-container>div:hover {
+    transition-property: box-shadow;
+    box-shadow: 0 0 5px 5px rgba(3, 191, 218, 1.000);
+}
+.project-container>div>div:nth-child(2){
+    position: relative;
+    margin: 1vh;
+    width: 50%;
+    height: 28vh;
+}
+.img{
+    margin: 1vh;
+    width: 50%;
+    height: 28vh;
+    border: 2px solid #000000;
+    transition: 2s;
+    filter: opacity(60%);
+    -webkit-filter: opacity(60%);
+    -moz-filter: opacity(60%);
+}
+.pro-h1{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: inline-block;
+    width: max-content;
+    top: 6vh;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 32em;
+    font-style: normal;
+    font-weight: 400;
+}
+.pro-button{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 70%;
+    height: 15%;
+    color: #000;
+    background: #FFFFFF;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 20em;
+    font-style: normal;
+    font-weight: 400;
+    top: 18vh;
+    transition: 0.5s;
+}
+.pro-button:hover{
+    transition-property: background-color, color, border;
+    background-color: #03BFDA;
+    color: #FFFFFF;
+    border: none;
+}
+#case1{
+    background: url("/assets/img/assignment-ss/css-normal/css-case-1.png") center;
+    background-size: cover;
+}
+#case2{
+    background: url("/assets/img/assignment-ss/css-normal/css-case-2.png") center;
+    background-size: cover;
+}
+#case3{
+    background: url("/assets/img/assignment-ss/css-normal/css-case-3.png") center;
+    background-size: cover;
+}
+
+#case4{
+    background: url("/assets/img/assignment-ss/css-normal/css-case-4.png") center;
+    background-size: cover;
+}
+#case5{
+    background: url("/assets/img/assignment-ss/css-normal/css-case-5.png") center;
+    background-size: cover;
+}
+#case6{
+    background: url("/assets/img/assignment-ss/css-normal/css-case-6.png") center;
+    background-size: cover;
+}
+#tra1{
+    background: url("/assets/img/assignment-ss/css-trans/case-1.png") ;
+    background-size: cover;
+}
+#tra2{
+    background: url("/assets/img/assignment-ss/css-trans/case-2.png") center;
+    background-size: cover;
+}
+#tra3{
+    background: url("/assets/img/assignment-ss/css-trans/case-3.png") center;
+    background-size: cover;
+}
+#tra4{
+    background: url("/assets/img/assignment-ss/css-trans/case-4.png") center;
+    background-size: cover;
+}
+#ani1{
+    background: url("/assets/img/assignment-ss/css-anima/case-1.png") ;
+    background-size: cover;
+}
+#ani2{
+    background: url("/assets/img/assignment-ss/css-anima/case-2.png") center;
+    background-size: cover;
+}
+#ani3{
+    background: url("/assets/img/assignment-ss/css-anima/case-3.png") center;
+    background-size: cover;
+}
+#ani4{
+    /*background: url("/assets/img/assignment-ss/css-anima/case-4.png") center;*/
+    /*background-size: cover;*/
+}
