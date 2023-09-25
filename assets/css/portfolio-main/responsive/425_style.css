@@ -45,7 +45,9 @@
         position: relative;
         top: 4vh;
     }
-
+    .job-roll-loop{
+        overflow: hidden;
+    }
     .job-roll-loop > div {
         flex-shrink: 0;
         margin-left: 5vw;
@@ -74,6 +76,105 @@
         width: 30vw;
     }
     .journey-container{
+        display: none;
+    }
+    .tool-container > h1 {
+        font-size: 28em;
+    }
+    .project-container > h1:first-child, .gallery-container > h1:first-child {
+        font-size: 80em;
+    }
+    .project-container > h1:nth-child(2), .gallery-container > h1:nth-child(2) {
+        font-size: 28em;
+        position: relative;
+        top: -14.5vh;
+    }
+    .project-container > section:nth-child(3){
+        display: none;
+    }
+    .project-container>a>button {
+        height: 4vh;
+        width: 43vw;
+        font-size: 12em;
+    }
+    .gallery-container > section {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 3vw;
+        grid-row-gap: 3vh;
+    }
+    .gallery-container > section > div:first-child {
+        grid-area: unset;
+        width: calc(80vw/2);
+        height: calc(80vh/3);
+    }
+    .gallery-container > section > div:first-child>img{
+        height: 31vh;
+    }
+    .gallery-container > section > div:nth-child(2) {
+        grid-area: unset;
+        width: calc(80vw/2);
+        height: calc(80vh/3);
+    }
+    .gallery-container > section > div:nth-child(2)>img{
+        left: -15vw;
+    }
+    .gallery-container > section > div:nth-child(3) {
+        grid-area: unset;
+        width: calc(80vw/2);
+        height: calc(80vh/3);
+    }
+    .gallery-container > section > div:nth-child(3)>img{
+        left: -12vw;
+    }
+    .gallery-container > section > div:nth-child(4) {
+        grid-area: unset;
+        width: calc(80vw/2);
+        height: calc(80vh/3);
+    }
+
+    .gallery-container > section > div:nth-child(5) {
+        grid-area: unset;
+        width: calc(80vw/2);
+        height: calc(80vh/3);
+    }
+    .gallery-container > section > div:nth-child(5)>img{
+        height: 35vh;
+    }
+    .gallery-container > section > div:nth-child(6) {
+        grid-area: unset;
+        width: calc(80vw/2);
+        height: calc(80vh/3);
+    }
+    .gallery-container > section > div:nth-child(6)>img{
+        left: -6vh;
+    }
+    .gallery-container > section{
+        top: -15vh;
+        position: relative;
+    }
+    .contact-container{
+        margin-top: -15%;
+        flex-direction: column;
+    }
+    .contact-container > section{
+        width: 95vw;
+        padding: 5vw;
+    }
+    .contact-container > section > h1:first-child {
+        width: 49vh;
+        text-align: center;
+    }
+    .contact-container > section > p:nth-child(2) {
+        width: 83vw;
+        text-align: center;
+    }
+    .contact-container > section > div:nth-child(3) > h4 > a{
+        display: none;
+    }
+    .contact-container > section > div:nth-child(3) > img{
+        display: none;
+    }
+    .contact-container > section > div:nth-child(4){
         display: none;
     }
 }
