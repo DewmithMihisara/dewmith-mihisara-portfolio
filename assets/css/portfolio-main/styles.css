@@ -564,11 +564,8 @@ body > header > nav a {
 .journey-container > section:nth-child(3) > div:nth-child(2) > div:hover .hidden-box,.ctf-content>div:hover .hidden-box{
     height: 100%;
 }
-/*.tabs__content > div>div:hover .hidden-box{*/
-/*    height: 100%;*/
-/*}*/
 
-.journey-container > section:nth-child(3) > div:nth-child(2) > div > hgroup > h4, .ctf-content>div > hgroup.h4 {
+.journey-container > section:nth-child(3) > div:nth-child(2) > div > hgroup > h4, .ctf-content>div > hgroup>h4 {
     color: #000;
     font-family: Georgia, sans-serif;
     font-size: 20em;

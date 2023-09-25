@@ -45,9 +45,11 @@
         position: relative;
         top: 4vh;
     }
-    .job-roll-loop{
+
+    .job-roll-loop {
         overflow: hidden;
     }
+
     .job-roll-loop > div {
         flex-shrink: 0;
         margin-left: 5vw;
@@ -72,117 +74,145 @@
         margin-top: 15vh;
         margin-bottom: 15vh;
     }
+
     .about-container > aside:nth-child(2) button {
         width: 30vw;
     }
-    .journey-container>section:nth-child(2), .journey-container>section:nth-child(3){
+
+    .journey-container > section:nth-child(2), .journey-container > section:nth-child(3) {
         display: none;
     }
+
     .tool-container > h1 {
         font-size: 28em;
     }
+
     .project-container > h1:first-child, .gallery-container > h1:first-child {
         font-size: 80em;
     }
+
     .project-container > h1:nth-child(2), .gallery-container > h1:nth-child(2) {
         font-size: 28em;
         position: relative;
         top: -14.5vh;
     }
-    .project-container > section:nth-child(3){
+
+    .project-container > section:nth-child(3) {
         display: none;
     }
-    .project-container>a>button {
+
+    .project-container > a > button {
         height: 4vh;
         width: 43vw;
         font-size: 12em;
     }
+
     .gallery-container > section {
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 3vw;
         grid-row-gap: 3vh;
     }
+
     .gallery-container > section > div:first-child {
         grid-area: unset;
-        width: calc(80vw/2);
-        height: calc(80vh/3);
+        width: calc(80vw / 2);
+        height: calc(80vh / 3);
     }
-    .gallery-container > section > div:first-child>img{
+
+    .gallery-container > section > div:first-child > img {
         height: 31vh;
     }
+
     .gallery-container > section > div:nth-child(2) {
         grid-area: unset;
-        width: calc(80vw/2);
-        height: calc(80vh/3);
+        width: calc(80vw / 2);
+        height: calc(80vh / 3);
     }
-    .gallery-container > section > div:nth-child(2)>img{
+
+    .gallery-container > section > div:nth-child(2) > img {
         left: -15vw;
     }
+
     .gallery-container > section > div:nth-child(3) {
         grid-area: unset;
-        width: calc(80vw/2);
-        height: calc(80vh/3);
+        width: calc(80vw / 2);
+        height: calc(80vh / 3);
     }
-    .gallery-container > section > div:nth-child(3)>img{
+
+    .gallery-container > section > div:nth-child(3) > img {
         left: -12vw;
     }
+
     .gallery-container > section > div:nth-child(4) {
         grid-area: unset;
-        width: calc(80vw/2);
-        height: calc(80vh/3);
+        width: calc(80vw / 2);
+        height: calc(80vh / 3);
     }
 
     .gallery-container > section > div:nth-child(5) {
         grid-area: unset;
-        width: calc(80vw/2);
-        height: calc(80vh/3);
+        width: calc(80vw / 2);
+        height: calc(80vh / 3);
     }
-    .gallery-container > section > div:nth-child(5)>img{
+
+    .gallery-container > section > div:nth-child(5) > img {
         height: 35vh;
     }
+
     .gallery-container > section > div:nth-child(6) {
         grid-area: unset;
-        width: calc(80vw/2);
-        height: calc(80vh/3);
+        width: calc(80vw / 2);
+        height: calc(80vh / 3);
     }
-    .gallery-container > section > div:nth-child(6)>img{
+
+    .gallery-container > section > div:nth-child(6) > img {
         left: -6vh;
     }
-    .gallery-container > section{
+
+    .gallery-container > section {
         top: -15vh;
         position: relative;
     }
-    .contact-container{
+
+    .contact-container {
         margin-top: -15%;
         flex-direction: column;
     }
-    .contact-container > section{
+
+    .contact-container > section {
         width: 95vw;
         padding: 5vw;
         height: 25vh;
     }
-    .contact-container > form{
+
+    .contact-container > form {
         width: 95vw;
         padding-top: 5vh;
         height: max-content;
     }
+
     .contact-container > section > h1:first-child {
         width: 49vh;
         text-align: center;
     }
+
     .contact-container > section > p:nth-child(2) {
         width: 83vw;
         text-align: center;
     }
-    .contact-container > section > div:nth-child(3) > h4 > a{
+
+    .contact-container > section > div:nth-child(3) > h4 > a {
         display: none;
     }
-    .contact-container > section > div:nth-child(3) > img{
+
+    .contact-container > section > div:nth-child(3) > img {
         display: none;
     }
-    .contact-container > section > div:nth-child(4){
+
+    .contact-container > section > div:nth-child(4) {
         display: none;
     }
+
     .contact-container > form > fieldset {
         position: relative;
         top: -15vh;
@@ -190,18 +220,23 @@
         padding: 5vw;
 
     }
+
     .contact-container > form > fieldset > input, .contact-container > form > fieldset > textarea {
         width: 85vw;
     }
+
     .contact-container > form > fieldset > input:first-child, .contact-container > form > fieldset > input:nth-child(2) {
-        width: calc(83vw/2);
+        width: calc(83vw / 2);
     }
+
     .contact-container > form > fieldset > button {
         width: 85vw;
     }
-    .contact-container{
+
+    .contact-container {
         height: 77vh;
     }
+
     .mobile-links {
         position: relative;
         left: 0;
@@ -214,20 +249,25 @@
         justify-content: space-between;
         width: 50%;
     }
-    .mobile-links> div img{
+
+    .mobile-links > div img {
         height: 4vh;
     }
+
     footer > div {
         width: 40vw;
         height: 5vh;
     }
+
     footer > div > small > a {
         margin-left: 3vw;
         font-size: 0.5em;
     }
-    #for-mobile{
+
+    #for-mobile {
         display: flex;
     }
+
     .tabs {
         margin-top: 5vh;
         display: flex;
@@ -272,6 +312,7 @@
         margin-bottom: 5vh;
         display: initial;
     }
+
     .tabs__content {
         position: relative;
         font-size: 1px;
@@ -321,5 +362,38 @@
         font-family: Arial, sans-serif;
         font-size: 10em;
         font-weight: 400;
+    }
+
+    .ctf-content {
+        position: relative;
+        top: -3vh;
+        grid-template-columns: repeat(1, 1fr);
+        height: 40vh;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+
+    .ctf-content > div {
+        height: 15vh;
+        width: 60vw;
+    }
+
+    .ctf-content > div > hgroup > h4 {
+        font-size: 14em;
+    }
+
+    .ctf-content > div > hgroup > h6 {
+        padding-top: 0.5vh;
+        font-size: 12em;
+    }
+
+    .ctf-content > div > hgroup > p {
+        padding-top: 0.5vh;
+        font-size: 10em;
+    }
+
+    .hidden-box > button {
+        font-size: 16em;
+        height: 33%;
     }
 }
