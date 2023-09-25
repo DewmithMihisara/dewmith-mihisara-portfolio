@@ -1,0 +1,79 @@
+@media all and (min-width: 375px) and (max-width: 425px) {
+    .header-container {
+        flex-direction: column;
+    }
+
+    .header-container > div:first-child > hgroup > h1:first-child {
+
+    }
+
+    .header-container > div:first-child > hgroup > h1:first-child {
+        left: -6vw;
+        font-size: 125em;
+        top: 25vh;
+    }
+
+    .header-container > div:first-child > hgroup {
+        width: 80vw;
+        position: relative;
+        left: -23vw;
+        top: 5vh;
+    }
+
+    .header-container > div:first-child > hgroup > a:nth-child(6) > button {
+        display: none;
+    }
+
+    .header-container > div:first-child > hgroup > svg:nth-child(2) {
+        width: 35px;
+        height: 2px;
+        fill: none;
+    }
+
+    .header-container > div:first-child > hgroup > h1:nth-child(4) {
+        font-size: 28em;
+    }
+
+    .header-container > div:first-child > hgroup > p:nth-child(5) {
+        width: 77vw;
+        font-size: 12em;
+    }
+
+    .header-container > div:last-child {
+        width: 70vw;
+        height: 47vh;
+        position: relative;
+        top: 4vh;
+    }
+
+    .job-roll-loop > div {
+        flex-shrink: 0;
+        margin-left: 5vw;
+    }
+
+    #tab-mobile-container {
+        display: none;
+    }
+
+    .about-container > div:first-child {
+        display: none;
+    }
+
+    .about-container > aside:nth-child(2) > h1 {
+        font-size: 100em;
+        left: 0;
+        right: 0;
+    }
+
+    .accordion {
+        width: 75vw;
+        margin-top: 15vh;
+        margin-bottom: 15vh;
+    }
+    .about-container > aside:nth-child(2) button {
+        width: 30vw;
+    }
+    .journey-container{
+        display: none;
+    }
+}
