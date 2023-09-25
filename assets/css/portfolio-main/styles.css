@@ -23,6 +23,8 @@
 
 body {
     background: #FFFFFF;
+    overflow: hidden;
+    overflow-y: scroll;
 }
 
 .header {
@@ -76,6 +78,7 @@ body > header > nav a {
     margin: auto;
     left: 12vw;
     top: 10.5vh;
+    z-index: 10;
 }
 
 .header-container > div:first-child > hgroup > h1:first-child {
@@ -113,7 +116,7 @@ body > header > nav a {
     font-weight: 700;
     color: #000;
     font-size: 48em;
-    z-index: 2;
+    z-index: 10;
 
 }
 
