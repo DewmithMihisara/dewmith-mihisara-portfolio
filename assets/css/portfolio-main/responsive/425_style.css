@@ -407,6 +407,8 @@
     .project-container > a > button {
         bottom: 25vh;
         position: relative;
-
+    }
+    .tool-container{
+        display: none;
     }
 }
