@@ -1023,3 +1023,6 @@ footer > div > small > a {
 #tab-mobile-container{
     display: none;
 }
+.mobile-links{
+    display: none;
+}

@@ -159,6 +159,12 @@
     .contact-container > section{
         width: 95vw;
         padding: 5vw;
+        height: 25vh;
+    }
+    .contact-container > form{
+        width: 95vw;
+        padding-top: 5vh;
+        height: max-content;
     }
     .contact-container > section > h1:first-child {
         width: 49vh;
@@ -176,5 +182,47 @@
     }
     .contact-container > section > div:nth-child(4){
         display: none;
+    }
+    .contact-container > form > fieldset {
+        position: relative;
+        top: -15vh;
+        width: 95vw;
+        padding: 5vw;
+
+    }
+    .contact-container > form > fieldset > input, .contact-container > form > fieldset > textarea {
+        width: 85vw;
+    }
+    .contact-container > form > fieldset > input:first-child, .contact-container > form > fieldset > input:nth-child(2) {
+        width: calc(83vw/2);
+    }
+    .contact-container > form > fieldset > button {
+        width: 85vw;
+    }
+    .contact-container{
+        height: 77vh;
+    }
+    .mobile-links {
+        position: relative;
+        left: 0;
+        height: max-content;
+        right: 0;
+        bottom: 21vh;
+        margin: auto;
+        padding-top: 4vh;
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+    }
+    .mobile-links> div img{
+        height: 4vh;
+    }
+    footer > div {
+        width: 40vw;
+        height: 5vh;
+    }
+    footer > div > small > a {
+        margin-left: 3vw;
+        font-size: 0.5em;
     }
 }
