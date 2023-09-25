@@ -504,7 +504,7 @@ body > header > nav a {
     padding-right: 1em;
 }
 
-.journey-container > section:nth-child(3) > div:nth-child(2), .tabs__content > div {
+.journey-container > section:nth-child(3) > div:nth-child(2), .ctf-content {
     margin-top: 5vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -513,7 +513,7 @@ body > header > nav a {
     grid-row-gap: 3vh;
 }
 
-.journey-container > section:nth-child(3) > div:nth-child(2) > div, .tabs__content > div > div {
+.journey-container > section:nth-child(3) > div:nth-child(2) > div, .ctf-content > div {
     border: 1px solid #000;
     text-align: center;
     padding: 3vh 3vw;
@@ -561,21 +561,21 @@ body > header > nav a {
     border: none;
 }
 
-.journey-container > section:nth-child(3) > div:nth-child(2) > div:hover .hidden-box,.tabs__content > div>div:hover .hidden-box{
+.journey-container > section:nth-child(3) > div:nth-child(2) > div:hover .hidden-box,.ctf-content>div:hover .hidden-box{
     height: 100%;
 }
 /*.tabs__content > div>div:hover .hidden-box{*/
 /*    height: 100%;*/
 /*}*/
 
-.journey-container > section:nth-child(3) > div:nth-child(2) > div > hgroup > h4, .tabs__content > div>div > hgroup.h4 {
+.journey-container > section:nth-child(3) > div:nth-child(2) > div > hgroup > h4, .ctf-content>div > hgroup.h4 {
     color: #000;
     font-family: Georgia, sans-serif;
     font-size: 20em;
     font-weight: 700;
 }
 
-.journey-container > section:nth-child(3) > div:nth-child(2) > div > hgroup > h6, .tabs__content > div>div > hgroup > h6 {
+.journey-container > section:nth-child(3) > div:nth-child(2) > div > hgroup > h6, .ctf-content>div > hgroup > h6 {
     padding-top: 1vh;
     color: #000;
     font-family: Georgia, sans-serif;
@@ -583,7 +583,7 @@ body > header > nav a {
     font-weight: 700;
 }
 
-.journey-container > section:nth-child(3) > div:nth-child(2) > div > hgroup > p, .tabs__content > div >div> hgroup > p {
+.journey-container > section:nth-child(3) > div:nth-child(2) > div > hgroup > p, .ctf-content >div> hgroup > p {
     padding-top: 1.5vh;
     color: #343A40;
     font-family: Arial, sans-serif;
