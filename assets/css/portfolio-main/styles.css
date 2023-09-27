@@ -173,12 +173,20 @@ body > header > nav a {
     justify-content: space-between;
     background-color: #E5F3F4;
     font-size: 1px;
+    /*overflow: hidden;*/
+    /*box-sizing: border-box;*/
+    animation-name: slide_me;
+    animation-duration: 25s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
 .job-roll-loop > div {
+    flex-shrink: 0;
     height: 100%;
     width: max-content;
-
+    flex-grow: 1;
+    box-sizing: border-box;
 }
 
 .job-roll-loop > div > h4 {
@@ -192,7 +200,14 @@ body > header > nav a {
     top: 1.5vh;
     width: 5vh;
 }
-
+@keyframes slide_me {
+    from{
+        transform:translateX(calc((-100%/4)*0));
+    }
+    to{
+        transform:translateX(calc((-100%/4)*3));
+    }
+}
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<summery oneliner>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 .summery-container {
     margin-top: 3%;

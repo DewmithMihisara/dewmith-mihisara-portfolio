@@ -42,12 +42,8 @@
         top: 4vh;
     }
 
-    .job-roll-loop {
-        overflow: hidden;
-    }
 
     .job-roll-loop > div {
-        flex-shrink: 0;
         margin-left: 5vw;
     }
 
