@@ -141,24 +141,24 @@ section{
     border: none;
 }
 #case1{
-    background: url("/assets/img/assignment-ss/css-normal/css-case-1.png") center;
+    background: url("../../img/assignment-ss/css-normal/css-case-1.png") center;
     background-size: cover;
 }
 #case2{
-    background: url("/assets/img/assignment-ss/css-normal/css-case-2.png") center;
+    background: url("../../img/assignment-ss/css-normal/css-case-2.png") center;
     background-size: cover;
 }
 #case3{
-    background: url("/assets/img/assignment-ss/css-normal/css-case-3.png") center;
+    background: url("../../img/assignment-ss/css-normal/css-case-3.png") center;
     background-size: cover;
 }
 
 #case4{
-    background: url("/assets/img/assignment-ss/css-normal/css-case-4.png") center;
+    background: url("../../img/assignment-ss/css-normal/css-case-4.png") center;
     background-size: cover;
 }
 #case5{
-    background: url("/assets/img/assignment-ss/css-normal/css-case-5.png") center;
+    background: url("../../img/assignment-ss/css-normal/css-case-5.png") center;
     background-size: cover;
 }
 #case6{
@@ -166,35 +166,35 @@ section{
     background-size: cover;
 }
 #tra1{
-    background: url("/assets/img/assignment-ss/css-trans/case-1.png") ;
+    background: url("../../img/assignment-ss/css-trans/case-1.png") ;
     background-size: cover;
 }
 #tra2{
-    background: url("/assets/img/assignment-ss/css-trans/case-2.png") center;
+    background: url("../../img/assignment-ss/css-trans/case-2.png") center;
     background-size: cover;
 }
 #tra3{
-    background: url("/assets/img/assignment-ss/css-trans/case-3.png") center;
+    background: url("../../img/assignment-ss/css-trans/case-3.png") center;
     background-size: cover;
 }
 #tra4{
-    background: url("/assets/img/assignment-ss/css-trans/case-4.png") center;
+    background: url("../../img/assignment-ss/css-trans/case-4.png") center;
     background-size: cover;
 }
 #ani1{
-    background: url("/assets/img/assignment-ss/css-anima/case-1.png") ;
+    background: url("../../img/assignment-ss/css-anima/case-1.png") ;
     background-size: cover;
 }
 #ani2{
-    background: url("/assets/img/assignment-ss/css-anima/case-2.png") center;
+    background: url("../../img/assignment-ss/css-anima/case-2.png") center;
     background-size: cover;
 }
 #ani3{
-    background: url("/assets/img/assignment-ss/css-anima/case-3.png") center;
+    background: url("../../img/assignment-ss/css-anima/case-3.png") center;
     background-size: cover;
 }
 #ani4{
-    background: url("/assets/img/assignment-ss/css-anima/case-4.png") center;
+    background: url("../../img/assignment-ss/css-anima/case-4.png") center;
     background-size: cover;
 }
 /*body>div{*/
