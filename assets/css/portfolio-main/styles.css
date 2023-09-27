@@ -80,7 +80,7 @@ body > header > div > img {
     transition: .3s ease;
 }
 .navi-bar a:hover{
-    border-bottom: 4px solid #03BFDA;
+    border-bottom: 5px solid #03BFDA;
 }
 #check{
     display: none;
