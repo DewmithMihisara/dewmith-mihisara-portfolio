@@ -159,7 +159,7 @@ body > header > nav a {
     margin: auto;
     width: 35vw;
     height: 80vh;
-    background: url("/assets/img/my-pic/open-img-second.png");
+    background: url("../../img/my-pic/open-img-second.png");
     background-size: cover;
     z-index: 10;
 }
