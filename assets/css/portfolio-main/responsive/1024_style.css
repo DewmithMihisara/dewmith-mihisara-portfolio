@@ -1,8 +1,11 @@
 @media all and (min-width: 769px) and (max-width: 1024px){
-    .header-container > div:first-child{
+    .header-container > div:first-child {
         top: 15vh;
         left: 4vw;
         width: 38.5vw;
+    }
+    .header {
+        padding: 1.3rem 5%;
     }
 
     .header-container > div:first-child > hgroup > h1:first-child {

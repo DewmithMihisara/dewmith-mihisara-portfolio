@@ -1,6 +1,6 @@
 @media all and (min-width: 425px) and (max-width: 768px) {
     .header {
-        padding: 2vh 5%
+        padding: 1.3rem 5%;
     }
 
     body > header > nav a {
@@ -8,8 +8,11 @@
     }
 
     .header-container > div:last-child {
+        position: relative;
+        left: 3vh;
+        bottom: -3vh;
         width: 53vw;
-        height: 80vh;
+        height: 74vh;
     }
 
     .header-container > div:first-child > hgroup > h6:nth-child(3) {

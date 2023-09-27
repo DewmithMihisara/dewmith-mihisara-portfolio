@@ -32,27 +32,66 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2vh 10%;
-    background: #FFFFFF;
+    padding: 1.3rem 10%;
+    /*background: #FFFFFF;*/
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
     font-size: 1px;
 }
+.header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.1);
+    backdrop-filter: blur(50px);
+    z-index: -1;
+}
+.header::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent,rgba(255,255,255,.4), transparent);
+    transition: .5s;
+}
+.header:hover::after{
+    left: 100%;
+}
 
 body > header > div > img {
-    width: 3vw;
+    width: 2rem;
     margin-left: 5%;
 }
 
-body > header > nav a {
+.navi-bar a {
     font-family: Arial, sans-serif;
-    font-size: 24em;
+    font-size: 1.15rem;
     color: #000000;
     text-decoration: none;
     font-weight: 500;
-    margin-left: 3vw;
+    margin-left: 2.5rem;
+    transition: .3s ease;
+}
+.navi-bar a:hover{
+    border-bottom: 4px solid #03BFDA;
+}
+#check{
+    display: none;
+}
+.icon{
+    position: absolute;
+    right: 5%;
+    font-size: 1.8rem;
+    color: #000000;
+    cursor: pointer;
+    display: none;
 }
 
 /*body > header > nav a.active, body > header > nav a:hover {*/

@@ -43,11 +43,16 @@
 <body>
 <header class="header">
     <div><img src="assets/img/logo/IMG_20230215_234101.jpg" alt="zyko"></div>
-    <nav>
-        <a href="#home" class="active">HOME</a>
-        <a href="#about">ABOUT</a>
-        <a href="#projects">PROJECTS</a>
-        <a href="#gallary">GALLERY</a>
+    <input type="checkbox" id="check">
+    <label for="check" class="icon">
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <i class="fa-solid fa-xmark" id="close-icon"></i>
+    </label>
+    <nav class="navi-bar">
+        <a href="#home" class="active"  style="--i:0;">HOME</a>
+        <a href="#about" style="--i:1;">ABOUT</a>
+        <a href="#projects" style="--i:2;">PROJECTS</a>
+        <a href="#gallary" style="--i:3;">GALLERY</a>
     </nav>
 </header>
 <main>
