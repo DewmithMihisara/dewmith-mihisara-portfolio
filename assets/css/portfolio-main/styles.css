@@ -281,7 +281,7 @@ body > header > nav a {
 }
 
 .about-container > div:first-child {
-    background: url("/../../img/my-pic/about-me.png");
+    background: url("../../img/my-pic/about-me.png");
     background-size: cover;
     height: 100vh;
     width: 40vw;
@@ -685,7 +685,7 @@ body > header > nav a {
 
 .project-container > section:nth-child(3) > div {
     box-shadow: 1px 4px 5px 0 #1a1616;
-    background: url("/../../img/projects/projectimg.png") center;
+    background: url("../../img/projects/projectimg.png") center;
     background-size: cover;
     filter: opacity(60%);
     -webkit-filter: opacity(60%);
