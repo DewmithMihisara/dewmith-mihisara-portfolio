@@ -314,29 +314,34 @@
     </section>
 </main>
 <script>
+    const dash= document.querySelector("#dashboardForm");
+    const cus=document.querySelector("#customerForm");
+    const itm=document.querySelector("#itemForm");
+    const order=document.querySelector("#orderForm");
+
     document.querySelector('#homeBtn').addEventListener("click",function(){
-        document.querySelector("#dashboardForm").style.display="block";
-        document.querySelector("#customerForm").style.display="none";
-        document.querySelector("#itemForm").style.display="none";
-        document.querySelector("#orderForm").style.display="none";
+        dash.style.display="block";
+        cus.style.display="none";
+        itm.style.display="none";
+        order.style.display="none";
     });
     document.querySelector('#cusBtn').addEventListener("click",function(){
-        document.querySelector("#customerForm").style.display="block";
-        document.querySelector("#dashboardForm").style.display="none";
-        document.querySelector("#itemForm").style.display="none";
-        document.querySelector("#orderForm").style.display="none";
+        cus.style.display="block";
+        dash.style.display="none";
+        itm.style.display="none";
+        order.style.display="none";
     });
     document.querySelector('#itmBtn').addEventListener("click",function(){
-        document.querySelector("#itemForm").style.display="block";
-        document.querySelector("#dashboardForm").style.display="none";
-        document.querySelector("#customerForm").style.display="none";
-        document.querySelector("#orderForm").style.display="none";
+        itm.style.display="block";
+        dash.style.display="none";
+        cus.style.display="none";
+        order.style.display="none";
     });
     document.querySelector('#orderBtn').addEventListener("click",function(){
-        document.querySelector("#orderForm").style.display="block";
-        document.querySelector("#dashboardForm").style.display="none";
-        document.querySelector("#customerForm").style.display="none";
-        document.querySelector("#itemForm").style.display="none";
+        order.style.display="block";
+        dash.style.display="none";
+        cus.style.display="none";
+        itm.style.display="none";
     });
 </script>
 <script src="assets/bootstrap/js/bootstrap.js"></script>
