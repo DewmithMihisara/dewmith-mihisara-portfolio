@@ -69,7 +69,7 @@ section{
     padding-top: 1%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    /*grid-template-rows: repeat(2, 1fr);*/
     grid-column-gap: 1vw;
     grid-row-gap: 1vh;
     height: max-content;
@@ -197,6 +197,11 @@ section{
     background: url("../../img/assignment-ss/css-anima/case-4.png") center;
     background-size: cover;
 }
+#pos{
+    background: url("../../img/assignment-ss/css-framework-pos/pos.png") center;
+    background-size: cover;
+}
+
 /*body>div{*/
 /*    !*display: inline-block;*!*/
 /*    position: sticky;*/
