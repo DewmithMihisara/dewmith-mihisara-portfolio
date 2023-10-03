@@ -4,8 +4,75 @@
     <meta charset="UTF-8">
     <title>Night-Rider</title>
     <meta name="viewport" content="width=device-width initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="assets/css/normalize/8.0.1_normalize.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+    <style>
+        main{
+            width: 100%;
+            height: 100vh;
+        }
+        #main-container{
+            width: 85%;
+            height: 15%;
+        }
+        #head-container{
+            width: 85%;
+        }
+        #foot-container{
+            width: 85%;
+            bottom: 30vh;
+        }
+        #sep{
+            height:  6em;
+        }
+        .ride-ele{
+            width: calc(100%/8);
+            height: 100%;
+        }
+        #range{
+            width: 25%;
+        }
+    </style>
+
 </head>
 <body>
+<main class="d-flex flex-column justify-content-center align-items-center position-relative">
+    <div id="head-container" class="position-absolute top-0">
+        <h1 class="h1 text-center display-1 ">Night Rider</h1>
+        <div id="big-con" class="d-flex justify-content-center mt-5">
+            <div class="content">
+                <h4 class="h4">speed :</h4>
+                <h1>0</h1>
+            </div>
+            <div id="sep" class="ms-5 me-5 border border-3 border-black"></div>
+            <div class="content">
+                <h4 class="h4">tread :</h4>
+                <h1>0</h1>
+            </div>
+        </div>
 
+    </div>
+    <div id="main-container" class="d-flex">
+        <div class="ride-ele border border-2 border-black border-end-0"></div>
+        <div class="ride-ele border border-2 border-black border-end-0"></div>
+        <div class="ride-ele border border-2 border-black border-end-0"></div>
+        <div class="ride-ele border border-2 border-black border-end-0"></div>
+        <div class="ride-ele border border-2 border-black border-end-0"></div>
+        <div class="ride-ele border border-2 border-black border-end-0"></div>
+        <div class="ride-ele border border-2 border-black border-end-0"></div>
+        <div class="ride-ele border border-2 border-black"></div>
+    </div>
+    <div id="foot-container" class="d-flex position-absolute justify-content-center">
+        <button type="button" class="btn btn-primary btn-lg">Start</button>
+        <button type="button" class="btn btn-danger ms-3 btn-lg">Stop</button>
+        <div id="range" class="ms-5">
+            <input type="range" class="form-range" id="customRange1">
+        </div>
+    </div>
+</main>
+<script src="assets/bootstrap/js/bootstrap.js"></script>
+<script>
+    let divList=document
+</script>
 </body>
 </html>
