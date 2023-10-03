@@ -197,7 +197,7 @@ section{
     background: url("../../img/assignment-ss/css-anima/case-4.png") center;
     background-size: cover;
 }
-#pos{
+#pos , #posJs{
     background: url("../../img/assignment-ss/css-framework-pos/pos.png") center;
     background-size: cover;
 }
