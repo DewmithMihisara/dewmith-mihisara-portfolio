@@ -524,13 +524,13 @@
                         <span class="input-group-text">.00</span>
                     </div>
                     <div class="col-12">
-                        <button type="submit" class="btn btn-success">Save</button>
-                        <button type="submit" class="btn btn-primary">Update</button>
-                        <button type="submit" class="btn btn-danger">Delete</button>
+                        <button type="button" class="btn btn-success" id="cusSv">Save</button>
+                        <button type="button" class="btn btn-primary">Update</button>
+                        <button type="button" class="btn btn-danger">Delete</button>
                     </div>
                 </form>
             </div>
-            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 border rounded-5">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 border rounded-5 overflow-hidden overflow-y-scroll">
                 <table class="table mt-2 table-hover">
                     <thead>
                     <tr>
@@ -541,28 +541,7 @@
                         <th scope="col">Salary</th>
                     </tr>
                     </thead>
-                    <tbody>
-                    <tr>
-                        <th scope="row">c-001</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>Galle</td>
-                        <td>2500.00</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">c-002</th>
-                        <td>Jacob</td>
-                        <td>Fury</td>
-                        <td>Matara</td>
-                        <td>40500.00</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">c-003</th>
-                        <td>Mahinda</td>
-                        <td>Rajapaksha</td>
-                        <td>Matara</td>
-                        <td>20000.00</td>
-                    </tr>
+                    <tbody id="tblBody">
                     </tbody>
                 </table>
             </div>
@@ -752,6 +731,51 @@
         </div>
     </section>
 </main>
+<script>
+    const cusId=document.querySelector("#id");
+    const firstName=document.querySelector("#firstName");
+    const lastName=document.querySelector("#lastName");
+    const cusArs=document.querySelector("#inputAddress");
+    const cusSal=document.querySelector("#salary");
+
+    let customers=[];
+
+    document.querySelector('#cusSv').addEventListener("click",function(){
+        let cus={
+            id:cusId.value,
+            firsName:firstName.value,
+            lastname:lastName.value,
+            address:cusArs.value,
+            salary:cusSal.value,
+        };
+        customers.push(cus);
+
+        let trow=document.createElement("tr");
+
+        let idCol=document.createElement("th");
+        let fCol=document.createElement("td")
+        let lCol=document.createElement("td")
+        let addCol=document.createElement("td")
+        let salCol=document.createElement("td")
+
+        idCol.textContent=cus.id;
+        fCol.textContent=cus.firsName;
+        lCol.textContent=cus.lastname;
+        addCol.textContent=cus.address;
+        salCol.textContent=cus.salary;
+
+        cusId.value="";
+        firstName.value="";
+        lastName.value="";
+        cusArs.value="";
+        cusSal.value="";
+
+        trow.append(idCol,fCol,lCol,addCol,salCol);
+        document.querySelector('#tblBody').appendChild(trow);
+
+    });
+
+</script>
 <script src="assets/js/navigation.js"></script>
 <script src="assets/bootstrap/js/bootstrap.js"></script>
 <script src="assets/js/particles.js"></script>
