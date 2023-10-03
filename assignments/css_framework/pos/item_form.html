@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>item</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+    <meta name="viewport" content="width=device-width initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/logo/kade-logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg border border-info bg-body-tertiary shadow-lg p-3 mb-5 position-absolute w-100">
+        <div class="container-fluid">
+            <img id="logo" src="https://fontmeme.com/permalink/231002/74e8f352b0dc0fe5f9f4eaae67406fee.png"
+                 alt="sinhala">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li id="homeBtn" class="nav-item">
+                        <a class="nav-link " href="index.html">Home</a>
+                    </li>
+                    <li id="cusBtn" class="nav-item">
+                        <a class="nav-link " href="customer_form.html">Customer</a>
+                    </li>
+                    <li id="itmBtn" class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="item_form.html">Items</a>
+                    </li>
+                    <li id="orderBtn" class="nav-item">
+                        <a class="nav-link" href="order_form.html">Orders</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<main class="d-flex justify-content-center align-items-center">
+    <section id="particles-js"></section>
+    <section id="itemForm" class="container border border-info shadow-lg p-3 mb-5 bg-body-tertiary rounded-5 bg ">
+        <div class="row d-flex justify-content-between ttl">
+            <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 ps-5 pt-4">
+                <h1 class="display-4 h1"><i class="bi bi-box-fill"></i>Items</h1>
+            </div>
+            <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 pe-5 pt-5">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search Item Code" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center con">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 border mx-3 rounded-5">
+                <form class="row g-3 mt-2">
+                    <div class="col-12">
+                        <label for="code" class="form-label">Item Code</label>
+                        <input type="text" class="form-control" id="code" placeholder="I-0001">
+                    </div>
+                    <div class="col-12">
+                        <label for="description" class="form-label">Description</label>
+                        <input type="text" class="form-control" id="description" placeholder="Sunlight">
+                    </div>
+                    <div class="col-12">
+                        <label for="hQty" class="form-label">Qty.on Hand</label>
+                        <input type="text" class="form-control" id="hQty" placeholder="10">
+                    </div>
+                    <label for="price" class="form-label">Unit Price</label>
+                    <div class="input-group mb-3 col-12">
+                        <span class="input-group-text">Rs.</span>
+                        <input type="text" class="form-control" id="price" aria-label="Amount (to the nearest rupee)"
+                               placeholder="Price">
+                        <span class="input-group-text">.00</span>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-success">Save</button>
+                        <button type="submit" class="btn btn-primary">Update</button>
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 border rounded-5">
+                <table class="table mt-2 table-hover">
+                    <thead>
+                    <tr>
+                        <th scope="col">Code</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Qty</th>
+                        <th scope="col">Price</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">I-001</th>
+                        <td>Sunlight</td>
+                        <td>10</td>
+                        <td>100.00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">I-002</th>
+                        <td>life boy</td>
+                        <td>30</td>
+                        <td>120.00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">I-003</th>
+                        <td>tipi tip</td>
+                        <td>100</td>
+                        <td>100.00</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+</main>
+<script src="assets/bootstrap/js/bootstrap.js"></script>
+<script src="assets/js/particles.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -22,16 +22,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li id="homeBtn" class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li id="cusBtn" class="nav-item">
-                        <a class="nav-link" href="customer_form.html">Customer</a>
+                        <a class="nav-link" href="#">Customer</a>
                     </li>
                     <li id="itmBtn" class="nav-item">
-                        <a class="nav-link" href="item_form.html">Items</a>
+                        <a class="nav-link" href="#">Items</a>
                     </li>
                     <li id="orderBtn" class="nav-item">
-                        <a class="nav-link" href="order_form.html">Orders</a>
+                        <a class="nav-link" href="#">Orders</a>
                     </li>
                 </ul>
             </div>
@@ -40,6 +40,7 @@
 </header>
 <main class="d-flex justify-content-center align-items-center">
     <section id="particles-js"></section>
+    <!--    dashboard page-->
     <section id="dashboardForm" class="container border border-info shadow-lg p-3 mb-5 bg-body-tertiary rounded-5 bg">
         <div id="carouselExampleDark" class="carousel carousel-dark slide h-100 w-100" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -483,7 +484,275 @@
             </button>
         </div>
     </section>
+    <!--    customer page-->
+    <section id="customerForm" class="container border border-info shadow-lg p-3 mb-5 bg-body-tertiary rounded-5 bg ">
+        <div class="row d-flex justify-content-between ttl">
+            <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 ps-5 pt-4">
+                <h1 class="display-4 h1"><i class="bi bi-people-fill"></i>Customer</h1>
+            </div>
+            <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 pe-5 pt-5">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search Customer ID" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center con">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 border mx-3 rounded-5">
+                <form class="row g-3 mt-2">
+                    <div class="col-12">
+                        <label for="id" class="form-label">Customer Id</label>
+                        <input type="text" class="form-control" id="id" placeholder="C-0001">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="firstName" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="Amarabandu">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="lastName" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="Rupasinha">
+                    </div>
+                    <div class="col-12">
+                        <label for="inputAddress" class="form-label">Address</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="WWGG+QG3, B231, Angoda">
+                    </div>
+                    <label for="salary" class="form-label">Salary</label>
+                    <div class="input-group mb-3 col-12">
+                        <span class="input-group-text">Rs.</span>
+                        <input type="text" class="form-control" id="salary" aria-label="Amount (to the nearest rupee)"
+                               placeholder="salary">
+                        <span class="input-group-text">.00</span>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-success">Save</button>
+                        <button type="submit" class="btn btn-primary">Update</button>
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 border rounded-5">
+                <table class="table mt-2 table-hover">
+                    <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">First Name</th>
+                        <th scope="col">Last Name</th>
+                        <th scope="col">Address</th>
+                        <th scope="col">Salary</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">c-001</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>Galle</td>
+                        <td>2500.00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">c-002</th>
+                        <td>Jacob</td>
+                        <td>Fury</td>
+                        <td>Matara</td>
+                        <td>40500.00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">c-003</th>
+                        <td>Mahinda</td>
+                        <td>Rajapaksha</td>
+                        <td>Matara</td>
+                        <td>20000.00</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <!--    item page-->
+    <section id="itemForm" class="container border border-info shadow-lg p-3 mb-5 bg-body-tertiary rounded-5 bg ">
+        <div class="row d-flex justify-content-between ttl">
+            <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 ps-5 pt-4">
+                <h1 class="display-4 h1"><i class="bi bi-box-fill"></i>Items</h1>
+            </div>
+            <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 pe-5 pt-5">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search Item Code" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center con">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 border mx-3 rounded-5">
+                <form class="row g-3 mt-2">
+                    <div class="col-12">
+                        <label for="code" class="form-label">Item Code</label>
+                        <input type="text" class="form-control" id="code" placeholder="I-0001">
+                    </div>
+                    <div class="col-12">
+                        <label for="description" class="form-label">Description</label>
+                        <input type="text" class="form-control" id="description" placeholder="Sunlight">
+                    </div>
+                    <div class="col-12">
+                        <label for="hQty" class="form-label">Qty.on Hand</label>
+                        <input type="text" class="form-control" id="hQty" placeholder="10">
+                    </div>
+                    <label for="price" class="form-label">Unit Price</label>
+                    <div class="input-group mb-3 col-12">
+                        <span class="input-group-text">Rs.</span>
+                        <input type="text" class="form-control" id="price" aria-label="Amount (to the nearest rupee)"
+                               placeholder="Price">
+                        <span class="input-group-text">.00</span>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-success">Save</button>
+                        <button type="submit" class="btn btn-primary">Update</button>
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 border rounded-5">
+                <table class="table mt-2 table-hover">
+                    <thead>
+                    <tr>
+                        <th scope="col">Code</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Qty</th>
+                        <th scope="col">Price</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">I-001</th>
+                        <td>Sunlight</td>
+                        <td>10</td>
+                        <td>100.00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">I-002</th>
+                        <td>life boy</td>
+                        <td>30</td>
+                        <td>120.00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">I-003</th>
+                        <td>tipi tip</td>
+                        <td>100</td>
+                        <td>100.00</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <!--    order page-->
+    <section id="orderForm" class="container border border-info shadow-lg p-3 mb-5 bg-body-tertiary rounded-5 bg ">
+        <div class="row d-flex justify-content-between ttl">
+            <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 ps-5 pt-4">
+                <h1 class="display-4 h1"><i class="bi bi-cart-plus-fill"></i>Order</h1>
+            </div>
+            <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 pe-5 pt-5">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search Order Id" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+        <div id="orderCon" class="row d-flex justify-content-center">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 border mx-3 rounded-5">
+                <form class="row g-3 mt-2">
+                    <div class="col-4">
+                        <label for="oid" class="form-label">Order Id</label>
+                        <input type="text" class="form-control" id="oid" placeholder="Or-0001">
+                    </div>
+                    <div class="col-8">
+                        <label for="date" class="form-label">Date</label>
+                        <input type="text" class="form-control" id="date" placeholder="date">
+                    </div>
+                    <div class="col-4">
+                        <label for="cusId" class="form-label">Customer Id</label>
+                        <input type="text" class="form-control" id="cusId" placeholder="C-0001">
+                    </div>
+                    <div class="col-8">
+                        <label for="cusName" class="form-label">Customer Name</label>
+                        <input type="text" class="form-control" id="cusName" placeholder="Mahinda Rajapaksha">
+                    </div>
+                </form>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 border rounded-5">
+                <form class="row g-3 mt-2">
+                    <div class="col-3">
+                        <label for="itmId" class="form-label">Item Id</label>
+                        <input type="text" class="form-control" id="itmId" placeholder="I-0001">
+                    </div>
+                    <div class="col-9">
+                        <label for="des" class="form-label">Description</label>
+                        <input type="text" class="form-control" id="des" placeholder="SunLight">
+                    </div>
+                    <div class="col-4">
+                        <label for="qoh" class="form-label">Qty.on Hand</label>
+                        <input type="text" class="form-control" id="qoh" placeholder="10">
+                    </div>
+                    <div class="col-4">
+                        <label for="unitPrice" class="form-label">Unit Price</label>
+                        <input type="text" class="form-control" id="unitPrice" placeholder="2500.00">
+                    </div>
+                    <div class="col-4">
+                        <label for="qty" class="form-label">Qty</label>
+                        <input type="text" class="form-control" id="qty" placeholder="2">
+                    </div>
+                    <div class="col-12 d-flex">
+                        <button type="submit" class="btn btn-primary ms-auto p-2"><i class="bi bi-plus"></i>Add</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="orderFoot" class="row d-flex justify-content-center pt-3">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 col-xxl-8 border rounded-5 mx-3">
+                <table class="table mt-2 table-hover">
+                    <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Qty</th>
+                        <th scope="col">Unit Price</th>
+                        <th scope="col">Total</th>
+                        <th scope="col">Delete</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">I-001</th>
+                        <td>Sunlight</td>
+                        <td>10</td>
+                        <td>100.00</td>
+                        <td>1000.00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">I-002</th>
+                        <td>Life Boy</td>
+                        <td>2</td>
+                        <td>120.00</td>
+                        <td>240.00</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2 col-xxl-2 border rounded-5">
+                <form class="row g-3 mt-2">
+                    <div class="col-12">
+                        <label for="ttl" class="form-label">Item Id</label>
+                        <h1 class="h1" id="ttl">000.00</h1>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center align-items-center">
+                        <button type="submit" class="btn btn-warning"><i class="bi bi-bag-plus"></i>Place Order</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </section>
 </main>
+<script src="assets/js/navigation.js"></script>
 <script src="assets/bootstrap/js/bootstrap.js"></script>
 <script src="assets/js/particles.js"></script>
 <script src="assets/js/app.js"></script>
