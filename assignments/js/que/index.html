@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>que</title>
+    <meta name="viewport" content="width=device-width initial-scale=1.0 user-scalable=no">
+    <style>
+        body{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #main{
+            width: 85%;
+            height: 10%;
+            display: flex;
+
+        }
+        #main>div{
+            width: calc(100%/5);
+            height: 100%;
+            border: 2px solid black;
+
+        }
+        #firstItm{
+            background-color: red;
+            position: relative;
+            bottom: 100%;
+        }
+        #secItm{
+            background-color: blue;
+        }
+        #thItm{
+            background-color: green;
+        }
+        #forItm{
+            background-color: yellow;
+        }
+        #lastItem{
+            background-color: deeppink;
+            position: relative;
+            top: 100%;
+        }
+    </style>
+</head>
+<body>
+<div id="main">
+    <div id="firstItm"></div>
+    <div id="secItm"></div>
+    <div id="thItm"></div>
+    <div id="forItm"></div>
+    <div id="lastItem"></div>
+</div>
+</body>
+</html>
