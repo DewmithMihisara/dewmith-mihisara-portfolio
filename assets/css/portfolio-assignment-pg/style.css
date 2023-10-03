@@ -201,6 +201,10 @@ section{
     background: url("../../img/assignment-ss/css-framework-pos/pos.png") center;
     background-size: cover;
 }
+#que{
+    background: url("../../img/assignment-ss/js/js-que.png") center;
+    background-size: cover;
+}
 
 /*body>div{*/
 /*    !*display: inline-block;*!*/
