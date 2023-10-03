@@ -25,21 +25,10 @@
 
         }
         #firstItm{
-            background-color: red;
             position: relative;
             bottom: 100%;
         }
-        #secItm{
-            background-color: blue;
-        }
-        #thItm{
-            background-color: green;
-        }
-        #forItm{
-            background-color: yellow;
-        }
         #lastItem{
-            background-color: deeppink;
             position: relative;
             top: 100%;
         }
@@ -47,11 +36,19 @@
 </head>
 <body>
 <div id="main">
-    <div id="firstItm"></div>
-    <div id="secItm"></div>
-    <div id="thItm"></div>
-    <div id="forItm"></div>
-    <div id="lastItem"></div>
+    <div class="clBox" id="firstItm"></div>
+    <div class="clBox" ></div>
+    <div class="clBox" ></div>
+    <div class="clBox" ></div>
+    <div class="clBox" id="lastItem"></div>
 </div>
 </body>
+<script>
+    let clrs=["red","blue","green","yellow","deeppink"];
+    let divs=document.querySelectorAll(".clBox");
+
+    for (let i in clrs){
+        divs[i].style.background=clrs[i];
+    }
+</script>
 </html>
