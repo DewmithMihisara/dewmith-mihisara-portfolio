@@ -72,7 +72,17 @@
 </main>
 <script src="assets/bootstrap/js/bootstrap.js"></script>
 <script>
-    let divList=document
+    let divList=document.querySelectorAll(".ride-ele");
+    let clr=["#fbfffe","#fbfffe","#f6cacc","#ec8385","#e35053","#d02224","#ac1c1e","#9c191b"];
+    // let revClr=clr.reverse();
+
+    for (let i in clr) {
+        divList[i].style.background = clr[i];
+    }
+
+    setInterval(function () {
+
+    }, 1000);
 </script>
 </body>
 </html>
