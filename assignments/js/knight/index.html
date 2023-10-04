@@ -46,17 +46,16 @@
         <div id="big-con" class="d-flex justify-content-center mt-5">
             <div class="content">
                 <h2 class="h2 text-danger">speed :</h2>
-                <h2 class="h2 text-primary">0</h2>
+                <h2 id="speedTxt" class="h2 text-primary">50</h2>
             </div>
             <div id="sep" class="ms-5 me-5 border border-3 border-danger"></div>
             <div class="content">
                 <h2 class="h2 text-danger">Waiting Time :</h2>
-                <h2 class="h2 text-primary">0</h2>
+                <h2 id="timeTxt" class="h2 text-primary">2000</h2>
             </div>
         </div>
-
     </div>
-    <div id="main-container" class="d-flex">
+    <div id="main-container" class="d-flex bg-light">
         <div class="ride-ele border border-2 border-black border-end-0"></div>
         <div class="ride-ele border border-2 border-black border-end-0"></div>
         <div class="ride-ele border border-2 border-black border-end-0"></div>
@@ -65,26 +64,45 @@
         <div class="ride-ele border border-2 border-black"></div>
     </div>
     <div id="foot-container" class="d-flex position-absolute justify-content-center">
-        <button type="button" class="btn btn-primary btn-lg">Start</button>
-        <button type="button" class="btn btn-danger ms-3 btn-lg">Stop</button>
+        <button id="stBtn" type="button" class="btn btn-primary btn-lg">Start</button>
+        <button id="stopBtn" type="button" class="btn btn-danger ms-3 btn-lg">Stop</button>
         <div id="range" class="ms-5">
-            <input type="range" class="form-range" id="customRange1">
+            <input type="range" class="form-range" id="inputSlider" min="50" max="150" value="50">
         </div>
     </div>
+    <audio id="audio" src="assets/background-music/knightrider.mp3"loop>
+    </audio>
 </main>
 <script src="assets/bootstrap/js/bootstrap.js"></script>
 <script>
     let divList=document.querySelectorAll(".ride-ele");
     let clr=["#f6cacc","#ec8385","#e35053","#d02224","#ac1c1e","#9c191b"];
-    // let revClr=clr.reverse();
 
-    for (let i in clr) {
-        divList[i].style.background = clr[i];
-    }
+    const startBtn=document.querySelector('#stBtn');
+    const stopBtn=document.querySelector('#stopBtn');
+    const slider=document.querySelector('#inputSlider')
 
-    setInterval(function () {
+    const ado=document.querySelector('#audio');
 
-    }, 1000);
+    let time=document.querySelector('#timeTxt');
+    let speed=document.querySelector('#speedTxt');
+
+    let timeVal=2000;
+    let speedVal=50;
+
+    slider.addEventListener('input', function (){
+        speedVal=parseInt(slider.value);
+        timeVal=speedVal*40;
+        speed.innerText=speedVal;
+        time.innerText=timeVal;
+    });
+
+    startBtn.addEventListener("click",function(){
+        ado.play();
+    });
+    stopBtn.addEventListener("click",function(){
+        ado.pause();
+    });
 </script>
 </body>
 </html>
