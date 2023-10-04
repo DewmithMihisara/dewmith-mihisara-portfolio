@@ -13,7 +13,7 @@
         }
         #main-container{
             width: 85%;
-            height: 15%;
+            height: 7%;
         }
         #head-container{
             width: 85%;
@@ -23,38 +23,40 @@
             bottom: 30vh;
         }
         #sep{
-            height:  6em;
+            height:  2em;
         }
         .ride-ele{
-            width: calc(100%/8);
+            width: calc(100%/6);
             height: 100%;
         }
         #range{
             width: 25%;
         }
+        .content>h2, .content>h2{
+            display: inline-block;
+        }
+
     </style>
 
 </head>
-<body>
+<body class="bg-dark">
 <main class="d-flex flex-column justify-content-center align-items-center position-relative">
     <div id="head-container" class="position-absolute top-0">
-        <h1 class="h1 text-center display-1 ">Night Rider</h1>
+        <h1 class="h1 text-center display-3 text-light mt-5">KNIGHT RIDER</h1>
         <div id="big-con" class="d-flex justify-content-center mt-5">
             <div class="content">
-                <h4 class="h4">speed :</h4>
-                <h1>0</h1>
+                <h2 class="h2 text-danger">speed :</h2>
+                <h2 class="h2 text-primary">0</h2>
             </div>
-            <div id="sep" class="ms-5 me-5 border border-3 border-black"></div>
+            <div id="sep" class="ms-5 me-5 border border-3 border-danger"></div>
             <div class="content">
-                <h4 class="h4">tread :</h4>
-                <h1>0</h1>
+                <h2 class="h2 text-danger">Waiting Time :</h2>
+                <h2 class="h2 text-primary">0</h2>
             </div>
         </div>
 
     </div>
     <div id="main-container" class="d-flex">
-        <div class="ride-ele border border-2 border-black border-end-0"></div>
-        <div class="ride-ele border border-2 border-black border-end-0"></div>
         <div class="ride-ele border border-2 border-black border-end-0"></div>
         <div class="ride-ele border border-2 border-black border-end-0"></div>
         <div class="ride-ele border border-2 border-black border-end-0"></div>
@@ -73,7 +75,7 @@
 <script src="assets/bootstrap/js/bootstrap.js"></script>
 <script>
     let divList=document.querySelectorAll(".ride-ele");
-    let clr=["#fbfffe","#fbfffe","#f6cacc","#ec8385","#e35053","#d02224","#ac1c1e","#9c191b"];
+    let clr=["#f6cacc","#ec8385","#e35053","#d02224","#ac1c1e","#9c191b"];
     // let revClr=clr.reverse();
 
     for (let i in clr) {
