@@ -533,7 +533,7 @@
                 </form>
             </div>
             <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 border rounded-5 overflow-hidden overflow-y-scroll">
-                <table class="table mt-2 table-hover">
+                <table id="tbl" class="table mt-2 table-hover">
                     <thead>
                     <tr>
                         <th scope="col">ID</th>
@@ -736,36 +736,97 @@
 </main>
 <script src="assets/js/jquery.js"></script>
 <script>
+    // var customers = [];
+    //
+    // $("#cusSv").click(function () {
+    //     let cusId = document.querySelector("#id");
+    //     let firstName = document.querySelector("#firstName");
+    //     let lastName = document.querySelector("#lastName");
+    //     let cusArs = document.querySelector("#inputAddress");
+    //     let cusSal = document.querySelector("#salary");
+    //
+    //     let cus = {
+    //         id: $(cusId).val(),
+    //         firsName: $(firstName).val(),
+    //         lastname: $(lastName).val(),
+    //         address: $(cusArs).val(),
+    //         salary: $(cusSal).val(),
+    //     };
+    //     customers.push(cus);
+    //     addTbl();
+    // });
+    // addTbl();
+    // function addTbl(){
+    //     $('#tblBody').empty();
+    //     for (let i = 0; i < customers.length; i++) {
+    //         let row = `<tr>
+    //                     <th scope="col">${customers[i].id}</th>
+    //                     <th scope="col">${customers[i].firsName}</th>
+    //                     <th scope="col">${customers[i].lastname}</th>
+    //                     <th scope="col">${customers[i].address}</th>
+    //                     <th scope="col">${customers[i].salary}</th>
+    //                 </tr>`;
+    //
+    //         $('#tblBody').append(row);
+    //     }
+    // };
+    $(document).ready(function() {
+        var customers = [];
 
+        $("#cusSv").click(function () {
+            let cusId = document.querySelector("#id");
+            let firstName = document.querySelector("#firstName");
+            let lastName = document.querySelector("#lastName");
+            let cusArs = document.querySelector("#inputAddress");
+            let cusSal = document.querySelector("#salary");
 
-    let customers = [];
+            let cus = {
+                id: $(cusId).val(),
+                firstName: $(firstName).val(),
+                lastName: $(lastName).val(),
+                address: $(cusArs).val(),
+                salary: $(cusSal).val(),
+            };
+            customers.push(cus);
+            addTbl();
 
-    $("#cusSv").click(function () {
-        let cusId = document.querySelector("#id");
-        let firstName = document.querySelector("#firstName");
-        let lastName = document.querySelector("#lastName");
-        let cusArs = document.querySelector("#inputAddress");
-        let cusSal = document.querySelector("#salary");
+            // Clear input field values
+            $(cusId).val("");
+            $(firstName).val("");
+            $(lastName).val("");
+            $(cusArs).val("");
+            $(cusSal).val("");
+        });
 
-        let cus = {
-            id: $(cusId).val(),
-            firsName: $(firstName).val(),
-            lastname: $(lastName).val(),
-            address: $(cusArs).val(),
-            salary: $(cusSal).val(),
+        function addTbl(){
+            $('#tblBody').empty();
+            for (let i = 0; i < customers.length; i++) {
+                let row = `<tr>
+                            <td>${customers[i].id}</td>
+                            <td>${customers[i].firstName}</td>
+                            <td>${customers[i].lastName}</td>
+                            <td>${customers[i].address}</td>
+                            <td>${customers[i].salary}</td>
+                        </tr>`;
+
+                $('#tblBody').append(row);
+            }
         };
-        customers.push(cus);
 
-        let row = `<tr>
-                        <th scope="col">${cus.id}</th>
-                        <th scope="col">${cus.firsName}</th>
-                        <th scope="col">${cus.lastname}</th>
-                        <th scope="col">${cus.address}</th>
-                        <th scope="col">${cus.salary}</th>
-                    </tr>`;
+        // Click event handler for rows
+        $('#tblBody').on('click', 'tr', function () {
+            // Get the values of the clicked row
+            var rowData = $(this).find('td').map(function() {
+                return $(this).text();
+            }).get();
 
-        $('#tblBody').append(row);
-
+            // Set the values into input fields
+            $("#id").val(rowData[0]);
+            $("#firstName").val(rowData[1]);
+            $("#lastName").val(rowData[2]);
+            $("#inputAddress").val(rowData[3]);
+            $("#salary").val(rowData[4]);
+        });
     });
 </script>
 <script src="assets/js/navigation.js"></script>
