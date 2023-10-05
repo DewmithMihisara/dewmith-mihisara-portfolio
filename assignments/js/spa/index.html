@@ -790,7 +790,6 @@
             customers.push(cus);
             addTbl();
 
-            // Clear input field values
             $(cusId).val("");
             $(firstName).val("");
             $(lastName).val("");
@@ -813,14 +812,12 @@
             }
         };
 
-        // Click event handler for rows
         $('#tblBody').on('click', 'tr', function () {
-            // Get the values of the clicked row
+
             var rowData = $(this).find('td').map(function() {
                 return $(this).text();
             }).get();
 
-            // Set the values into input fields
             $("#id").val(rowData[0]);
             $("#firstName").val(rowData[1]);
             $("#lastName").val(rowData[2]);
