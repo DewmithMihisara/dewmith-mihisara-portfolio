@@ -19,6 +19,7 @@ let count = 0;
 let animate_time = 50;
 let wait_time = 2000;
 let root = true;
+let animaTime;
 
 
 function setLeft() {
@@ -60,20 +61,8 @@ function animate() {
 }
 
 btnStart.addEventListener('click', function () {
-    startAnima();
+    updateValue();
     ado.play();
-});
-
-function startAnima() {
-    clearInterval(interval);
-    let animaTime = animate_time * 12;
-    console.log(animaTime)
-    interval = setInterval(animate, animaTime);
-}
-
-btnStop.addEventListener('click', function () {
-    clearInterval(interval);
-    ado.pause();
 });
 
 function updateValue() {
@@ -85,5 +74,16 @@ function updateValue() {
     startAnima();
 }
 
+function startAnima() {
+    clearInterval(interval);
+    animaTime = animate_time * 12;
+    console.log(animaTime)
+    interval = setInterval(animate, animaTime);
+}
+
+btnStop.addEventListener('click', function () {
+    clearInterval(interval);
+    ado.pause();
+});
+
 rangeInput.addEventListener('input', updateValue);
-updateValue();
