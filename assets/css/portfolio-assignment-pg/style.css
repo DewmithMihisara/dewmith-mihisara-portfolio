@@ -209,6 +209,10 @@ section{
     background: url("../../img/assignment-ss/js/knight-rider.png") center;
     background-size: cover;
 }
+#cal{
+    background: url("../../img/assignment-ss/js/cal.png") center;
+    background-size: cover;
+}
 
 /*body>div{*/
 /*    !*display: inline-block;*!*/
