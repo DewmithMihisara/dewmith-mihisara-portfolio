@@ -7,32 +7,39 @@
     <link rel="stylesheet" href="assets/css/normalize/8.0.1_normalize.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
     <style>
-        main{
+        main {
             width: 100%;
             height: 100vh;
         }
-        #main-container{
+
+        #main-container {
             width: 85%;
             height: 7%;
         }
-        #head-container{
+
+        #head-container {
             width: 85%;
         }
-        #foot-container{
+
+        #foot-container {
             width: 85%;
             bottom: 30vh;
         }
-        #sep{
-            height:  2em;
+
+        #sep {
+            height: 2em;
         }
-        .ride-ele{
-            width: calc(100%/6);
+
+        .ride-ele {
+            width: calc(100% / 6);
             height: 100%;
         }
-        #range{
+
+        #range {
             width: 25%;
         }
-        .content>h2, .content>h2{
+
+        .content > h2, .content > h2 {
             display: inline-block;
         }
 
@@ -70,39 +77,100 @@
             <input type="range" class="form-range" id="inputSlider" min="50" max="150" value="50">
         </div>
     </div>
-    <audio id="audio" src="assets/background-music/knightrider.mp3"loop>
+    <audio id="audio" src="assets/background-music/knightrider.mp3" loop>
     </audio>
 </main>
 <script src="assets/bootstrap/js/bootstrap.js"></script>
 <script>
-    let divList=document.querySelectorAll(".ride-ele");
-    let clr=["#f6cacc","#ec8385","#e35053","#d02224","#ac1c1e","#9c191b"];
+    const div_list = document.querySelectorAll(".ride-ele");
+    const btnStart = document.getElementById("stBtn");
+    const btnStop = document.getElementById("stopBtn");
+    const ado = document.getElementById("audio");
+    const rangeInput = document.getElementById('inputSlider');
+    const speed = document.getElementById('speedTxt');
+    const time = document.getElementById('timeTxt');
 
-    const startBtn=document.querySelector('#stBtn');
-    const stopBtn=document.querySelector('#stopBtn');
-    const slider=document.querySelector('#inputSlider')
+    let colors_right = ["#962727", "#ec6666", "#eaadad", "white"];
+    let colors_left = ["#962727", "#ec6666", "#eaadad", "white"];
+    let setColor_right = [];
+    let setColor_left = [];
 
-    const ado=document.querySelector('#audio');
+    let interval;
+    let rightInterval;
+    let leftInterval;
 
-    let time=document.querySelector('#timeTxt');
-    let speed=document.querySelector('#speedTxt');
+    let count = 0;
+    let animate_time = 50;
+    let wait_time = 2000;
+    let root = true;
 
-    let timeVal=2000;
-    let speedVal=50;
 
-    slider.addEventListener('input', function (){
-        speedVal=parseInt(slider.value);
-        timeVal=speedVal*40;
-        speed.innerText=speedVal;
-        time.innerText=timeVal;
-    });
+    function setLeft() {
+        clearInterval(leftInterval);
+        leftInterval = setInterval(function () {
+            setColor_left.unshift(colors_left[count]);
+            for (let i = 0; i < 6; i++) {
+                div_list[5 - i].style.backgroundColor = setColor_left[i];
+            }
+            count++;
+        }, animate_time);
+        clearInterval(rightInterval);
+        setColor_left = [];
+        count = 0;
+    }
 
-    startBtn.addEventListener("click",function(){
+    function setRight() {
+        clearInterval(rightInterval);
+        rightInterval = setInterval(function () {
+            setColor_right.unshift(colors_right[count]);
+            for (let i = 0; i < 6; i++) {
+                div_list[i].style.backgroundColor = setColor_right[i];
+            }
+            count++;
+        }, animate_time);
+        clearInterval(leftInterval);
+        setColor_right = [];
+        count = 0;
+    }
+
+    function animate() {
+        if (root) {
+            setRight();
+            root = false;
+        } else {
+            setLeft();
+            root = true;
+        }
+    }
+
+    btnStart.addEventListener('click', function () {
+        startAnima();
         ado.play();
     });
-    stopBtn.addEventListener("click",function(){
+
+    function startAnima() {
+        clearInterval(interval);
+        let animaTime = animate_time * 12;
+        console.log(animaTime)
+        interval = setInterval(animate, animaTime);
+    }
+
+    btnStop.addEventListener('click', function () {
+        clearInterval(interval);
         ado.pause();
     });
+
+    function updateValue() {
+        animate_time = rangeInput.value;
+        wait_time = animate_time * 40;
+
+        speed.textContent = rangeInput.value;
+        time.textContent = wait_time;
+        startAnima();
+    }
+
+    rangeInput.addEventListener('input', updateValue);
+    updateValue();
 </script>
 </body>
 </html>
