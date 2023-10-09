@@ -14,14 +14,15 @@
             height: 100vh;
             background-color: #edf2f4;
         }
-        #particles-js{
+
+        #particles-js {
             position: absolute;
             width: 100%;
             height: 95%;
-            top:0;
-            left:0;
-            right:0;
-            bottom:0;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
             margin: auto;
             z-index: 1;
         }
@@ -51,80 +52,48 @@
         .row {
             height: calc(80% / 5);
         }
+        .container button{
+            font-size: 2em;
+        }
     </style>
 </head>
 <body>
 <main class="d-flex justify-content-center align-items-center ">
     <section id="particles-js"></section>
-    <section id="cal" class="border border-light rounded-5 d-flex flex-column justify-content-around shadow-lg p-3 mb-5 ">
+    <section id="cal"
+             class="border border-light rounded-5 d-flex flex-column justify-content-around shadow-lg p-3 mb-5 ">
         <div class="w-100 border-bottom border-danger d-flex justify-content-end align-items-end">
             <h1 id="main_num" class="me-4 mb-4 h1 display-1 ">0</h1>
         </div>
         <div class="w-100 ">
             <div class="container text-center row-gap-3 text-light">
                 <div class="row  column-gap-3">
-                    <div id="c" class="col-6 rounded-5 d-flex justify-content-center align-items-center bg-danger">
-                        <h1 class="text-black">C</h1>
-                    </div>
-                    <div id="back" class="col bg-dark rounded-5 d-flex justify-content-center align-items-center">
-                        <h3 class="text-success"><i class="bi bi-backspace"></i></h3>
-                    </div>
-                    <div id="devide" class="col bg-dark rounded-5 d-flex justify-content-center align-items-center">
-                        <h1 class="text-success">/</h1>
-                    </div>
+                    <button type="button" class="btn btn-outline-danger col-6 rounded-5 d-flex justify-content-center align-items-center ">C</button>
+                    <button type="button" class="btn btn-outline-success col rounded-5 d-flex justify-content-center align-items-center ">⇦</button>
+                    <button type="button" class="btn btn-outline-success col rounded-5 d-flex justify-content-center align-items-center ">/</button>
                 </div>
                 <div class="row column-gap-3 mt-3">
-                    <div id="7" class="col bg-dark  rounded-5 d-flex justify-content-center align-items-center">
-                        <h1>7</h1>
-                    </div>
-                    <div id="8" class="col bg-dark rounded-5 d-flex justify-content-center align-items-center">
-                        <h1>8</h1>
-                    </div>
-                    <div id="9" class="col bg-dark rounded-5 d-flex justify-content-center align-items-center">
-                        <h1>9</h1>
-                    </div>
-                    <div id="multi" class="col bg-dark rounded-5 d-flex justify-content-center align-items-center">
-                        <h1 class="text-success">x</h1>
-                    </div>
+                    <button type="button" class="btn btn-outline-dark col rounded-5 d-flex justify-content-center align-items-center ">7</button>
+                    <button type="button" class="btn btn-outline-dark col rounded-5 d-flex justify-content-center align-items-center ">8</button>
+                    <button type="button" class="btn btn-outline-dark col rounded-5 d-flex justify-content-center align-items-center ">9</button>
+                    <button type="button" class="btn btn-outline-success col rounded-5 d-flex justify-content-center align-items-center ">*</button>
                 </div>
                 <div class="row column-gap-3 mt-3">
-                    <div id="4" class="col bg-dark  rounded-5 d-flex justify-content-center align-items-center">
-                        <h1>4</h1>
-                    </div>
-                    <div id="5" class="col bg-dark  rounded-5 d-flex justify-content-center align-items-center">
-                        <h1>5</h1>
-                    </div>
-                    <div id="6" class="col bg-dark  rounded-5 d-flex justify-content-center align-items-center">
-                        <h1>6</h1>
-                    </div>
-                    <div id="minus" class="col bg-dark  rounded-5 d-flex justify-content-center align-items-center">
-                        <h1 class="text-success">-</h1>
-                    </div>
+                    <button type="button" class="btn btn-outline-dark col rounded-5 d-flex justify-content-center align-items-center ">4</button>
+                    <button type="button" class="btn btn-outline-dark col rounded-5 d-flex justify-content-center align-items-center ">5</button>
+                    <button type="button" class="btn btn-outline-dark col rounded-5 d-flex justify-content-center align-items-center ">6</button>
+                    <button type="button" class="btn btn-outline-success col rounded-5 d-flex justify-content-center align-items-center ">-</button>
                 </div>
                 <div class="row column-gap-3 mt-3">
-                    <div id="1" class="col bg-dark rounded-5 d-flex justify-content-center align-items-center">
-                        <h1>1</h1>
-                    </div>
-                    <div id="2" class="col bg-dark rounded-5 d-flex justify-content-center align-items-center">
-                        <h1>2</h1>
-                    </div>
-                    <div id="3" class="col bg-dark rounded-5 d-flex justify-content-center align-items-center">
-                        <h1>3</h1>
-                    </div>
-                    <div id="plus" class="col bg-dark rounded-5 d-flex justify-content-center align-items-center">
-                        <h1 class="text-success">+</h1>
-                    </div>
+                    <button type="button" class="btn btn-outline-dark col rounded-5 d-flex justify-content-center align-items-center ">1</button>
+                    <button type="button" class="btn btn-outline-dark col rounded-5 d-flex justify-content-center align-items-center ">2</button>
+                    <button type="button" class="btn btn-outline-dark col rounded-5 d-flex justify-content-center align-items-center ">3</button>
+                    <button type="button" class="btn btn-outline-success col rounded-5 d-flex justify-content-center align-items-center ">+</button>
                 </div>
                 <div class="row column-gap-3 d-flex justify-content-center mt-3">
-                    <div id="0" class="col-6 bg-dark rounded-5 d-flex justify-content-center align-items-center">
-                        <h1>0</h1>
-                    </div>
-                    <div id="dot" class="col bg-dark rounded-5 d-flex justify-content-center align-items-center">
-                        <h1>.</h1>
-                    </div>
-                    <div id="eq" class="col bg-success rounded-5 d-flex justify-content-center align-items-center">
-                        <h1>=</h1>
-                    </div>
+                    <button type="button" class="btn btn-outline-dark col-6 rounded-5 d-flex justify-content-center align-items-center ">0</button>
+                    <button type="button" class="btn btn-outline-dark col rounded-5 d-flex justify-content-center align-items-center ">.</button>
+                    <button type="button" class="btn btn-outline-success col rounded-5 d-flex justify-content-center align-items-center ">=</button>
                 </div>
             </div>
         </div>
@@ -133,6 +102,41 @@
 <script src="assets/bootstrap/js/bootstrap.js"></script>
 <script src="assets/js/jquery.js"></script>
 <script>
+    const buttons = $('.btn');
+    const display = $('main_num');
+    let currentInput = '0';
+
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            const buttonValue = button.innerText;
+            switch (buttonValue) {
+                case 'C':
+                    currentInput = '0';
+                    break;
+                case '=':
+                    try {
+                        currentInput = eval(currentInput);
+                    } catch (error) {
+                        currentInput = 'Error';
+                    }
+                    break;
+                case '⇦':
+                    currentInput = currentInput.slice(0, -1);
+                    if (currentInput === '') {
+                        currentInput = '0';
+                    }
+                    break;
+                default:
+                    if (currentInput === '0' || currentInput === 'Error') {
+                        currentInput = buttonValue;
+                    } else {
+                        currentInput += buttonValue;
+                    }
+            }
+            display.innerText = currentInput;
+        });
+    });
+
 
 </script>
 <script src="assets/js/particles.js"></script>
