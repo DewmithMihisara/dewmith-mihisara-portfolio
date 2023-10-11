@@ -733,101 +733,21 @@
         </div>
     </section>
 </main>
-<script src="assets/js/jquery.js"></script>
-<script>
-    // var customers = [];
-    //
-    // $("#cusSv").click(function () {
-    //     let cusId = document.querySelector("#id");
-    //     let firstName = document.querySelector("#firstName");
-    //     let lastName = document.querySelector("#lastName");
-    //     let cusArs = document.querySelector("#inputAddress");
-    //     let cusSal = document.querySelector("#salary");
-    //
-    //     let cus = {
-    //         id: $(cusId).val(),
-    //         firsName: $(firstName).val(),
-    //         lastname: $(lastName).val(),
-    //         address: $(cusArs).val(),
-    //         salary: $(cusSal).val(),
-    //     };
-    //     customers.push(cus);
-    //     addTbl();
-    // });
-    // addTbl();
-    // function addTbl(){
-    //     $('#tblBody').empty();
-    //     for (let i = 0; i < customers.length; i++) {
-    //         let row = `<tr>
-    //                     <th scope="col">${customers[i].id}</th>
-    //                     <th scope="col">${customers[i].firsName}</th>
-    //                     <th scope="col">${customers[i].lastname}</th>
-    //                     <th scope="col">${customers[i].address}</th>
-    //                     <th scope="col">${customers[i].salary}</th>
-    //                 </tr>`;
-    //
-    //         $('#tblBody').append(row);
-    //     }
-    // };
-    $(document).ready(function() {
-        var customers = [];
-
-        $("#cusSv").click(function () {
-            let cusId = document.querySelector("#id");
-            let firstName = document.querySelector("#firstName");
-            let lastName = document.querySelector("#lastName");
-            let cusArs = document.querySelector("#inputAddress");
-            let cusSal = document.querySelector("#salary");
-
-            let cus = {
-                id: $(cusId).val(),
-                firstName: $(firstName).val(),
-                lastName: $(lastName).val(),
-                address: $(cusArs).val(),
-                salary: $(cusSal).val(),
-            };
-            customers.push(cus);
-            addTbl();
-
-            $(cusId).val("");
-            $(firstName).val("");
-            $(lastName).val("");
-            $(cusArs).val("");
-            $(cusSal).val("");
-        });
-
-        function addTbl(){
-            $('#tblBody').empty();
-            for (let i = 0; i < customers.length; i++) {
-                let row = `<tr>
-                            <td>${customers[i].id}</td>
-                            <td>${customers[i].firstName}</td>
-                            <td>${customers[i].lastName}</td>
-                            <td>${customers[i].address}</td>
-                            <td>${customers[i].salary}</td>
-                        </tr>`;
-
-                $('#tblBody').append(row);
-            }
-        };
-
-        $('#tblBody').on('click', 'tr', function () {
-
-            var rowData = $(this).find('td').map(function() {
-                return $(this).text();
-            }).get();
-
-            $("#id").val(rowData[0]);
-            $("#firstName").val(rowData[1]);
-            $("#lastName").val(rowData[2]);
-            $("#inputAddress").val(rowData[3]);
-            $("#salary").val(rowData[4]);
-        });
-    });
-</script>
-<script src="assets/js/navigation.js"></script>
 <script src="assets/bootstrap/js/bootstrap.js"></script>
 <script src="assets/js/particles.js"></script>
 <script src="assets/js/app.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="util/navigation.js"></script>
+<script src="db/db.js"></script>
+<script src="model/Customer.js"></script>
+<script src="model/Item.js"></script>
+<script src="model/Order.js"></script>
+<script src="model/OrderDetails.js"></script>
+<script src="controller/CustomerController.js"></script>
+<script src="controller/ItemController.js"></script>
+<script src="controller/OrdersController.js"></script>
+<script src="controller/validation/CustomerValidation.js"></script>
+<script src="controller/validation/ItemValidation.js"></script>
+<script src="controller/validation/OrderValidation.js"></script>
 </body>
 </html>
