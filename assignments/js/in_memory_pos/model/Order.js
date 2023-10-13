@@ -1,4 +1,4 @@
-let order = {
+let orders = {
     oid:"",
     date:"",
     customerID:"",
