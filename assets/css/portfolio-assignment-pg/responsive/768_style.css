@@ -13,4 +13,7 @@
     .project-container>div{
         width: 40vw;
     }
+    .spec{
+        font-size: 22em;
+    }
 }

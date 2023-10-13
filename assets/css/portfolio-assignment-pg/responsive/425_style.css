@@ -43,4 +43,8 @@
         top: 12vh;
         width: 50%;
     }
+    #css_f_work{
+        height: 23vh;
+        overflow: unset;
+    }
 }
