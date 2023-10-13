@@ -1,3 +1,38 @@
+$("#cusSv").click(function () {
+    if (checkAll()) {
+        saveCus();
+    } else {
+        alert("Error");
+    }
+});
+$("#cusDl").click(function () {
+    let id = $("#id").val();
+
+    let consent = confirm("Do you want to delete.?");
+    if (consent) {
+        let response = deleteCustomer(id);
+        if (response) {
+            alert("Customer Deleted");
+            clearCustomerInputFields();
+            getAllCustomers();
+        } else {
+            alert("Customer Not Removed..!");
+        }
+    }
+});
+$("#cusUp").click(function () {
+    let id = $("#id").val();
+    updateCustomer(id);
+    clearCustomerInputFields();
+});
+// $("#searchCus").click(function (){
+//     let cusId = $('#id').val();
+//     if (searchCustomer(cusId) == undefined) {
+//         alert("No such Customer..please check the ID");
+//     }else{
+//         let customer=getCustomer(cusId);
+//     }
+// });
 function bindTrEvents() {
     $('#tblBody>tr').click(function () {
         let id = $(this).children().eq(0).text();
@@ -13,29 +48,66 @@ function bindTrEvents() {
         $("#salary").val(salary);
     })
 }
-$('cusSv').click(function (){
-   let cusId=$('id').val();
 
-   if (cusSearch(cusId.trim()) == undefined){
-       let cusFirstName = $("#firstName").val();
-       let cusLastName = $("#lastName").val();
-       let cusAddress = $("#inputAddress").val();
-       let cusSalary = $("#salary").val();
+function saveCus() {
+    let cusId = $('#id').val();
+    if (searchCustomer(cusId.trim()) == undefined) {
+        let cusFirstName = $("#firstName").val();
+        let cusLastName = $("#lastName").val();
+        let cusAddress = $("#inputAddress").val();
+        let cusSalary = $("#salary").val();
 
-       let newCustomer = Object.assign({}, customer);
+        customer = {
+            id: cusId,
+            firstName: cusFirstName,
+            lastName: cusLastName,
+            address: cusAddress,
+            salary: cusSalary
+        };
 
-       newCustomer.id = cusId;
-       newCustomer.firstName = cusFirstName;
-       newCustomer.lastName = cusLastName;
-       newCustomer.address = cusAddress;
-       newCustomer.salary = cusSalary;
+        customerDB.push(customer);
+        clearCustomerInputFields();
+        getAllCustomers();
+        console.log(customerDB);
 
-       customerDB.push(newCustomer);
-       clearCustomerInputFields();
-       getAllCustomers();
-       console.log(customerDB);
+    } else {
+        alert("Customer already exits.!");
+        clearCustomerInputFields();
     }
-});
+}
+
+function updateCustomer(id) {
+    if (searchCustomer(id) == undefined) {
+        alert("No such Customer..please check the ID");
+    } else {
+        let consent = confirm("Do you really want to update this customer.?");
+        if (consent) {
+            let customer = searchCustomer(id);
+            let cusFirstName = $("#firstName").val();
+            let cusLastName = $("#lastName").val();
+            let cusAddress = $("#inputAddress").val();
+            let cusSalary = $("#salary").val();
+
+            customer.firstName = cusFirstName;
+            customer.lastName = cusLastName;
+            customer.address = cusAddress;
+            customer.salary = cusSalary;
+
+            getAllCustomers();
+        }
+    }
+}
+
+function deleteCustomer(id) {
+    for (let i = 0; i < customerDB.length; i++) {
+        if (customerDB[i].id == id) {
+            customerDB.splice(i, 1);
+            return true;
+        }
+    }
+    return false;
+}
+
 function getAllCustomers() {
     $("#tblBody").empty();
 
@@ -60,8 +132,11 @@ function getAllCustomers() {
     }
 }
 
-function cusSearch(id) {
+function searchCustomer(id) {
     return customerDB.find(function (customer) {
         return customer.id == id;
     });
 }
+// function getCustomer(id){
+//
+// }
