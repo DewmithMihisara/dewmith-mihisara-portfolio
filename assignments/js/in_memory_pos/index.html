@@ -584,9 +584,9 @@
                         <span class="input-group-text">.00</span>
                     </div>
                     <div class="col-12">
-                        <button type="submit" class="btn btn-success">Save</button>
-                        <button type="submit" class="btn btn-primary">Update</button>
-                        <button type="submit" class="btn btn-danger">Delete</button>
+                        <button type="submit" class="btn btn-success" id="itmSv">Save</button>
+                        <button type="submit" class="btn btn-primary" id="itmUp">Update</button>
+                        <button type="submit" class="btn btn-danger" id="itmDel">Delete</button>
                     </div>
                 </form>
             </div>
@@ -600,26 +600,7 @@
                         <th scope="col">Price</th>
                     </tr>
                     </thead>
-                    <tbody>
-                    <tr>
-                        <th scope="row">I-001</th>
-                        <td>Sunlight</td>
-                        <td>10</td>
-                        <td>100.00</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">I-002</th>
-                        <td>life boy</td>
-                        <td>30</td>
-                        <td>120.00</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">I-003</th>
-                        <td>tipi tip</td>
-                        <td>100</td>
-                        <td>100.00</td>
-                    </tr>
-                    </tbody>
+                    <tbody id="itmTblBody"></tbody>
                 </table>
             </div>
         </div>
