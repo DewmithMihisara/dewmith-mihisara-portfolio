@@ -35,13 +35,13 @@ $("#cusUp").click(function () {
 // });
 function bindTrEvents() {
     $('#tblBody>tr').click(function () {
-        let id = $(this).children().eq(0).text();
+        let cusId = $(this).children().eq(0).text();
         let firstName = $(this).children().eq(1).text();
         let lastName = $(this).children().eq(2).text();
         let address = $(this).children().eq(3).text();
         let salary = $(this).children().eq(4).text();
 
-        $("#cusId").val(id);
+        $("#id").val(cusId);
         $("#firstName").val(firstName);
         $("#lastName").val(lastName);
         $("#inputAddress").val(address);

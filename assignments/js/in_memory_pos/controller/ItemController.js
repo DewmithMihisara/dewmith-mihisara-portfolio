@@ -1,31 +1,40 @@
 $("#itmSv").click(function () {
-    // if (checkAllItm()) {
-    //     saveItm();
-    // } else {
-    //     alert("Error");
-    // }
-    let codeItm = $('#code').val();
-    let itmDes = $("#description").val();
-    let itmHQty = $("#hQty").val();
-    let price = $("#price").val();
-
-    item = {
-        code:codeItm,
-        description:itmDes,
-        qtyOnHand:itmHQty,
-        unitPrice:price
-    };
-
-    itemDB.push(item);
-    clearItemInputFields();
-    getAllItem();
-    console.log(itemDB);
+    if (checkAllItm()) {
+        saveItm();
+    } else {
+        alert("Error");
+    }
 });
 $("#itmUp").click(function () {
     let id = $("#code").val();
     updateItem(id);
     clearItemInputFields();
 });
+
+$("#itmDel").click(function () {
+    let id = $("#code").val();
+
+    let consent = confirm("Do you want to delete.?");
+    if (consent) {
+        let response = deleteItem(id);
+        if (response) {
+            alert("Item Deleted");
+            clearItemInputFields();
+            getAllItem();
+        } else {
+            alert("Item Not Removed..!");
+        }
+    }
+});
+function deleteItem(id) {
+    for (let i = 0; i < itemDB.length; i++) {
+        if (itemDB[i].code == id) {
+            itemDB.splice(i, 1);
+            return true;
+        }
+    }
+    return false;
+}
 function updateItem(id) {
     if (searchItem(id) == undefined) {
         alert("No such Item..please check the ID");
@@ -41,7 +50,7 @@ function updateItem(id) {
             item.qtyOnHand = hqt;
             item.unitPrice = price;
 
-            getAllCustomers();
+            getAllItem();
         }
     }
 }
@@ -69,7 +78,7 @@ function saveItm() {
         clearItemInputFields();
     }
 }
-function bindTrEvents() {
+function bindTrEventsItm() {
     $('#itmTblBody>tr').click(function () {
         let code = $(this).children().eq(0).text();
         let des = $(this).children().eq(1).text();
@@ -100,7 +109,7 @@ function getAllItem() {
 
         $("#itmTblBody").append(row);
 
-        bindTrEvents();
+        bindTrEventsItm();
     }
 }
 function searchItem(id) {
