@@ -67,7 +67,6 @@ function saveItm() {
             qtyOnHand:itmHQty,
             unitPrice:price
         };
-
         itemDB.push(item);
         clearItemInputFields();
         getAllItem();
