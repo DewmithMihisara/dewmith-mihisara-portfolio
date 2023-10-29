@@ -1,5 +1,5 @@
 @media all and (min-width: 1024px) and (max-width: 1440px){
-    body>h1:first-child{
+    #main_header{
         font-size: 180em;
     }
     .project-container>div{

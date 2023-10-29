@@ -1,5 +1,5 @@
 @media all and (min-width: 769px) and (max-width: 1024px){
-    body>h1:first-child {
+    #main_header{
         font-size: 130em;
     }
     .title{

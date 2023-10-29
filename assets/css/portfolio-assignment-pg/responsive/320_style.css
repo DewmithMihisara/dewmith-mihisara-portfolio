@@ -1,9 +1,9 @@
 @media all and (max-width: 320px){
-    body>h1:first-child{
+    #main_header{
         font-size: 40em;
         top: 6.5vh;
     }
-    body>section:nth-child(2) {
+    body>section:nth-child(3) {
         margin-top: 15vh;
     }
     section{
@@ -50,5 +50,9 @@
         font-size: 9em;
         top: 8vh;
         width: 50%;
+    }
+    #css_f_work{
+        height: 23vh;
+        overflow: unset;
     }
 }

@@ -26,7 +26,7 @@ body{
     width: max-content;
     height: max-content;
 }
-body>h1:first-child{
+#main_header{
     position: absolute;
     display: inline-block;
     left: 0;
@@ -42,9 +42,9 @@ body>h1:first-child{
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    z-index: 1;
+    z-index: -1;
 }
-body>section:nth-child(2){
+body>section:nth-child(3){
     margin-top: 25vh;
 }
 section{

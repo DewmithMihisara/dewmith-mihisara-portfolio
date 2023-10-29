@@ -1,9 +1,9 @@
 @media all and (min-width: 321px) and (max-width: 425px){
-    body>h1:first-child{
+    #main_header{
         font-size: 50em;
         top: 6.5vh;
     }
-    body>section:nth-child(2) {
+    body>section:nth-child(3) {
         margin-top: 15vh;
     }
     .title{
